@@ -25,8 +25,8 @@ class BNCCMatcher:
         """Carrega dados da BNCC do JSON"""
         try:
             # Path relativo ao diretório do módulo
-            current_dir = os.path.dirname(os.path.abspath(__file__))
-            bncc_path = os.path.join(current_dir, '..', 'data', 'bncc-data.json')
+            BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+            bncc_path = os.path.join(BASE_DIR, 'data', 'bncc-data.json')
             
             if os.path.exists(bncc_path):
                 with open(bncc_path, 'r', encoding='utf-8') as f:
