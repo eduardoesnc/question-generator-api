@@ -1,0 +1,30 @@
+{
+  "input": "Questão de matemática sobre frações para o 7º ano, nível de análise, múltipla escolha com gráfico",
+  "output": {
+    "extracted": {
+      "disciplina": "Matemática",
+      "ano": "7º ano",
+      "nivelBloom": "analise",
+      "tipoQuestao": "multipla_escolha",
+      "tipoTextoBase": "grafico_barras"
+    },
+    "confidence": {
+      "disciplina": 0.95,
+      "ano": 0.95,
+      "nivelBloom": 0.75,
+      "tipoQuestao": 0.85,
+      "tipoTextoBase": 0.80
+    },
+    "suggestions": [
+      {
+        "field": "unidadeTematica",
+        "values": ["Números e Operações", "Frações"],
+        "message": "Possíveis tópicos identificados no texto"
+      }
+    ],
+    "missing_fields": [
+      "perfilAluno"
+    ],
+    "original_text": "Questão de matemática sobre frações para o 7º ano, nível de análise, múltipla escolha com gráfico"
+  }
+}
