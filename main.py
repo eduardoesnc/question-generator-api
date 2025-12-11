@@ -17,7 +17,10 @@ app = FastAPI(
 )
 
 # CORS - configurável via env
-cors_origins = os.getenv("CORS_ORIGINS", "https://question-generator-seven-delta.vercel.app")
+cors_origins = os.getenv(
+    "CORS_ORIGINS",
+    "https://question-generator-seven-delta.vercel.app,http://localhost:3000"
+).split(",")
 origins_list = [origin.strip() for origin in cors_origins.split(",")]
 
 app.add_middleware(
