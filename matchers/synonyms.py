@@ -218,14 +218,21 @@ def get_key_terms(text: str, include_weights: bool = False) -> set:
         'contexto', 'situação', 'situacao', 'momento', 'fase',
         'parte', 'partes', 'elemento', 'elementos', 'forma', 'formas',
         'sobre', 'com', 'longa', 'análise', 'dissertativa', 'histórico', 'documento',
-        'ideal', 'nação', 'nacão', 'moderna', 'moderno',  # Palavras muito genéricas de períodos
+        'ideal', 'nação', 'nacão', 'moderna', 'moderno',
         'transformação', 'transformacao', 'desdobramentos', 'desdobramento',
         'nascimento', 'metade', 'século', 'seculo', 'primeiros', 'primeira',
-        'era'  # MUITO genérico - causa falsos positivos (era JK vs Era Vargas)
+        'era',  # MUITO genérico - causa falsos positivos
+        # Palavras de contexto de questões (não são conteúdo)
+        'quero', 'questões', 'questoes', 'questão', 'questao',
+        'estilo', 'tipo', 'tipos', 'para', 'com', 'de',
+        'enem', 'prova', 'exame', 'teste', 'avaliação', 'avaliacao',
+        'multipla', 'multiplas', 'escolha', 'escolhas', 'alternativas',
+        'dissertativa', 'dissertativas', 'curta', 'longa'
     }
     
     # Termos muito específicos que têm peso maior
     high_value_terms = {
+        # História
         'vargas', 'varguista', 'getúlio', 'getulio',
         'trabalhismo', 'trabalhista', 'trabalhadores',
         'urbanização', 'urbanizacao', 'urbana', 'urbano',
@@ -235,11 +242,18 @@ def get_key_terms(text: str, include_weights: bool = False) -> set:
         'república', 'republica', 'republicano', 'republicana',
         'abolição', 'abolicao', 'escravidão', 'escravidao',
         'independência', 'independencia', 'colonial', 'colonização', 'colonizacao',
-        'jk', 'juscelino', 'kubitschek',  # Para diferenciar "era JK" de "Era Vargas"
+        'jk', 'juscelino', 'kubitschek',
         'redemocratização', 'redemocratizacao', 'constituição', 'constituicao',
         'negros', 'indígena', 'indigena', 'quilombolas', 'afrodescendentes',
         'feminino', 'anarquismo', 'totalitarismo', 'fascismo', 'nazismo',
-        'holocausto', 'onu', 'direitos', 'humanos'
+        'holocausto', 'onu', 'direitos', 'humanos',
+        # Matemática
+        'funções', 'funcoes', 'função', 'funcao',
+        'equações', 'equacoes', 'equação', 'equacao',
+        'frações', 'fracoes', 'fração', 'fracao',
+        'álgebra', 'algebra', 'algébrico', 'algebrico',
+        'geometria', 'geométrico', 'geometrico',
+        'trigonometria', 'trigonométrico', 'trigonometrico'
     }
     
     if include_weights:

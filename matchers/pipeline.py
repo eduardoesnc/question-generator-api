@@ -12,9 +12,11 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from matchers.disciplinas_matcher import DisciplinasMatcher
 from matchers.bloom_matcher import BloomMatcher
 from matchers.bncc_matcher import BNCCMatcher
-from educational_mappings import (
+from app.core.mappings import (
     ANOS_MAP, TIPOS_QUESTAO_MAP, TIPOS_TEXTO_BASE_MAP, PERFIS_ALUNO_MAP
 )
+from app.core.logging import logger
+from app.models.responses import Suggestion
 
 
 class NLPPipeline:
@@ -33,9 +35,9 @@ class NLPPipeline:
         Returns:
             Dict com extracted, confidence, suggestions, missing_fields
         """
-        print(f"\n{'='*60}")
-        print(f"DEBUG: Processando texto: '{text}'")
-        print(f"{'='*60}\n")
+        logger.debug("="*60)
+        logger.debug(f"Processando texto: '{text}'")
+        logger.debug("="*60)
         
         text_lower = text.lower()
         
@@ -53,7 +55,7 @@ class NLPPipeline:
         # 🌍 BUSCA GLOBAL PRIMEIRO - tenta encontrar tudo de uma vez
         # Isso é especialmente útil para textos curtos como "Vargas", "Era Vargas", etc.
         if len(text.split()) <= 5:  # Textos curtos (até 5 palavras)
-            print(f"\n🎯 Texto curto detectado - tentando busca global na BNCC...")
+            logger.info("🎯 Texto curto detectado - tentando busca global na BNCC...")
             global_result = self.bncc_matcher.search_global(text)
             if global_result:
                 # Extrair tudo que foi encontrado
@@ -61,16 +63,16 @@ class NLPPipeline:
                     if field in global_result and global_result[field]:
                         extracted[field] = global_result[field]
                         confidence[field] = global_result['confidence'][field]
-                        print(f"   ✅ {field}: {str(global_result[field])[:60]}... (conf: {global_result['confidence'][field]:.2f})")
+                        logger.info(f"   ✅ {field}: {str(global_result[field])[:60]}... (conf: {global_result['confidence'][field]:.2f})")
                 
                 # Se encontrou tudo na BNCC, pular extração individual
                 if all(f in extracted for f in ['disciplina', 'ano', 'unidadeTematica', 'objetoConhecimento', 'habilidade']):
-                    print(f"\n   🎉 BUSCA GLOBAL COMPLETA! Todos os campos BNCC encontrados.")
+                    logger.success("🎉 BUSCA GLOBAL COMPLETA! Todos os campos BNCC encontrados.")
                     # Continuar para extrair apenas campos não-BNCC (bloom, tipo questão, etc.)
                 else:
-                    print(f"\n   ⚠️  Busca global parcial - continuando extração normal...")
+                    logger.warning("⚠️  Busca global parcial - continuando extração normal...")
             else:
-                print(f"   ❌ Busca global não encontrou matches - continuando extração normal...")
+                logger.debug("Busca global não encontrou matches - continuando extração normal...")
         
         # Extrair disciplina com PhraseMatcher
         if "disciplina" not in extracted:
@@ -78,9 +80,9 @@ class NLPPipeline:
             if disc_result:
                 extracted["disciplina"] = disc_result[0]
                 confidence["disciplina"] = disc_result[1]
-                print(f"✅ Disciplina: {disc_result[0]} (confiança: {disc_result[1]:.2f})")
+                logger.info(f"✅ Disciplina: {disc_result[0]} (confiança: {disc_result[1]:.2f})")
             else:
-                print("❌ Disciplina não encontrada")
+                logger.debug("Disciplina não encontrada")
         
         # Extrair ano escolar (regex) - usar texto original para preservar números
         if "ano" not in extracted:
@@ -88,9 +90,9 @@ class NLPPipeline:
             if ano_result:
                 extracted["ano"] = ano_result["value"]
                 confidence["ano"] = ano_result["confidence"]
-                print(f"✅ Ano: {ano_result['value']} (confiança: {ano_result['confidence']:.2f})")
+                logger.info(f"✅ Ano: {ano_result['value']} (confiança: {ano_result['confidence']:.2f})")
             else:
-                print("❌ Ano não encontrado")
+                logger.debug("Ano não encontrado")
         
         # Extrair nível Bloom com PhraseMatcher
         if "nivelBloom" not in extracted:
@@ -98,9 +100,9 @@ class NLPPipeline:
             if bloom_result:
                 extracted["nivelBloom"] = bloom_result[0]
                 confidence["nivelBloom"] = bloom_result[1]
-                print(f"✅ Nível Bloom: {bloom_result[0]} (confiança: {bloom_result[1]:.2f})")
+                logger.info(f"✅ Nível Bloom: {bloom_result[0]} (confiança: {bloom_result[1]:.2f})")
             else:
-                print("❌ Nível Bloom não encontrado")
+                logger.debug("Nível Bloom não encontrado")
         
         # Extrair tipo de questão (keyword matching)
         if "tipoQuestao" not in extracted:
@@ -108,9 +110,9 @@ class NLPPipeline:
             if tipo_q:
                 extracted["tipoQuestao"] = tipo_q["value"]
                 confidence["tipoQuestao"] = tipo_q["confidence"]
-                print(f"✅ Tipo Questão: {tipo_q['value']} (confiança: {tipo_q['confidence']:.2f})")
+                logger.info(f"✅ Tipo Questão: {tipo_q['value']} (confiança: {tipo_q['confidence']:.2f})")
             else:
-                print("❌ Tipo Questão não encontrado")
+                logger.debug("Tipo Questão não encontrado")
         
         # Extrair tipo de texto base
         if "tipoTextoBase" not in extracted:
@@ -118,9 +120,9 @@ class NLPPipeline:
             if tipo_t:
                 extracted["tipoTextoBase"] = tipo_t["value"]
                 confidence["tipoTextoBase"] = tipo_t["confidence"]
-                print(f"✅ Tipo Texto Base: {tipo_t['value']} (confiança: {tipo_t['confidence']:.2f})")
+                logger.info(f"✅ Tipo Texto Base: {tipo_t['value']} (confiança: {tipo_t['confidence']:.2f})")
             else:
-                print("❌ Tipo Texto Base não encontrado")
+                logger.debug("Tipo Texto Base não encontrado")
         
         # Extrair perfil do aluno
         if "perfilAluno" not in extracted:
@@ -128,23 +130,21 @@ class NLPPipeline:
             if perfil:
                 extracted["perfilAluno"] = perfil["value"]
                 confidence["perfilAluno"] = perfil["confidence"]
-                print(f"✅ Perfil Aluno: {perfil['value']} (confiança: {perfil['confidence']:.2f})")
+                logger.info(f"✅ Perfil Aluno: {perfil['value']} (confiança: {perfil['confidence']:.2f})")
             else:
-                print("❌ Perfil Aluno não encontrado")
+                logger.debug("Perfil Aluno não encontrado")
         
         # Extrair Unidade Temática da BNCC (ou tópicos livres)
         if "unidadeTematica" not in extracted:
             disciplina = extracted.get("disciplina")
             ano = extracted.get("ano")
             
-            print(f"\n🔍 Tentando extrair Unidade Temática...")
-            print(f"   Disciplina: {disciplina}, Ano: {ano}")
+            logger.debug(f"Tentando extrair Unidade Temática... Disciplina: {disciplina}, Ano: {ano}")
             
             # Se não tem ano mas tem disciplina, tentar buscar em todos os anos
             if disciplina and not ano:
-                print(f"   ⚙️  Chamando match_unidade_any_year('{text}', '{disciplina}')...")
+                logger.debug(f"Chamando match_unidade_any_year('{text}', '{disciplina}')...")
                 unidade_result = self.bncc_matcher.match_unidade_any_year(text, disciplina)
-                print(f"   ⚙️  Resultado: {unidade_result}")
                 if unidade_result:
                     extracted["unidadeTematica"] = unidade_result[0]
                     confidence["unidadeTematica"] = unidade_result[1]
@@ -153,21 +153,19 @@ class NLPPipeline:
                     if ano_inferido and "ano" not in extracted:
                         extracted["ano"] = ano_inferido
                         confidence["ano"] = 0.75
-                        print(f"✅ Ano inferido: {ano_inferido} (confiança: 0.75)")
-                    print(f"✅ Unidade Temática (BNCC): {unidade_result[0]} (confiança: {unidade_result[1]:.2f})")
+                        logger.info(f"✅ Ano inferido: {ano_inferido} (confiança: 0.75)")
+                    logger.info(f"✅ Unidade Temática (BNCC): {unidade_result[0]} (confiança: {unidade_result[1]:.2f})")
             # Primeiro tentar na BNCC com ano específico
             elif disciplina and ano:
                 unidade_result = self.bncc_matcher.match_unidade_tematica(text, disciplina, ano)
                 if unidade_result:
                     extracted["unidadeTematica"] = unidade_result[0]
                     confidence["unidadeTematica"] = unidade_result[1]
-                    print(f"✅ Unidade Temática (BNCC): {unidade_result[0]} (confiança: {unidade_result[1]:.2f})")
+                    logger.info(f"✅ Unidade Temática (BNCC): {unidade_result[0]} (confiança: {unidade_result[1]:.2f})")
                 else:
-                    # BNCC não encontrou nada - não usar tópicos livres
-                    # Deixar vazio para o usuário preencher manualmente
-                    print("❌ Unidade Temática não encontrada na BNCC")
+                    logger.debug("Unidade Temática não encontrada na BNCC")
             else:
-                print("⚠️  Unidade Temática: precisa de disciplina primeiro")
+                logger.debug("Unidade Temática: precisa de disciplina primeiro")
         
         # Extrair Objeto de Conhecimento
         if "objetoConhecimento" not in extracted:
@@ -175,19 +173,18 @@ class NLPPipeline:
             ano = extracted.get("ano")
             unidade = extracted.get("unidadeTematica")
             
-            print(f"\n🔍 Tentando extrair Objeto de Conhecimento...")
-            print(f"   Disciplina: {disciplina}, Ano: {ano}, Unidade: {unidade}")
+            logger.debug(f"Tentando extrair Objeto de Conhecimento... Disciplina: {disciplina}, Ano: {ano}, Unidade: {unidade}")
             
             if disciplina and ano:
                 objeto_result = self.bncc_matcher.match_objeto_conhecimento(text, disciplina, ano, unidade)
                 if objeto_result:
                     extracted["objetoConhecimento"] = objeto_result[0]
                     confidence["objetoConhecimento"] = objeto_result[1]
-                    print(f"✅ Objeto Conhecimento (BNCC): {objeto_result[0][:80]}... (confiança: {objeto_result[1]:.2f})")
+                    logger.info(f"✅ Objeto Conhecimento (BNCC): {objeto_result[0][:80]}... (confiança: {objeto_result[1]:.2f})")
                 else:
-                    print("❌ Objeto de Conhecimento não encontrado na BNCC")
+                    logger.debug("Objeto de Conhecimento não encontrado na BNCC")
             else:
-                print("⚠️  Objeto Conhecimento: precisa de disciplina e ano primeiro")
+                logger.debug("Objeto Conhecimento: precisa de disciplina e ano primeiro")
         
         # Extrair Habilidade
         if "habilidade" not in extracted:
@@ -196,55 +193,54 @@ class NLPPipeline:
             unidade = extracted.get("unidadeTematica")
             objeto = extracted.get("objetoConhecimento")
             
-            print(f"\n🔍 Tentando extrair Habilidade...")
-            print(f"   Disciplina: {disciplina}, Ano: {ano}")
-            print(f"   Unidade: {unidade}, Objeto: {objeto}")
+            logger.debug(f"Tentando extrair Habilidade... Disciplina: {disciplina}, Ano: {ano}, Unidade: {unidade}, Objeto: {objeto}")
             
             if all([disciplina, ano, unidade, objeto]):
                 habilidade_result = self.bncc_matcher.match_habilidade(text, disciplina, ano, unidade, objeto)
                 if habilidade_result:
                     extracted["habilidade"] = habilidade_result[0]
                     confidence["habilidade"] = habilidade_result[1]
-                    print(f"✅ Habilidade (BNCC): {habilidade_result[0][:50]}... (confiança: {habilidade_result[1]:.2f})")
+                    logger.info(f"✅ Habilidade (BNCC): {habilidade_result[0][:50]}... (confiança: {habilidade_result[1]:.2f})")
                 else:
                     # Se não encontrou na BNCC, buscar em qualquer ano da mesma disciplina
-                    print("   Buscando habilidade em outros anos...")
+                    logger.debug("Buscando habilidade em outros anos...")
                     habilidade_any = self.bncc_matcher.match_habilidade_any_year(text, disciplina, unidade, objeto)
                     if habilidade_any:
                         extracted["habilidade"] = habilidade_any[0]
                         confidence["habilidade"] = habilidade_any[1]
-                        print(f"✅ Habilidade (outro ano): {habilidade_any[0][:50]}... (confiança: {habilidade_any[1]:.2f})")
+                        logger.info(f"✅ Habilidade (outro ano): {habilidade_any[0][:50]}... (confiança: {habilidade_any[1]:.2f})")
                     else:
                         # Gerar habilidade genérica baseada no contexto
                         habilidade_generica = f"Compreender e analisar {objeto} no contexto de {unidade}"
                         extracted["habilidade"] = habilidade_generica
                         confidence["habilidade"] = 0.50
-                        print(f"✅ Habilidade (genérica): {habilidade_generica} (confiança: 0.50)")
+                        logger.info(f"✅ Habilidade (genérica): {habilidade_generica} (confiança: 0.50)")
             else:
-                print("⚠️  Habilidade: precisa de disciplina, ano, unidade e objeto primeiro")
+                logger.debug("Habilidade: precisa de disciplina, ano, unidade e objeto primeiro")
         
         # Extrair tópicos livres como sugestões (fallback se não encontrou na BNCC)
         if "unidadeTematica" not in extracted:
             topicos = self._extract_free_topics(text)
             if topicos:
-                suggestions.append({
-                    "field": "unidadeTematica",
-                    "values": topicos,
-                    "message": "Tópicos identificados no texto (não encontrados na BNCC)"
-                })
+                suggestions.append(Suggestion(
+                    field="unidadeTematica",
+                    values=topicos,
+                    message="Tópicos identificados no texto (não encontrados na BNCC)"
+                ))
         
         # Aplicar defaults inteligentes
         self._apply_smart_defaults(extracted, confidence, text_lower)
         
-        print(f"\n{'='*60}")
-        print(f"📊 RESULTADO FINAL:")
-        print(f"{'='*60}")
+        # VALIDAÇÃO DE CONSISTÊNCIA
+        self._validate_consistency(extracted, confidence)
+        
+        logger.debug("="*60)
+        logger.debug("📊 RESULTADO FINAL:")
+        logger.debug("="*60)
         for field, value in extracted.items():
             conf = confidence.get(field, 0)
             value_display = value if len(str(value)) < 50 else str(value)[:50] + "..."
-            print(f"  {field}: {value_display} (conf: {conf:.2f})")
-        print(f"\n❌ Campos faltantes: {missing_fields if 'missing_fields' in locals() else 'calculando...'}")
-        print(f"{'='*60}\n")
+            logger.debug(f"  {field}: {value_display} (conf: {conf:.2f})")
         
         # Identificar campos faltantes (TODOS os 10 campos)
         all_fields = [
@@ -256,6 +252,9 @@ class NLPPipeline:
             field for field in all_fields
             if field not in extracted or confidence.get(field, 0) < 0.5
         ]
+        
+        logger.debug(f"Campos faltantes: {missing_fields}")
+        logger.debug("="*60)
         
         return {
             "extracted": extracted,
@@ -270,9 +269,9 @@ class NLPPipeline:
             for pattern in patterns:
                 match = re.search(pattern, text, re.IGNORECASE)
                 if match:
-                    print(f"DEBUG: Ano encontrado: {ano} com padrão '{pattern}' em '{text}'")
+                    logger.debug(f"Ano encontrado: {ano} com padrão '{pattern}' em '{text}'")
                     return {"value": ano, "confidence": 0.95}
-        print(f"DEBUG: Nenhum ano encontrado em '{text}'")
+        logger.debug(f"Nenhum ano encontrado em '{text}'")
         return None
     
     def _extract_by_keywords(self, text: str, mapping: Dict) -> Optional[Dict[str, Any]]:
@@ -384,18 +383,83 @@ class NLPPipeline:
                 extracted["nivelBloom"] = "compreensao"
                 confidence["nivelBloom"] = 0.5
         
-        # Tipo de texto baseado na disciplina
-        if "tipoTextoBase" not in extracted and "disciplina" in extracted:
-            disc = extracted["disciplina"].lower()
-            if "matemática" in disc or "matematica" in disc:
-                extracted["tipoTextoBase"] = "grafico_barras"
-                confidence["tipoTextoBase"] = 0.55
-            elif "história" in disc or "historia" in disc:
-                extracted["tipoTextoBase"] = "documento_historico"
-                confidence["tipoTextoBase"] = 0.55
-            elif "geografia" in disc:
-                extracted["tipoTextoBase"] = "mapa"
-                confidence["tipoTextoBase"] = 0.55
-            elif "português" in disc or "portugues" in disc:
-                extracted["tipoTextoBase"] = "texto_literario"
-                confidence["tipoTextoBase"] = 0.55
+        # REMOVIDO: Não defaultar tipoTextoBase sem evidência clara
+        # Apenas extrair se houver palavra-chave explícita no texto
+
+    
+    def _validate_consistency(self, extracted: Dict, confidence: Dict):
+        """
+        Valida consistência entre campos extraídos
+        Reduz confiança se houver inconsistências
+        """
+        logger.debug("🔍 Validando consistência entre campos...")
+        
+        # 1. Validar se unidade/objeto/habilidade pertencem à disciplina/ano corretos
+        if all(k in extracted for k in ['disciplina', 'ano', 'unidadeTematica']):
+            disciplina = extracted['disciplina']
+            ano = extracted['ano']
+            unidade = extracted['unidadeTematica']
+            
+            # Verificar se unidade existe na BNCC para essa disciplina/ano
+            if disciplina in self.bncc_matcher.bncc_data:
+                if ano in self.bncc_matcher.bncc_data[disciplina]:
+                    if unidade not in self.bncc_matcher.bncc_data[disciplina][ano]:
+                        logger.warning(f"⚠️  Inconsistência: Unidade '{unidade}' não existe em {disciplina} {ano}")
+                        # Reduzir confiança
+                        if 'unidadeTematica' in confidence:
+                            confidence['unidadeTematica'] *= 0.7
+        
+        # 2. Validar se tipo de texto base é compatível com disciplina
+        if 'disciplina' in extracted and 'tipoTextoBase' in extracted:
+            disc = extracted['disciplina'].lower()
+            tipo = extracted['tipoTextoBase']
+            
+            incompatible = False
+            if 'matemática' in disc or 'matematica' in disc:
+                if tipo in ['documento_historico', 'texto_literario', 'poema']:
+                    incompatible = True
+            elif 'história' in disc or 'historia' in disc:
+                if tipo in ['grafico_barras', 'grafico_linhas']:
+                    incompatible = True
+            
+            if incompatible:
+                logger.warning(f"⚠️  Inconsistência: Tipo de texto '{tipo}' incomum para {extracted['disciplina']}")
+                if 'tipoTextoBase' in confidence:
+                    confidence['tipoTextoBase'] *= 0.8
+        
+        # 3. Validar se nível Bloom é compatível com ano escolar
+        if 'ano' in extracted and 'nivelBloom' in extracted:
+            ano = extracted['ano']
+            bloom = extracted['nivelBloom']
+            
+            # Anos iniciais (1º-5º) raramente usam síntese/avaliação
+            if any(x in ano for x in ["1º", "2º", "3º"]):
+                if bloom in ['sintese', 'avaliacao']:
+                    logger.warning(f"⚠️  Inconsistência: Nível Bloom '{bloom}' avançado para {ano}")
+                    if 'nivelBloom' in confidence:
+                        confidence['nivelBloom'] *= 0.7
+        
+        # 4. Validar se perfil do aluno é compatível com ano
+        if 'ano' in extracted and 'perfilAluno' in extracted:
+            ano = extracted['ano']
+            perfil = extracted['perfilAluno']
+            
+            # Anos iniciais raramente têm "conhecimento_avancado"
+            if any(x in ano for x in ["1º", "2º", "3º"]):
+                if perfil == 'conhecimento_avancado':
+                    logger.warning(f"⚠️  Inconsistência: Perfil '{perfil}' avançado para {ano}")
+                    if 'perfilAluno' in confidence:
+                        confidence['perfilAluno'] *= 0.8
+        
+        # 5. Validar se tipo de questão é compatível com nível Bloom
+        if 'nivelBloom' in extracted and 'tipoQuestao' in extracted:
+            bloom = extracted['nivelBloom']
+            tipo_q = extracted['tipoQuestao']
+            
+            # Múltipla escolha raramente avalia síntese/avaliação
+            if bloom in ['sintese', 'avaliacao'] and tipo_q == 'multipla_escolha':
+                logger.warning(f"⚠️  Inconsistência: Múltipla escolha para nível '{bloom}'")
+                if 'tipoQuestao' in confidence:
+                    confidence['tipoQuestao'] *= 0.8
+        
+        logger.debug("✅ Validação de consistência concluída")

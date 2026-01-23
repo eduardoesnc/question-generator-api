@@ -302,33 +302,7 @@ class BNCCMatcher:
                 return (best_match, confidence)
             else:
                 print(f"   ❌ Score por termos-chave insuficiente: {best_score:.3f}")
-                print(f"   🔄 Tentando busca semântica...")
-                
-                # FALLBACK: Busca semântica usando embeddings
-                best_semantic_match = None
-                best_semantic_score = 0
-                best_semantic_objeto = None
-                
-                for unidade, objetos in unidades_data.items():
-                    for objeto in objetos.keys():
-                        # Calcular similaridade semântica com cada variação
-                        max_similarity = 0
-                        for text_var in text_variations:
-                            similarity = self._semantic_similarity(text_var, objeto)
-                            max_similarity = max(max_similarity, similarity)
-                        
-                        if max_similarity > best_semantic_score:
-                            best_semantic_score = max_similarity
-                            best_semantic_match = unidade
-                            best_semantic_objeto = objeto
-                
-                if best_semantic_match and best_semantic_score > 0.35:  # Threshold para similaridade semântica
-                    confidence = min(0.80, 0.50 + best_semantic_score * 0.30)
-                    print(f"   ✅ MATCH SEMÂNTICO! Unidade: '{best_semantic_match[:60]}...'")
-                    print(f"      Via objeto: '{best_semantic_objeto[:60]}...' (similaridade: {best_semantic_score:.3f}, conf: {confidence:.2f})")
-                    return (best_semantic_match, confidence)
-                else:
-                    print(f"   ❌ Similaridade semântica insuficiente: {best_semantic_score:.3f} (mínimo: 0.35)")
+                # Keywords puro - sem fallback semântico
         except Exception as e:
             print(f"   ❌ Erro: {e}")
         
@@ -418,30 +392,7 @@ class BNCCMatcher:
                 return (best_match, confidence)
             else:
                 print(f"   ❌ Score por termos-chave insuficiente: {best_score:.3f}")
-                print(f"   🔄 Tentando busca semântica...")
-                
-                # FALLBACK: Busca semântica usando embeddings
-                best_semantic_match = None
-                best_semantic_score = 0
-                
-                for objeto in objetos:
-                    # Calcular similaridade semântica com cada variação
-                    max_similarity = 0
-                    for text_var in text_variations:
-                        similarity = self._semantic_similarity(text_var, objeto)
-                        max_similarity = max(max_similarity, similarity)
-                    
-                    if max_similarity > best_semantic_score:
-                        best_semantic_score = max_similarity
-                        best_semantic_match = objeto
-                
-                if best_semantic_match and best_semantic_score > 0.35:  # Threshold para similaridade semântica
-                    confidence = min(0.80, 0.50 + best_semantic_score * 0.30)
-                    print(f"   ✅ MATCH SEMÂNTICO! Objeto: '{best_semantic_match[:60]}...'")
-                    print(f"      Similaridade: {best_semantic_score:.3f}, Confiança: {confidence:.2f}")
-                    return (best_semantic_match, confidence)
-                else:
-                    print(f"   ❌ Similaridade semântica insuficiente: {best_semantic_score:.3f} (mínimo: 0.35)")
+                # Keywords puro - sem fallback semântico
         except Exception as e:
             print(f"   ❌ Erro: {e}")
         
@@ -542,7 +493,7 @@ class BNCCMatcher:
             return False
     
     def match_unidade_any_year(self, text: str, disciplina: str) -> Optional[Tuple[str, float]]:
-        """Busca unidade temática em qualquer ano da disciplina usando busca semântica"""
+        """Busca unidade temática em qualquer ano da disciplina usando keywords"""
         if not disciplina:
             return None
         
@@ -552,6 +503,10 @@ class BNCCMatcher:
         text_variations = expand_query(text)
         print(f"   📝 Variações: {text_variations[:3]}...")
         
+        # Extrair termos-chave
+        key_terms_text = get_key_terms(text)
+        print(f"   🔑 Termos-chave: {key_terms_text}")
+        
         best_match_unidade = None
         best_match_ano = None
         best_score = 0
@@ -560,31 +515,31 @@ class BNCCMatcher:
         try:
             anos = self.bncc_data.get(disciplina, {})
             
-            # FASE 1: Busca semântica (mais eficaz para textos curtos)
-            print(f"   🔄 Usando busca semântica...")
+            # Busca por keywords
             for ano, unidades in anos.items():
                 for unidade, objetos in unidades.items():
                     for objeto in objetos.keys():
-                        # Calcular similaridade semântica com cada variação
-                        max_similarity = 0
-                        for text_var in text_variations:
-                            similarity = self._semantic_similarity(text_var, objeto)
-                            max_similarity = max(max_similarity, similarity)
+                        # Calcular score baseado em termos-chave
+                        key_terms_objeto = get_key_terms(objeto)
+                        key_terms_comuns = key_terms_text & key_terms_objeto
                         
-                        if max_similarity > best_score:
-                            best_score = max_similarity
-                            best_match_unidade = unidade
-                            best_match_ano = ano
-                            best_objeto = objeto
+                        if key_terms_comuns:
+                            score = len(key_terms_comuns) / max(len(key_terms_objeto), 1)
+                            
+                            if score > best_score:
+                                best_score = score
+                                best_match_unidade = unidade
+                                best_match_ano = ano
+                                best_objeto = objeto
             
-            if best_match_unidade and best_score > 0.30:  # Threshold mais baixo para any_year
+            if best_match_unidade and best_score > 0.20:  # Threshold para keywords
                 confidence = min(0.80, 0.50 + best_score * 0.30)
-                print(f"   ✅ MATCH SEMÂNTICO! Unidade: '{best_match_unidade[:60]}...'")
+                print(f"   ✅ MATCH! Unidade: '{best_match_unidade[:60]}...'")
                 print(f"      Ano: {best_match_ano}, Via objeto: '{best_objeto[:60]}...'")
-                print(f"      Similaridade: {best_score:.3f}, Confiança: {confidence:.2f}")
+                print(f"      Score: {best_score:.3f}, Confiança: {confidence:.2f}")
                 return (best_match_unidade, confidence)
             else:
-                print(f"   ❌ Similaridade insuficiente: {best_score:.3f} (mínimo: 0.30)")
+                print(f"   ❌ Score insuficiente: {best_score:.3f} (mínimo: 0.20)")
         except Exception as e:
             print(f"   ❌ Erro: {e}")
         

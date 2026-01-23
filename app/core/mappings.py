@@ -1,12 +1,15 @@
 """
 Mapeamentos de palavras-chave para campos educacionais
+Movido de educational_mappings.py para app/core/mappings.py
 """
 
 DISCIPLINAS_MAP = {
     "Matemática": [
         "matemática", "matematica", "math", "cálculo", "calculo",
         "álgebra", "algebra", "geometria", "aritmética", "aritmetica",
-        "números", "numeros", "equações", "equacoes", "frações", "fracoes"
+        "números", "numeros", "equações", "equacoes", "frações", "fracoes",
+        "funções", "funcoes", "função", "funcao", "trigonometria",
+        "estatística", "estatistica", "probabilidade", "gráficos", "graficos"
     ],
     "Língua Portuguesa": [
         "português", "portugues", "lingua portuguesa", "língua portuguesa",
@@ -22,7 +25,6 @@ DISCIPLINAS_MAP = {
         "história", "historia", "histórico", "historico",
         "brasil", "mundo", "guerra", "revolução", "revolucao",
         "período", "periodo", "era", "século", "seculo",
-        # Adicionar figuras históricas e eventos importantes
         "vargas", "getúlio", "getulio", "dom pedro", "tiradentes",
         "república", "republica", "império", "imperio", "colonial",
         "ditadura", "democracia", "independência", "independencia",
@@ -105,8 +107,8 @@ NIVEIS_BLOOM_MAP = {
 
 TIPOS_QUESTAO_MAP = {
     "multipla_escolha": [
-        "múltipla escolha", "multipla escolha", "alternativas",
-        "opções", "opcoes", "a, b, c", "marcar", "assinalar",
+        "múltipla escolha", "multipla escolha", "multiplas escolhas", "múltiplas escolhas",
+        "alternativas", "opções", "opcoes", "a, b, c", "marcar", "assinalar",
         "escolha múltipla", "escolha multipla", "teste", "quiz",
         "marque", "assinale", "selecione", "escolha a alternativa"
     ],

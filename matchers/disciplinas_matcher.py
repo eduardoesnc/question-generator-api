@@ -12,6 +12,7 @@ DISCIPLINAS_PATTERNS = {
         "matemática", "matematica", "math", "cálculo", "calculo",
         "álgebra", "algebra", "geometria", "aritmética", "aritmetica",
         "números", "numeros", "equações", "equacoes", "frações", "fracoes",
+        "funções", "funcoes", "função", "funcao",
         "trigonometria", "estatística", "estatistica", "probabilidade"
     ],
     "Língua Portuguesa": [
