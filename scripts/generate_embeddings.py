@@ -42,6 +42,8 @@ def generate_embeddings():
     
     # Gerar embeddings para TUDO: unidades, objetos e habilidades
     print("🔄 Gerando embeddings para unidades, objetos e habilidades...")
+    print("   💡 Embeddings puros: deixando o modelo capturar semântica naturalmente")
+    
     for disciplina, anos in bncc_data.items():
         for ano, unidades in anos.items():
             for unidade, objetos in unidades.items():
@@ -86,6 +88,7 @@ def generate_embeddings():
                     for habilidade in habilidades:
                         habilidade_key = f"{disciplina}|{ano}|habilidade|{habilidade}"
                         if habilidade_key not in embeddings_data:
+                            # Embedding puro - sem limpeza manual
                             embedding = model.encode(habilidade, convert_to_numpy=True)
                             embeddings_data[habilidade_key] = {
                                 'embedding': embedding.tolist(),
@@ -121,6 +124,8 @@ def generate_embeddings():
     file_size = os.path.getsize(output_path) / (1024 * 1024)
     print(f"📊 Tamanho do arquivo: {file_size:.2f} MB")
     print("🎉 Embeddings gerados com sucesso!")
+    print("\n💡 Abordagem: Embeddings puros + boost opcional para termos importantes")
+    print("   O modelo captura semântica naturalmente, sem regras manuais")
 
 if __name__ == "__main__":
     generate_embeddings()

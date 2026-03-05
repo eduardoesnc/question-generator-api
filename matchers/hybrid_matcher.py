@@ -60,15 +60,20 @@ class HybridMatcher:
                 keywords_result['method'] = 'hybrid_consensus'
                 return keywords_result
             
-            # Se diferentes, usar o de maior confiança
-            if kw_conf > emb_conf:
-                logger.info("📝 Usando termos-chave (maior confiança)")
-                keywords_result['method'] = 'hybrid_keywords'
+            # Se diferentes, SEMPRE preferir keywords quando tem confiança razoável
+            # Keywords é mais confiável para termos específicos do domínio
+            if kw_conf >= 0.60:  # Threshold mais baixo para keywords
+                logger.info("📝 Usando termos-chave (mais confiável para domínio específico)")
+                keywords_result['method'] = 'hybrid_keywords_preferred'
                 return keywords_result
-            else:
-                logger.info("🧠 Usando embeddings (maior confiança)")
+            elif emb_conf > kw_conf * 1.3:  # Embeddings precisa ser MUITO melhor
+                logger.info("🧠 Usando embeddings (confiança significativamente maior)")
                 embeddings_result['method'] = 'hybrid_embeddings'
                 return embeddings_result
+            else:
+                logger.info("📝 Usando termos-chave (default para empate)")
+                keywords_result['method'] = 'hybrid_keywords_default'
+                return keywords_result
         
         elif keywords_result:
             logger.info("📝 Apenas termos-chave encontrou resultado")

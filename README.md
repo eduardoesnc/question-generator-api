@@ -23,7 +23,7 @@ python -m spacy download pt_core_news_lg
 ## 🏃 Executar
 
 ```bash
-python main.py
+python -m uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
 ```
 
 A API estará disponível em: `http://localhost:8000`

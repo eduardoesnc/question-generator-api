@@ -7,3 +7,5 @@ requests
 sentence-transformers
 scikit-learn
 numpy
+datasets
+torch
