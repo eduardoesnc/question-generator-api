@@ -1,6 +1,7 @@
 """
 Gera automaticamente exemplos de treino baseados na BNCC
 Cria exemplos positivos (similares) e negativos (não similares)
+Inclui exemplos para: BNCC, Bloom, Tipos de Questão, Tipos de Texto Base
 """
 import json
 import os
@@ -10,6 +11,7 @@ import sys
 # Adicionar path para imports
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from matchers.synonyms import SYNONYMS_MAP
+from app.core.mappings import NIVEIS_BLOOM_MAP, TIPOS_QUESTAO_MAP, TIPOS_TEXTO_BASE_MAP
 
 def load_bncc_data():
     """Carrega dados da BNCC"""
@@ -175,6 +177,324 @@ def generate_negative_examples(bncc_data):
     print(f"   ✅ {len(examples)} exemplos negativos gerados")
     return examples
 
+def generate_bloom_examples():
+    """Gera exemplos para níveis de Bloom"""
+    examples = []
+    
+    print("📝 Gerando exemplos de NÍVEIS BLOOM...")
+    
+    # Exemplos positivos: frases típicas → nível Bloom
+    bloom_phrases = {
+        "conhecimento": [
+            "Memorizar datas históricas importantes",
+            "Listar os estados brasileiros",
+            "Definir o conceito de fotossíntese",
+            "Identificar as partes do corpo humano",
+            "Recordar eventos da Segunda Guerra",
+            "Nomear os planetas do sistema solar"
+        ],
+        "compreensao": [
+            "Explicar o processo de fotossíntese",
+            "Interpretar um texto literário",
+            "Resumir os principais eventos da Era Vargas",
+            "Descrever o ciclo da água",
+            "Compreender as causas da Revolução Industrial",
+            "Parafrasear um poema"
+        ],
+        "aplicacao": [
+            "Resolver equações do segundo grau",
+            "Aplicar regras gramaticais em frases",
+            "Calcular a área de um triângulo",
+            "Usar fórmulas matemáticas em problemas",
+            "Demonstrar experimentos científicos",
+            "Executar operações com frações"
+        ],
+        "analise": [
+            "Analisar as causas da guerra",
+            "Comparar diferentes sistemas políticos",
+            "Diferenciar células vegetais e animais",
+            "Examinar dados de um gráfico",
+            "Investigar relações entre variáveis",
+            "Relacionar eventos históricos"
+        ],
+        "sintese": [
+            "Criar um projeto de ciências",
+            "Desenvolver uma redação argumentativa",
+            "Elaborar um plano de ação",
+            "Construir uma maquete",
+            "Produzir um vídeo educativo",
+            "Planejar uma apresentação"
+        ],
+        "avaliacao": [
+            "Avaliar a qualidade de um argumento",
+            "Julgar a validade de uma teoria",
+            "Criticar uma obra literária",
+            "Justificar uma decisão política",
+            "Argumentar sobre questões ambientais",
+            "Defender um ponto de vista"
+        ]
+    }
+    
+    # Positivos: frase → nível correto (score alto)
+    for nivel, frases in bloom_phrases.items():
+        for frase in frases:
+            examples.append({
+                "text1": frase,
+                "text2": nivel,
+                "score": 0.95,
+                "type": "bloom_positive",
+                "disciplina": "bloom"
+            })
+    
+    # Negativos: frase → nível errado (score baixo)
+    niveis = list(bloom_phrases.keys())
+    for nivel_correto, frases in bloom_phrases.items():
+        for frase in frases[:2]:  # 2 frases por nível
+            nivel_errado = random.choice([n for n in niveis if n != nivel_correto])
+            examples.append({
+                "text1": frase,
+                "text2": nivel_errado,
+                "score": 0.1,
+                "type": "bloom_negative",
+                "disciplina": "bloom"
+            })
+    
+    print(f"   ✅ {len(examples)} exemplos de Bloom gerados")
+    return examples
+
+def generate_question_type_examples():
+    """Gera exemplos para tipos de questão"""
+    examples = []
+    
+    print("📝 Gerando exemplos de TIPOS DE QUESTÃO...")
+    
+    question_phrases = {
+        "multipla_escolha": [
+            "Marque a alternativa correta",
+            "Assinale a opção que apresenta",
+            "Escolha entre as alternativas a), b), c)",
+            "Selecione a resposta adequada",
+            "Qual das opções abaixo está correta?",
+            "Indique a alternativa verdadeira"
+        ],
+        "dissertativa_curta": [
+            "Responda brevemente",
+            "Explique em poucas palavras",
+            "Descreva resumidamente",
+            "Cite dois exemplos",
+            "Defina o conceito",
+            "Responda de forma objetiva"
+        ],
+        "dissertativa_longa": [
+            "Desenvolva um texto argumentativo",
+            "Escreva uma redação sobre",
+            "Elabore um texto dissertativo",
+            "Discorra sobre o tema",
+            "Produza um texto explicando",
+            "Argumente a favor ou contra"
+        ],
+        "verdadeiro_falso": [
+            "Marque V para verdadeiro e F para falso",
+            "Indique se as afirmações são verdadeiras ou falsas",
+            "Julgue os itens como certo ou errado",
+            "Classifique as sentenças em V ou F",
+            "Determine a veracidade das afirmações",
+            "Avalie se cada item é verdadeiro ou falso"
+        ],
+        "associacao": [
+            "Relacione a coluna A com a coluna B",
+            "Ligue os itens correspondentes",
+            "Associe os conceitos às definições",
+            "Conecte os termos às suas descrições",
+            "Combine os elementos das duas listas",
+            "Estabeleça correspondência entre"
+        ]
+    }
+    
+    # Positivos
+    for tipo, frases in question_phrases.items():
+        for frase in frases:
+            examples.append({
+                "text1": frase,
+                "text2": tipo,
+                "score": 0.95,
+                "type": "question_type_positive",
+                "disciplina": "question_type"
+            })
+    
+    # Negativos
+    tipos = list(question_phrases.keys())
+    for tipo_correto, frases in question_phrases.items():
+        for frase in frases[:2]:
+            tipo_errado = random.choice([t for t in tipos if t != tipo_correto])
+            examples.append({
+                "text1": frase,
+                "text2": tipo_errado,
+                "score": 0.1,
+                "type": "question_type_negative",
+                "disciplina": "question_type"
+            })
+    
+    print(f"   ✅ {len(examples)} exemplos de tipos de questão gerados")
+    return examples
+
+def generate_text_base_examples():
+    """Gera exemplos para tipos de texto base"""
+    examples = []
+    
+    print("📝 Gerando exemplos de TIPOS DE TEXTO BASE...")
+    
+    text_base_phrases = {
+        "documento_historico": [
+            "Leia o documento histórico abaixo",
+            "Analise a fonte primária",
+            "Observe o trecho do documento oficial",
+            "Com base no registro histórico",
+            "Segundo o documento da época",
+            "De acordo com a fonte histórica"
+        ],
+        "texto_literario": [
+            "Leia o fragmento literário",
+            "Analise o trecho do romance",
+            "Observe o poema abaixo",
+            "Com base no texto literário",
+            "Segundo o conto apresentado",
+            "De acordo com a obra literária"
+        ],
+        "artigo_jornal": [
+            "Leia a notícia abaixo",
+            "Analise a reportagem",
+            "Observe o artigo jornalístico",
+            "Com base na matéria do jornal",
+            "Segundo a notícia publicada",
+            "De acordo com o texto jornalístico"
+        ],
+        "charge": [
+            "Observe a charge abaixo",
+            "Analise o cartum apresentado",
+            "Com base na tirinha",
+            "Segundo a charge política",
+            "De acordo com a história em quadrinhos",
+            "Interprete a caricatura"
+        ],
+        "grafico_barras": [
+            "Observe o gráfico de barras",
+            "Analise o gráfico em colunas",
+            "Com base no gráfico vertical",
+            "Segundo os dados do gráfico de barras",
+            "De acordo com o gráfico apresentado",
+            "Interprete o gráfico de colunas"
+        ],
+        "grafico_linhas": [
+            "Observe o gráfico de linhas",
+            "Analise a evolução temporal",
+            "Com base no gráfico linear",
+            "Segundo a série temporal",
+            "De acordo com o gráfico de evolução",
+            "Interprete o gráfico de linhas"
+        ],
+        "tabela": [
+            "Observe a tabela abaixo",
+            "Analise os dados tabulados",
+            "Com base na planilha",
+            "Segundo a tabela apresentada",
+            "De acordo com o quadro de dados",
+            "Interprete a matriz de dados"
+        ],
+        "imagem": [
+            "Observe a imagem abaixo",
+            "Analise a fotografia",
+            "Com base na figura",
+            "Segundo a ilustração",
+            "De acordo com a foto apresentada",
+            "Interprete a representação visual"
+        ],
+        "mapa": [
+            "Observe o mapa abaixo",
+            "Analise a carta geográfica",
+            "Com base no mapa geográfico",
+            "Segundo o planisfério",
+            "De acordo com a representação cartográfica",
+            "Interprete o mapa apresentado"
+        ],
+        "infografico": [
+            "Observe o infográfico abaixo",
+            "Analise a visualização de dados",
+            "Com base no gráfico informativo",
+            "Segundo o infográfico apresentado",
+            "De acordo com a infografia",
+            "Interprete o infográfico"
+        ]
+    }
+    
+    # Positivos
+    for tipo, frases in text_base_phrases.items():
+        for frase in frases:
+            examples.append({
+                "text1": frase,
+                "text2": tipo,
+                "score": 0.95,
+                "type": "text_base_positive",
+                "disciplina": "text_base"
+            })
+    
+    # Negativos
+    tipos = list(text_base_phrases.keys())
+    for tipo_correto, frases in text_base_phrases.items():
+        for frase in frases[:2]:
+            tipo_errado = random.choice([t for t in tipos if t != tipo_correto])
+            examples.append({
+                "text1": frase,
+                "text2": tipo_errado,
+                "score": 0.1,
+                "type": "text_base_negative",
+                "disciplina": "text_base"
+            })
+    
+    print(f"   ✅ {len(examples)} exemplos de tipos de texto base gerados")
+    return examples
+
+def balance_and_sample(positive, negative, max_total=200):
+    """Balanceia e amostra exemplos"""
+    print(f"\n⚖️  Balanceando dataset...")
+    print(f"   Positivos: {len(positive)}")
+    print(f"   Negativos: {len(negative)}")
+    
+    # Queremos 50% positivos, 50% negativos
+    target_per_type = max_total // 2
+    
+    # Amostrar positivos (priorizar synonyms e combined_terms)
+    positive_priority = sorted(positive, key=lambda x: {
+        'synonym': 3,
+        'combined_terms': 2,
+        'main_term': 1
+    }.get(x['type'], 0), reverse=True)
+    
+    sampled_positive = positive_priority[:target_per_type]
+    
+    # Amostrar negativos (distribuir entre tipos)
+    negative_by_type = {}
+    for ex in negative:
+        t = ex['type']
+        if t not in negative_by_type:
+            negative_by_type[t] = []
+        negative_by_type[t].append(ex)
+    
+    sampled_negative = []
+    per_type = target_per_type // len(negative_by_type)
+    
+    for examples in negative_by_type.values():
+        sampled_negative.extend(random.sample(examples, min(per_type, len(examples))))
+    
+    # Completar se necessário
+    if len(sampled_negative) < target_per_type:
+        remaining = [ex for ex in negative if ex not in sampled_negative]
+        sampled_negative.extend(random.sample(remaining, min(target_per_type - len(sampled_negative), len(remaining))))
+    
+    print(f"   ✅ Selecionados: {len(sampled_positive)} positivos, {len(sampled_negative)} negativos")
+    
+    return sampled_positive + sampled_negative
+
 def balance_and_sample(positive, negative, max_total=200):
     """Balanceia e amostra exemplos"""
     print(f"\n⚖️  Balanceando dataset...")
@@ -289,12 +609,50 @@ def main():
     bncc_data = load_bncc_data()
     print(f"   ✅ {len(bncc_data)} disciplinas carregadas")
     
-    # Gerar exemplos
+    # Gerar exemplos BNCC
     positive = generate_positive_examples(bncc_data)
     negative = generate_negative_examples(bncc_data)
     
-    # Balancear e amostrar
-    all_examples = balance_and_sample(positive, negative, max_total=200)
+    # ⚖️ BALANCEAR BNCC para evitar overfitting
+    # Usar apenas uma amostra representativa, não todos os dados
+    print(f"\n⚖️  Balanceando exemplos BNCC para evitar overfitting...")
+    print(f"   Total gerado: {len(positive)} positivos, {len(negative)} negativos")
+    
+    # Amostrar 300 positivos (priorizar synonyms e combined_terms)
+    positive_priority = sorted(positive, key=lambda x: {
+        'synonym': 3,
+        'combined_terms': 2,
+        'main_term': 1
+    }.get(x['type'], 0), reverse=True)
+    sampled_positive = positive_priority[:300]
+    
+    # Amostrar 150 negativos (distribuir entre tipos)
+    negative_by_type = {}
+    for ex in negative:
+        t = ex['type']
+        if t not in negative_by_type:
+            negative_by_type[t] = []
+        negative_by_type[t].append(ex)
+    
+    sampled_negative = []
+    per_type = 150 // len(negative_by_type)
+    for examples in negative_by_type.values():
+        sampled_negative.extend(random.sample(examples, min(per_type, len(examples))))
+    
+    # Completar se necessário
+    if len(sampled_negative) < 150:
+        remaining = [ex for ex in negative if ex not in sampled_negative]
+        sampled_negative.extend(random.sample(remaining, min(150 - len(sampled_negative), len(remaining))))
+    
+    print(f"   ✅ Selecionados: {len(sampled_positive)} positivos, {len(sampled_negative)} negativos")
+    
+    # Gerar exemplos Bloom, Tipos de Questão, Tipos de Texto Base
+    bloom_examples = generate_bloom_examples()
+    question_examples = generate_question_type_examples()
+    text_base_examples = generate_text_base_examples()
+    
+    # Combinar todos os exemplos
+    all_examples = sampled_positive + sampled_negative + bloom_examples + question_examples + text_base_examples
     
     # Embaralhar
     random.shuffle(all_examples)
@@ -313,6 +671,13 @@ def main():
     print(f"   1. Revise o arquivo: data/training_pairs_auto.json")
     print(f"   2. Execute fine-tuning: python scripts/finetune_embeddings.py")
     print(f"   3. Teste resultados: python test_finetuning_results.py")
+    print(f"\n📊 Dataset balanceado ({len(all_examples)} exemplos):")
+    print(f"   ✅ 300 exemplos BNCC positivos (amostra representativa)")
+    print(f"   ✅ 150 exemplos BNCC negativos (evita falsos positivos)")
+    print(f"   ✅ 48 exemplos Bloom (generalização)")
+    print(f"   ✅ 40 exemplos Questão (generalização)")
+    print(f"   ✅ 80 exemplos Texto Base (generalização)")
+    print(f"\n💡 Balanceamento evita overfitting e melhora generalização!")
 
 if __name__ == "__main__":
     main()

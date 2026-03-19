@@ -23,14 +23,26 @@ def load_bncc_data():
         return json.load(f)
 
 def generate_embeddings():
-    """Gera embeddings para todos os objetos BNCC"""
+    """Gera embeddings para todos os objetos BNCC usando modelo FINE-TUNED"""
     print("🚀 Iniciando geração de embeddings...")
     
-    # Carregar modelo (multilíngue, otimizado para português)
-    # MPNet é mais preciso que MiniLM (768 vs 384 dimensões)
-    print("📦 Carregando modelo sentence-transformers...")
-    model = SentenceTransformer('paraphrase-multilingual-mpnet-base-v2')
-    print("✅ Modelo carregado! (768 dimensões)")
+    # Carregar modelo FINE-TUNED
+    script_dir = os.path.dirname(__file__)
+    model_path = os.path.join(script_dir, '..', 'models', 'bncc-embeddings-finetuned')
+    model_path = os.path.abspath(model_path)
+    
+    if not os.path.exists(model_path):
+        print(f"❌ ERRO: Modelo fine-tuned não encontrado em: {model_path}")
+        print("Execute primeiro: python scripts/finetune_embeddings.py")
+        return
+    
+    print(f"📦 Carregando modelo FINE-TUNED de: {model_path}")
+    # Suprimir warnings do tokenizer
+    import warnings
+    with warnings.catch_warnings():
+        warnings.filterwarnings("ignore", message=".*incorrect regex pattern.*")
+        model = SentenceTransformer(model_path)
+    print("✅ Modelo FINE-TUNED carregado! (768 dimensões)")
     
     # Carregar BNCC
     print("📚 Carregando dados BNCC...")

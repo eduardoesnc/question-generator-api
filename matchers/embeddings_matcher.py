@@ -26,28 +26,31 @@ class EmbeddingsMatcher:
         self._load_embeddings()
     
     def _load_model(self):
-        """Carrega modelo sentence-transformers"""
-        logger.info("📦 Carregando modelo sentence-transformers...")
-        # Modelo maior e mais preciso (768 dimensões)
-        # Usar modelo fine-tuned se disponível
+        """Carrega modelo fine-tuned (OBRIGATÓRIO)"""
+        logger.info("📦 Carregando modelo FINE-TUNED...")
+        
         model_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'models', 'bncc-embeddings-finetuned')
-        if os.path.exists(model_path):
-            try:
-                logger.info(f"🎯 Tentando carregar modelo FINE-TUNED: {model_path}")
-                # Suprimir warnings do tokenizer
-                import warnings
-                with warnings.catch_warnings():
-                    warnings.filterwarnings("ignore", message=".*incorrect regex pattern.*")
-                    self.model = SentenceTransformer(model_path)
-                logger.success("✅ Modelo FINE-TUNED carregado com sucesso!")
-            except Exception as e:
-                logger.warning(f"⚠️  Erro ao carregar modelo fine-tuned: {e}")
-                logger.info("📦 Usando modelo base como fallback...")
-                self.model = SentenceTransformer('paraphrase-multilingual-mpnet-base-v2')
-        else:
-            logger.info("📦 Usando modelo base (fine-tuned não encontrado)")
-            self.model = SentenceTransformer('paraphrase-multilingual-mpnet-base-v2')
-        logger.success("✅ Modelo sentence-transformers carregado!")
+        
+        if not os.path.exists(model_path):
+            error_msg = (
+                f"❌ ERRO: Modelo fine-tuned não encontrado em: {model_path}\n"
+                f"Execute os seguintes comandos:\n"
+                f"  1. python scripts/generate_training_data.py\n"
+                f"  2. python scripts/finetune_embeddings.py\n"
+                f"  3. python scripts/generate_embeddings.py"
+            )
+            logger.error(error_msg)
+            raise FileNotFoundError(error_msg)
+        
+        logger.info(f"🎯 Carregando modelo de: {model_path}")
+        
+        # Suprimir warnings do tokenizer
+        import warnings
+        with warnings.catch_warnings():
+            warnings.filterwarnings("ignore", message=".*incorrect regex pattern.*")
+            self.model = SentenceTransformer(model_path)
+        
+        logger.success("✅ Modelo FINE-TUNED carregado com sucesso!")
     
     def _load_embeddings(self):
         """Carrega embeddings pré-computados"""

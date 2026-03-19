@@ -5,37 +5,37 @@ tags:
 - feature-extraction
 - dense
 - generated_from_trainer
-- dataset_size:160
+- dataset_size:494
 - loss:CosineSimilarityLoss
 base_model: sentence-transformers/paraphrase-multilingual-mpnet-base-v2
 widget:
-- source_sentence: Aparelho
+- source_sentence: Língua Portuguesa
   sentences:
-  - Compreensão em leitura
-  - Sistema Operacional
-  - Língua Inglesa
-- source_sentence: Interpretação
-  sentences:
-  - 'Números inteiros: usos, história, ordenação, associação com pontos da reta numérica
-    e operações'
-  - Compreensão em leitura
-  - Programação - Propriedades de grafos
-- source_sentence: Sistemas De Criptografia
-  sentences:
-  - 'Os anos 1960: revolução cultural? A ditadura civil-militar e os processos de
-    resistência As questões indígena e negra e a ditadura'
-  - Construção do sistema alfabético e da ortografia
-  - Codificação da informação
-- source_sentence: Matemática
-  sentences:
-  - Pronomes do caso reto e do caso oblíquo
-  - Codificação da informação
-  - Ginástica geral
-- source_sentence: Computação
-  sentences:
-  - Ensino Religioso
-  - Sistema Operacional
   - Educação Física
+  - Compreensão em leitura
+  - Relação do texto com o contexto de produção e experimentação de papéis sociais
+- source_sentence: Formação Palavras
+  sentences:
+  - grafico_linhas
+  - Geografia
+  - Morfologia
+- source_sentence: Era Vargas
+  sentences:
+  - mapa
+  - O período varguista e suas contradições A emergência da vida urbana e a segregação
+    espacial O trabalhismo e seu protagonismo político
+  - Leitura colaborativa e autônoma
+- source_sentence: Ciências
+  sentences:
+  - Educação Física
+  - Hipóteses sobre a finalidade de um texto
+  - Estratégias e procedimentos de leitura em textos reivindicatórios ou propositivos
+- source_sentence: Analise o trecho do romance
+  sentences:
+  - artigo_jornal
+  - Reconstrução da textualidade e compreensão dos efeitos de sentidos provocados
+    pelos usos de recursos linguísticos e multissemióticos
+  - texto_literario
 pipeline_tag: sentence-similarity
 library_name: sentence-transformers
 metrics:
@@ -52,10 +52,10 @@ model-index:
       type: bncc-validation
     metrics:
     - type: pearson_cosine
-      value: 0.8175080358574889
+      value: 0.8390828843863809
       name: Pearson Cosine
     - type: spearman_cosine
-      value: 0.7222915621496766
+      value: 0.761561692167952
       name: Spearman Cosine
 ---
 
@@ -108,9 +108,9 @@ from sentence_transformers import SentenceTransformer
 model = SentenceTransformer("sentence_transformers_model_id")
 # Run inference
 sentences = [
-    'Computação',
-    'Ensino Religioso',
-    'Sistema Operacional',
+    'Analise o trecho do romance',
+    'artigo_jornal',
+    'Reconstrução da textualidade e compreensão dos efeitos de sentidos provocados pelos usos de recursos linguísticos e multissemióticos',
 ]
 embeddings = model.encode(sentences)
 print(embeddings.shape)
@@ -119,9 +119,9 @@ print(embeddings.shape)
 # Get the similarity scores for the embeddings
 similarities = model.similarity(embeddings, embeddings)
 print(similarities)
-# tensor([[ 1.0000, -0.0216,  0.3750],
-#         [-0.0216,  1.0000,  0.2510],
-#         [ 0.3750,  0.2510,  1.0000]])
+# tensor([[1.0000, 0.0688, 0.8523],
+#         [0.0688, 1.0000, 0.1832],
+#         [0.8523, 0.1832, 1.0000]])
 ```
 
 <!--
@@ -159,8 +159,8 @@ You can finetune this model on your own dataset.
 
 | Metric              | Value      |
 |:--------------------|:-----------|
-| pearson_cosine      | 0.8175     |
-| **spearman_cosine** | **0.7223** |
+| pearson_cosine      | 0.8391     |
+| **spearman_cosine** | **0.7616** |
 
 <!--
 ## Bias, Risks and Limitations
@@ -180,19 +180,19 @@ You can finetune this model on your own dataset.
 
 #### Unnamed Dataset
 
-* Size: 160 training samples
+* Size: 494 training samples
 * Columns: <code>sentence_0</code>, <code>sentence_1</code>, and <code>label</code>
-* Approximate statistics based on the first 160 samples:
-  |         | sentence_0                                                                      | sentence_1                                                                        | label                                                           |
-  |:--------|:--------------------------------------------------------------------------------|:----------------------------------------------------------------------------------|:----------------------------------------------------------------|
-  | type    | string                                                                          | string                                                                            | float                                                           |
-  | details | <ul><li>min: 3 tokens</li><li>mean: 4.47 tokens</li><li>max: 8 tokens</li></ul> | <ul><li>min: 3 tokens</li><li>mean: 13.04 tokens</li><li>max: 92 tokens</li></ul> | <ul><li>min: 0.0</li><li>mean: 0.58</li><li>max: 0.95</li></ul> |
+* Approximate statistics based on the first 494 samples:
+  |         | sentence_0                                                                       | sentence_1                                                                        | label                                                           |
+  |:--------|:---------------------------------------------------------------------------------|:----------------------------------------------------------------------------------|:----------------------------------------------------------------|
+  | type    | string                                                                           | string                                                                            | float                                                           |
+  | details | <ul><li>min: 3 tokens</li><li>mean: 5.58 tokens</li><li>max: 14 tokens</li></ul> | <ul><li>min: 3 tokens</li><li>mean: 11.09 tokens</li><li>max: 92 tokens</li></ul> | <ul><li>min: 0.0</li><li>mean: 0.71</li><li>max: 0.95</li></ul> |
 * Samples:
-  | sentence_0                  | sentence_1                                            | label             |
-  |:----------------------------|:------------------------------------------------------|:------------------|
-  | <code>Revolucionário</code> | <code>Revolução Francesa e seus desdobramentos</code> | <code>0.95</code> |
-  | <code>Grandezas</code>      | <code>Morfossintaxe</code>                            | <code>0.1</code>  |
-  | <code>Matemática</code>     | <code>Arte</code>                                     | <code>0.0</code>  |
+  | sentence_0                                   | sentence_1                                                                                                                    | label             |
+  |:---------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------|:------------------|
+  | <code>Elaborar um plano de ação</code>       | <code>sintese</code>                                                                                                          | <code>0.95</code> |
+  | <code>Aparelho</code>                        | <code>Construção do sistema alfabético/ Estabelecimento de relações anafóricas na referenciação e construção da coesão</code> | <code>0.95</code> |
+  | <code>Justificar uma decisão política</code> | <code>avaliacao</code>                                                                                                        | <code>0.95</code> |
 * Loss: [<code>CosineSimilarityLoss</code>](https://sbert.net/docs/package_reference/sentence_transformer/losses.html#cosinesimilarityloss) with these parameters:
   ```json
   {
@@ -333,16 +333,24 @@ You can finetune this model on your own dataset.
 </details>
 
 ### Training Logs
-| Epoch | Step | bncc-validation_spearman_cosine |
-|:-----:|:----:|:-------------------------------:|
-| 1.0   | 20   | 0.6683                          |
-| 2.0   | 40   | 0.6902                          |
-| 2.5   | 50   | 0.6906                          |
-| 3.0   | 60   | 0.7130                          |
-| 4.0   | 80   | 0.7183                          |
-| 5.0   | 100  | 0.7125                          |
-| 6.0   | 120  | 0.7095                          |
-| 7.0   | 140  | 0.7223                          |
+| Epoch  | Step | bncc-validation_spearman_cosine |
+|:------:|:----:|:-------------------------------:|
+| 0.8065 | 50   | 0.6955                          |
+| 1.0    | 62   | 0.7077                          |
+| 1.6129 | 100  | 0.7358                          |
+| 2.0    | 124  | 0.7498                          |
+| 2.4194 | 150  | 0.7550                          |
+| 3.0    | 186  | 0.7444                          |
+| 3.2258 | 200  | 0.7485                          |
+| 4.0    | 248  | 0.7516                          |
+| 4.0323 | 250  | 0.7533                          |
+| 4.8387 | 300  | 0.7579                          |
+| 5.0    | 310  | 0.7574                          |
+| 5.6452 | 350  | 0.7557                          |
+| 6.0    | 372  | 0.7567                          |
+| 6.4516 | 400  | 0.7558                          |
+| 7.0    | 434  | 0.7584                          |
+| 7.2581 | 450  | 0.7616                          |
 
 
 ### Framework Versions

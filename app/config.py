@@ -21,12 +21,13 @@ class Settings(BaseSettings):
     
     # Paths
     DATA_DIR: str = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data")
+    MODELS_DIR: str = os.path.join(os.path.dirname(os.path.dirname(__file__)), "models")
     BNCC_DATA_PATH: str = os.path.join(DATA_DIR, "bncc-data.json")
     EMBEDDINGS_PATH: str = os.path.join(DATA_DIR, "bncc_embeddings.json")
     
     # NLP Models
     SPACY_MODEL: str = "pt_core_news_sm"
-    SENTENCE_TRANSFORMER_MODEL: str = "paraphrase-multilingual-mpnet-base-v2"
+    SENTENCE_TRANSFORMER_MODEL: str = os.path.join(MODELS_DIR, "bncc-embeddings-finetuned")
     
     # Thresholds
     KEYWORDS_THRESHOLD: float = 0.20
