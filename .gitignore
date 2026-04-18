@@ -11,3 +11,4 @@ ENV/
 *.log
 .DS_Store
 models/
+bncc_embeddings.json
