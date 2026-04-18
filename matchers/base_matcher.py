@@ -6,7 +6,6 @@ from spacy.matcher import PhraseMatcher
 from spacy.tokens import Doc
 import unicodedata
 
-
 def remove_accents(text: str) -> str:
     """Remove acentos de um texto"""
     return ''.join(
@@ -14,11 +13,9 @@ def remove_accents(text: str) -> str:
         if unicodedata.category(c) != 'Mn'
     )
 
-
 def normalize_text(text: str) -> str:
     """Normaliza texto: lowercase e remove acentos"""
     return remove_accents(text.lower())
-
 
 class BaseMatcher:
     """Classe base para matchers educacionais"""
@@ -37,7 +34,6 @@ class BaseMatcher:
     def _build_matcher(self):
         """Constrói o PhraseMatcher com os padrões"""
         for category, keywords in self.patterns.items():
-            # Criar docs para cada keyword
             patterns = [self.nlp.make_doc(kw) for kw in keywords]
             self.matcher.add(category, patterns)
     
@@ -48,13 +44,14 @@ class BaseMatcher:
         Returns:
             Tuple (categoria, confiança) ou None
         """
+        from app.core.logging import logger
+        
         doc = self.nlp(text)
         matches = self.matcher(doc)
         
         if not matches:
             return None
         
-        # Encontrar o melhor match (maior span)
         best_match = None
         best_length = 0
         
@@ -71,7 +68,6 @@ class BaseMatcher:
     
     def _calculate_confidence(self, span) -> float:
         """Calcula confiança baseada no tamanho do match"""
-        # Quanto maior o span, maior a confiança
         base_confidence = 0.75
         length_bonus = min(0.20, len(span.text) / 100)
         return min(0.98, base_confidence + length_bonus)

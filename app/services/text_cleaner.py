@@ -4,11 +4,9 @@ Limpador de texto para embeddings (Single Responsibility Principle)
 import re
 from typing import Set
 
-
 class TextCleaner:
     """Limpa texto removendo instruções e ruído para busca semântica"""
     
-    # Palavras de instrução/comando que não ajudam na busca
     INSTRUCTION_WORDS: Set[str] = {
         'quero', 'crie', 'elabore', 'faça', 'gere', 'desenvolva', 'construa',
         'questões', 'questoes', 'questão', 'questao',
@@ -18,7 +16,6 @@ class TextCleaner:
         'para', 'sobre', 'com', 'de', 'do', 'da', 'dos', 'das', 'uma', 'um', 'o', 'a', 'as', 'os'
     }
     
-    # Padrões regex para remover
     YEAR_PATTERNS = [
         r'\d+[ºª°]\s*ano',
         r'(primeiro|segundo|terceiro|quarto|quinto|sexto|sétimo|setimo|oitavo|nono)\s*ano'
@@ -38,11 +35,9 @@ class TextCleaner:
         """
         cleaned = text.lower()
         
-        # Remover menções de ano/série
         for pattern in cls.YEAR_PATTERNS:
             cleaned = re.sub(pattern, '', cleaned)
         
-        # Remover palavras de instrução
         words = cleaned.split()
         cleaned_words = [
             w for w in words

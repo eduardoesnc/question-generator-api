@@ -3,11 +3,9 @@ Detector de disciplina por termos fortes (Single Responsibility Principle)
 """
 from typing import Optional, Tuple
 
-
 class DisciplineDetector:
     """Detecta disciplina baseado em termos fortes no texto"""
     
-    # Mapeamento de termos → (disciplina, confiança)
     DISCIPLINE_TERMS = {
         'Matemática': {
             'terms': [

@@ -45,7 +45,6 @@ BLOOM_PATTERNS = {
     ]
 }
 
-
 class BloomMatcher(BaseMatcher):
     def __init__(self, nlp):
         super().__init__(nlp, BLOOM_PATTERNS)

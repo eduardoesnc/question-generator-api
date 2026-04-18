@@ -1,743 +1,23 @@
 [
   {
-    "text1": "Sistemas De Criptografia",
-    "text2": "Codificação da informação",
-    "score": 0.95
-  },
-  {
-    "text1": "Republicano",
-    "text2": "Primeira República e suas características Contestações e dinâmicas da vida cultural no Brasil entre 1900 e 1930",
-    "score": 0.95
-  },
-  {
-    "text1": "Ler",
-    "text2": "Compreensão em leitura",
-    "score": 0.95
-  },
-  {
-    "text1": "História",
-    "text2": "Forma de composição do texto",
-    "score": 0.30710630432890784
-  },
-  {
-    "text1": "Texto",
-    "text2": "Leitura colaborativa e autônoma",
-    "score": 0.95
-  },
-  {
-    "text1": "Executar operações com frações",
-    "text2": "aplicacao",
-    "score": 0.95
-  },
-  {
-    "text1": "Interpretação",
-    "text2": "Compreensão em leitura",
-    "score": 0.95
-  },
-  {
-    "text1": "Julgue os itens como certo ou errado",
-    "text2": "verdadeiro_falso",
-    "score": 0.95
-  },
-  {
-    "text1": "Ciências",
-    "text2": "Variação linguística",
-    "score": 0.40041670527052187
-  },
-  {
-    "text1": "Era Vargas",
-    "text2": "O período varguista e suas contradições A emergência da vida urbana e a segregação espacial O trabalhismo e seu protagonismo político",
-    "score": 0.95
-  },
-  {
-    "text1": "Texto",
-    "text2": "Leitura colaborativa e autônoma",
-    "score": 0.95
-  },
-  {
-    "text1": "Ler",
-    "text2": "Compreensão em leitura",
-    "score": 0.95
-  },
-  {
-    "text1": "Criticar uma obra literária",
-    "text2": "avaliacao",
-    "score": 0.95
-  },
-  {
-    "text1": "Estabeleça correspondência entre",
-    "text2": "associacao",
-    "score": 0.95
-  },
-  {
-    "text1": "Analise a fotografia",
-    "text2": "imagem",
-    "score": 0.95
-  },
-  {
-    "text1": "Demográfico",
-    "text2": "Distribuição da população mundial e deslocamentos populacionais",
-    "score": 0.95
-  },
-  {
-    "text1": "Geografia",
-    "text2": "Língua Inglesa",
-    "score": 0.0
-  },
-  {
-    "text1": "Computação",
-    "text2": "Matemática",
-    "score": 0.0
-  },
-  {
-    "text1": "Movimento Revolucionário",
-    "text2": "Revolução Francesa e seus desdobramentos",
-    "score": 0.95
-  },
-  {
-    "text1": "Ler",
-    "text2": "Estratégia de leitura",
-    "score": 0.95
-  },
-  {
-    "text1": "Ler",
-    "text2": "Estratégias e procedimentos de leitura em textos reivindicatórios ou propositivos",
-    "score": 0.95
-  },
-  {
-    "text1": "Escreva uma redação sobre",
-    "text2": "verdadeiro_falso",
-    "score": 0.1
-  },
-  {
-    "text1": "Associe os conceitos às definições",
-    "text2": "associacao",
-    "score": 0.95
-  },
-  {
-    "text1": "Nova",
-    "text2": "O imperialismo europeu e a partilha da África e da Ásia",
-    "score": 0.25519311189541316
-  },
-  {
-    "text1": "Texto",
-    "text2": "Estratégias e procedimentos de leitura em textos legais e normativos",
-    "score": 0.95
-  },
-  {
-    "text1": "Estrutura Morfológica",
-    "text2": "Morfologia",
-    "score": 0.95
-  },
-  {
-    "text1": "Sistemas",
-    "text2": "Construção do sistema alfabético/ Estabelecimento de relações anafóricas na referenciação e construção da coesão",
-    "score": 0.95
-  },
-  {
-    "text1": "Entendimento",
-    "text2": "Compreensão em leitura",
-    "score": 0.95
-  },
-  {
-    "text1": "Criar um projeto de ciências",
-    "text2": "conhecimento",
-    "score": 0.1
-  },
-  {
-    "text1": "Ler",
-    "text2": "Compreensão em leitura",
-    "score": 0.95
-  },
-  {
-    "text1": "Territorial",
-    "text2": "Território e diversidade cultural",
-    "score": 0.95
-  },
-  {
-    "text1": "Interpretação",
-    "text2": "Compreensão de textos orais",
-    "score": 0.95
-  },
-  {
-    "text1": "Esportes",
-    "text2": "Segurança e responsabilidade no uso da tecnologia computacional",
-    "score": 0.1
-  },
-  {
-    "text1": "Matemática",
-    "text2": "Leitura e interpretação de tabelas e gráficos (de colunas ou barras simples ou múltiplas) referentes a variáveis categóricas e variáveis numéricas",
-    "score": 0.31017263822357494
-  },
-  {
-    "text1": "Sistemas",
-    "text2": "Construção do sistema alfabético/ Estabelecimento de relações anafóricas na referenciação e construção da coesão",
-    "score": 0.95
-  },
-  {
-    "text1": "Interpretação",
-    "text2": "Reconstrução da textualidade e compreensão dos efeitos de sentidos provocados pelos usos de recursos linguísticos e multissemióticos",
-    "score": 0.95
-  },
-  {
-    "text1": "Interpretar um texto literário",
-    "text2": "analise",
-    "score": 0.1
-  },
-  {
-    "text1": "Entendimento",
-    "text2": "Reconstrução da textualidade e compreensão dos efeitos de sentidos provocados pelos usos de recursos linguísticos e multissemióticos",
-    "score": 0.95
-  },
-  {
-    "text1": "Sistemas",
-    "text2": "Construção do sistema alfabético e da ortografia",
-    "score": 0.95
-  },
-  {
-    "text1": "Observe o gráfico de linhas",
-    "text2": "grafico_linhas",
-    "score": 0.95
-  },
-  {
-    "text1": "Pré-Escrita:",
-    "text2": "Esportes de campo e taco Esportes de rede/parede Esportes de invasão",
-    "score": 0.1
-  },
-  {
-    "text1": "Aparelho",
-    "text2": "Construção do sistema alfabético/ Estabelecimento de relações anafóricas na referenciação e construção da coesão",
-    "score": 0.95
-  },
-  {
-    "text1": "Objetivos",
-    "text2": "Pronúncia",
-    "score": 0.3046251965870652
-  },
-  {
-    "text1": "Sistemas",
-    "text2": "Doutrinas religiosas",
-    "score": 0.1
-  },
-  {
-    "text1": "Responda brevemente",
-    "text2": "dissertativa_curta",
-    "score": 0.95
-  },
-  {
-    "text1": "Texto",
-    "text2": "Estratégia de leitura",
-    "score": 0.95
-  },
-  {
-    "text1": "Movimento Revolucionário",
-    "text2": "Revolução Industrial e seus impactos na produção e circulação de povos, produtos e culturas",
-    "score": 0.95
-  },
-  {
-    "text1": "Aparelho",
-    "text2": "Construção do sistema alfabético/ Convenções da escrita",
-    "score": 0.95
-  },
-  {
-    "text1": "Ler",
-    "text2": "Decodificação/Fluência de leitura",
-    "score": 0.95
-  },
-  {
-    "text1": "Texto",
-    "text2": "Estratégias e procedimentos de leitura Relação do verbal com outras semioses Procedimentos e gêneros de apoio à compreensão",
-    "score": 0.95
-  },
-  {
-    "text1": "Produza um texto explicando",
-    "text2": "dissertativa_longa",
-    "score": 0.95
-  },
-  {
-    "text1": "Língua Portuguesa",
-    "text2": "Língua Inglesa",
-    "score": 0.0
-  },
-  {
-    "text1": "Interprete o infográfico",
-    "text2": "infografico",
-    "score": 0.95
-  },
-  {
-    "text1": "Entendimento",
-    "text2": "Procedimentos de apoio à compreensão Tomada de nota",
-    "score": 0.95
-  },
-  {
-    "text1": "Texto",
-    "text2": "Decodificação/Fluência de leitura",
-    "score": 0.95
-  },
-  {
-    "text1": "Unidades",
-    "text2": "Notação e registro musical",
-    "score": 0.1
-  },
-  {
-    "text1": "Sistemas",
-    "text2": "Sistema Operacional",
-    "score": 0.95
-  },
-  {
-    "text1": "Entendimento",
-    "text2": "Compreensão em leitura",
-    "score": 0.95
-  },
-  {
-    "text1": "Educação Física",
-    "text2": "Arte",
-    "score": 0.0
-  },
-  {
-    "text1": "Contextos",
-    "text2": "Revisão de textos",
-    "score": 0.1
-  },
-  {
-    "text1": "Armazenamento",
-    "text2": "Transformações do espaço na sociedade urbano-industrial",
-    "score": 0.1
-  },
-  {
-    "text1": "Selecione a resposta adequada",
-    "text2": "multipla_escolha",
-    "score": 0.95
-  },
-  {
-    "text1": "Ciências",
-    "text2": "Ginástica de condicionamento físico Ginástica de conscientização corporal",
-    "score": 0.3092129858129838
-  },
-  {
-    "text1": "Analise os dados tabulados",
-    "text2": "tabela",
-    "score": 0.95
-  },
-  {
-    "text1": "Ler",
-    "text2": "Leitura colaborativa e autônoma",
-    "score": 0.95
-  },
-  {
-    "text1": "Texto",
-    "text2": "Compreensão em leitura",
-    "score": 0.95
-  },
-  {
-    "text1": "Resolver equações do segundo grau",
-    "text2": "conhecimento",
-    "score": 0.1
-  },
-  {
-    "text1": "Ler",
-    "text2": "Leitura colaborativa e autônoma",
-    "score": 0.95
-  },
-  {
-    "text1": "Ler",
-    "text2": "Estratégia de leitura",
-    "score": 0.95
-  },
-  {
-    "text1": "Resumir os principais eventos da Era Vargas",
-    "text2": "compreensao",
-    "score": 0.95
-  },
-  {
-    "text1": "Assinale a opção que apresenta",
-    "text2": "multipla_escolha",
-    "score": 0.95
-  },
-  {
-    "text1": "Interpretação",
-    "text2": "Compreensão em leitura",
-    "score": 0.95
-  },
-  {
-    "text1": "Ensino Religioso",
-    "text2": "Língua Portuguesa",
-    "score": 0.0
-  },
-  {
-    "text1": "Aparelho",
-    "text2": "Construção do sistema alfabético/ Convenções da escrita",
-    "score": 0.95
-  },
-  {
-    "text1": "Entendimento",
-    "text2": "Compreensão em leitura",
-    "score": 0.95
-  },
-  {
-    "text1": "Interpretação",
-    "text2": "Procedimentos de apoio à compreensão Tomada de nota",
-    "score": 0.95
-  },
-  {
-    "text1": "Aparelho",
-    "text2": "Sistema Operacional",
-    "score": 0.95
-  },
-  {
-    "text1": "Texto",
-    "text2": "Estratégias e procedimentos de leitura em textos legais e normativos",
-    "score": 0.95
-  },
-  {
-    "text1": "Ciências",
-    "text2": "Língua Inglesa",
-    "score": 0.0
-  },
-  {
-    "text1": "Algoritmos",
-    "text2": "O eu, a família e o ambiente de convivência",
-    "score": 0.1
-  },
-  {
-    "text1": "Texto",
-    "text2": "Estratégia de leitura",
-    "score": 0.95
-  },
-  {
-    "text1": "Construção",
-    "text2": "Propriedades físicas dos materiais Ciclo hidrológico Consumo consciente  Reciclagem",
-    "score": 0.1
-  },
-  {
-    "text1": "Aplicar regras gramaticais em frases",
-    "text2": "aplicacao",
-    "score": 0.95
-  },
-  {
-    "text1": "Ler",
-    "text2": "Estratégias, procedimentos de leitura em textos reivindicatórios ou propositivos",
-    "score": 0.95
-  },
-  {
-    "text1": "Sistemas",
-    "text2": "Sistema Operacional",
-    "score": 0.95
-  },
-  {
-    "text1": "Aparelho",
-    "text2": "Sistema operacional",
-    "score": 0.95
-  },
-  {
-    "text1": "Revolucionário",
-    "text2": "Revolução Industrial e seus impactos na produção e circulação de povos, produtos e culturas",
-    "score": 0.95
-  },
-  {
-    "text1": "Ação",
-    "text2": "Princípios e valores éticos",
-    "score": 0.1
-  },
-  {
-    "text1": "Português",
-    "text2": "Misturas homogêneas e heterogêneas Separação de materiais Materiais sintéticos Transformações químicas",
-    "score": 0.3819667957228662
-  },
-  {
-    "text1": "Construção",
-    "text2": "Países que têm a língua inglesa como língua materna e/ou oficial",
-    "score": 0.33536501495724386
-  },
-  {
-    "text1": "Leia a notícia abaixo",
-    "text2": "tabela",
-    "score": 0.1
-  },
-  {
-    "text1": "Texto",
-    "text2": "Compreensão em leitura",
-    "score": 0.95
-  },
-  {
-    "text1": "Memorizar datas históricas importantes",
-    "text2": "sintese",
-    "score": 0.1
-  },
-  {
-    "text1": "Texto",
-    "text2": "Adesão às práticas de leitura",
-    "score": 0.95
-  },
-  {
     "text1": "Interprete a caricatura",
     "text2": "charge",
     "score": 0.95
   },
   {
-    "text1": "Ler",
-    "text2": "Protocolos de leitura",
-    "score": 0.95
-  },
-  {
-    "text1": "Ler",
-    "text2": "Compreensão em leitura",
-    "score": 0.95
-  },
-  {
-    "text1": "Língua Portuguesa",
-    "text2": "Matemática",
-    "score": 0.0
-  },
-  {
-    "text1": "Localização,",
-    "text2": "Instâncias do poder público e canais de participação social",
-    "score": 0.3070525690102109
-  },
-  {
-    "text1": "Geografia",
-    "text2": "A formação e o funcionamento das monarquias europeias: a lógica da centralização política e os conflitos na Europa",
-    "score": 0.47846750360006646
-  },
-  {
-    "text1": "Analise o gráfico em colunas",
-    "text2": "grafico_barras",
-    "score": 0.95
-  },
-  {
-    "text1": "Sistemas",
-    "text2": "Construção do sistema alfabético/ Convenções da escrita",
-    "score": 0.95
-  },
-  {
-    "text1": "Ler",
-    "text2": "Compreensão em leitura",
-    "score": 0.95
-  },
-  {
-    "text1": "Resolver equações do segundo grau",
-    "text2": "aplicacao",
-    "score": 0.95
-  },
-  {
-    "text1": "Esportes",
-    "text2": "Distribuição da população mundial e deslocamentos populacionais",
-    "score": 0.1
-  },
-  {
-    "text1": "Sistemas",
-    "text2": "Sistema Sol, Terra e Lua Clima",
-    "score": 0.95
-  },
-  {
-    "text1": "De acordo com o gráfico de evolução",
-    "text2": "grafico_linhas",
-    "score": 0.95
-  },
-  {
-    "text1": "Texto",
-    "text2": "Estratégia de leitura",
-    "score": 0.95
-  },
-  {
-    "text1": "Formas De Energia",
-    "text2": "Fontes e tipos de energia Transformação de energia Cálculo de consumo de energia elétrica Circuitos elétricos Uso consciente de energia elétrica",
-    "score": 0.95
-  },
-  {
-    "text1": "Texto",
-    "text2": "Compreensão em leitura",
-    "score": 0.95
-  },
-  {
-    "text1": "Escrita",
-    "text2": "Estratégias de produção: planejamento, realização e edição de entrevistas orais",
-    "score": 0.2638868184899611
-  },
-  {
-    "text1": "Ensino Religioso",
-    "text2": "Geografia",
-    "score": 0.0
-  },
-  {
-    "text1": "Elabore um texto dissertativo",
-    "text2": "dissertativa_longa",
-    "score": 0.95
-  },
-  {
-    "text1": "Entendimento",
-    "text2": "Reconstrução da textualidade e compreensão dos efeitos de sentidos provocados pelos usos de recursos linguísticos e multissemióticos",
-    "score": 0.95
-  },
-  {
-    "text1": "Matemática",
-    "text2": "Reformas religiosas: a cristandade fragmentada",
-    "score": 0.3107769400576948
-  },
-  {
-    "text1": "Aparelho",
-    "text2": "Sistema de orientação",
-    "score": 0.95
-  },
-  {
-    "text1": "Entendimento",
-    "text2": "Compreensão",
-    "score": 0.95
-  },
-  {
-    "text1": "História",
-    "text2": "Contextos e práticas",
-    "score": 0.39091035006271346
-  },
-  {
-    "text1": "Segundo o infográfico apresentado",
-    "text2": "infografico",
-    "score": 0.95
-  },
-  {
-    "text1": "Texto",
-    "text2": "Estratégias e procedimentos de leitura em textos reivindicatórios ou propositivos",
-    "score": 0.95
-  },
-  {
-    "text1": "Ler",
-    "text2": "Estratégias e procedimentos de leitura Relação do verbal com outras semioses Procedimentos e gêneros de apoio à compreensão",
-    "score": 0.95
-  },
-  {
-    "text1": "Coleta,",
-    "text2": "Oralidade pública/Intercâmbio conversacional em sala de aula",
-    "score": 0.1
-  },
-  {
-    "text1": "Texto",
-    "text2": "Estratégias e procedimentos de leitura em textos reivindicatórios ou propositivos",
-    "score": 0.95
-  },
-  {
-    "text1": "Formação Palavras",
-    "text2": "Morfologia",
-    "score": 0.95
-  },
-  {
-    "text1": "Leia o documento histórico abaixo",
-    "text2": "documento_historico",
-    "score": 0.95
-  },
-  {
-    "text1": "Analise a carta geográfica",
+    "text1": "Analise a fonte primária",
     "text2": "grafico_barras",
     "score": 0.1
   },
   {
-    "text1": "Texto",
-    "text2": "Estratégias e procedimentos de leitura Relação do verbal com outras semioses Procedimentos e gêneros de apoio à compreensão",
+    "text1": "Produção",
+    "text2": "Escalas de tempo",
+    "score": 0.37861257576802565
+  },
+  {
+    "text1": "Ler",
+    "text2": "Estratégias e procedimentos de leitura em textos legais e normativos",
     "score": 0.95
-  },
-  {
-    "text1": "Matemática",
-    "text2": "Educação Física",
-    "score": 0.0
-  },
-  {
-    "text1": "Texto",
-    "text2": "Adesão às práticas de leitura",
-    "score": 0.95
-  },
-  {
-    "text1": "Geografia",
-    "text2": "Língua Portuguesa",
-    "score": 0.0
-  },
-  {
-    "text1": "Texto",
-    "text2": "Compreensão em leitura",
-    "score": 0.95
-  },
-  {
-    "text1": "Aparelho",
-    "text2": "Construção do sistema alfabético/ Convenções da escrita",
-    "score": 0.95
-  },
-  {
-    "text1": "Demografia",
-    "text2": "Distribuição da população mundial e deslocamentos populacionais",
-    "score": 0.95
-  },
-  {
-    "text1": "Ciências",
-    "text2": "Computação",
-    "score": 0.0
-  },
-  {
-    "text1": "Português",
-    "text2": "Tradição escrita: registro dos ensinamentos sagrados",
-    "score": 0.43485044985300847
-  },
-  {
-    "text1": "Ciências",
-    "text2": "Língua Portuguesa",
-    "score": 0.0
-  },
-  {
-    "text1": "Família",
-    "text2": "Relação do texto com o contexto de produção e experimentação de papéis sociais",
-    "score": 0.1
-  },
-  {
-    "text1": "Interpretação",
-    "text2": "Procedimentos de apoio à compreensão Tomada de nota",
-    "score": 0.95
-  },
-  {
-    "text1": "Listar os estados brasileiros",
-    "text2": "conhecimento",
-    "score": 0.95
-  },
-  {
-    "text1": "Marque a alternativa correta",
-    "text2": "dissertativa_curta",
-    "score": 0.1
-  },
-  {
-    "text1": "Avaliar a qualidade de um argumento",
-    "text2": "sintese",
-    "score": 0.1
-  },
-  {
-    "text1": "Texto",
-    "text2": "Compreensão em leitura",
-    "score": 0.95
-  },
-  {
-    "text1": "Segundo a tabela apresentada",
-    "text2": "tabela",
-    "score": 0.95
-  },
-  {
-    "text1": "Brincadeiras",
-    "text2": "Danças de salão",
-    "score": 0.3017308621443242
-  },
-  {
-    "text1": "Interprete o mapa apresentado",
-    "text2": "mapa",
-    "score": 0.95
-  },
-  {
-    "text1": "Aparelho",
-    "text2": "Construção do sistema alfabético/ Estabelecimento de relações anafóricas na referenciação e construção da coesão",
-    "score": 0.95
-  },
-  {
-    "text1": "Matemática",
-    "text2": "Misturas Transformações reversíveis e não reversíveis",
-    "score": 0.33295249170841784
-  },
-  {
-    "text1": "Português",
-    "text2": "Fenômenos naturais e sociais representados de diferentes maneiras",
-    "score": 0.4971382679979842
   },
   {
     "text1": "Transformação De Energia",
@@ -745,53 +25,58 @@
     "score": 0.95
   },
   {
-    "text1": "Demográfico",
-    "text2": "Características da população brasileira",
+    "text1": "Geografia",
+    "text2": "Matemática",
+    "score": 0.0
+  },
+  {
+    "text1": "Aparelho",
+    "text2": "Sistema operacional",
     "score": 0.95
   },
   {
-    "text1": "Texto",
+    "text1": "Analise a carta geográfica",
+    "text2": "mapa",
+    "score": 0.95
+  },
+  {
+    "text1": "Ler",
     "text2": "Estratégia de leitura",
     "score": 0.95
   },
   {
-    "text1": "Segundo o conto apresentado",
-    "text2": "texto_literario",
+    "text1": "Definir o conceito de fotossíntese",
+    "text2": "conhecimento",
     "score": 0.95
   },
   {
-    "text1": "Movimento",
-    "text2": "Cadeias alimentares simples Microrganismos",
-    "score": 0.2836929474561731
+    "text1": "Ciências",
+    "text2": "Revisão de textos",
+    "score": 0.47205058230140357
   },
   {
-    "text1": "Conecte os termos às suas descrições",
-    "text2": "associacao",
+    "text1": "Segundo o infográfico apresentado",
+    "text2": "infografico",
     "score": 0.95
   },
   {
-    "text1": "Questão",
-    "text2": "Recursos de argumentação",
-    "score": 0.1
-  },
-  {
-    "text1": "Defender um ponto de vista",
-    "text2": "avaliacao",
+    "text1": "Entendimento",
+    "text2": "Compreensão em leitura",
     "score": 0.95
   },
   {
-    "text1": "Sistemas De Criptografia",
-    "text2": "Codificação da informação",
+    "text1": "Republicana",
+    "text2": "Primeira República e suas características Contestações e dinâmicas da vida cultural no Brasil entre 1900 e 1930",
     "score": 0.95
   },
   {
-    "text1": "De acordo com a história em quadrinhos",
-    "text2": "charge",
+    "text1": "Turma com dificuldade de interpretação",
+    "text2": "dificuldade_conexao",
     "score": 0.95
   },
   {
-    "text1": "Interprete o gráfico de linhas",
-    "text2": "grafico_linhas",
+    "text1": "Interpretação",
+    "text2": "Procedimentos de apoio à compreensão Tomada de nota",
     "score": 0.95
   },
   {
@@ -800,104 +85,44 @@
     "score": 0.95
   },
   {
-    "text1": "Leia o fragmento literário",
-    "text2": "texto_literario",
+    "text1": "Com base na planilha",
+    "text2": "tabela",
     "score": 0.95
   },
   {
-    "text1": "Formação Palavras",
-    "text2": "Morfologia",
-    "score": 0.95
+    "text1": "Processos",
+    "text2": "Materialidades",
+    "score": 0.28845682528432115
   },
   {
-    "text1": "Interpretação",
-    "text2": "Compreensão em leitura",
-    "score": 0.95
-  },
-  {
-    "text1": "Relacione a coluna A com a coluna B",
-    "text2": "associacao",
-    "score": 0.95
-  },
-  {
-    "text1": "Segundo o planisfério",
-    "text2": "mapa",
-    "score": 0.95
-  },
-  {
-    "text1": "Analise a fonte primária",
-    "text2": "artigo_jornal",
+    "text1": "Criar um projeto de ciências",
+    "text2": "analise",
     "score": 0.1
   },
   {
     "text1": "Ler",
-    "text2": "Estratégias e procedimentos de leitura Relação do verbal com outras semioses Procedimentos e gêneros de apoio à compreensão",
+    "text2": "Estratégia de leitura",
     "score": 0.95
   },
   {
-    "text1": "Ler",
-    "text2": "Estratégias e procedimentos de leitura Relação do verbal com outras semioses Procedimentos e gêneros de apoio à compreensão",
-    "score": 0.95
-  },
-  {
-    "text1": "Analise os dados tabulados",
-    "text2": "grafico_linhas",
+    "text1": "Construção",
+    "text2": "Codificação da informação",
     "score": 0.1
   },
   {
-    "text1": "Com base no gráfico vertical",
-    "text2": "grafico_barras",
+    "text1": "Revolucionário",
+    "text2": "Os anos 1960: revolução cultural? A ditadura civil-militar e os processos de resistência As questões indígena e negra e a ditadura",
     "score": 0.95
   },
   {
-    "text1": "Ler",
-    "text2": "Leitura de imagens em narrativas visuais",
-    "score": 0.95
+    "text1": "Ciências",
+    "text2": "Crenças, filosofias de vida e esfera pública",
+    "score": 0.3761877408782961
   },
   {
-    "text1": "Texto",
-    "text2": "Protocolos de leitura",
-    "score": 0.95
-  },
-  {
-    "text1": "Analise o trecho do romance",
-    "text2": "artigo_jornal",
-    "score": 0.1
-  },
-  {
-    "text1": "Ensino Religioso",
-    "text2": "Matemática",
-    "score": 0.0
-  },
-  {
-    "text1": "Matemática",
-    "text2": "Língua Inglesa",
-    "score": 0.0
-  },
-  {
-    "text1": "Determine a veracidade das afirmações",
-    "text2": "verdadeiro_falso",
-    "score": 0.95
-  },
-  {
-    "text1": "Ler",
-    "text2": "Decodificação/Fluência de leitura",
-    "score": 0.95
-  },
-  {
-    "text1": "Conflitos",
-    "text2": "As formas de organização social e política: a noção de Estado",
-    "score": 0.32720018801239004
-  },
-  {
-    "text1": "Entendimento",
-    "text2": "Compreensão em leitura",
-    "score": 0.95
-  },
-  {
-    "text1": "Matemática",
-    "text2": "Brincadeiras e jogos populares do Brasil e do mundo Brincadeiras e jogos de matriz indígena e africana",
-    "score": 0.3266408792123167
+    "text1": "História",
+    "text2": "A cidade e suas atividades: trabalho, cultura e lazer",
+    "score": 0.49844832703936726
   },
   {
     "text1": "Sistemas",
@@ -906,37 +131,82 @@
   },
   {
     "text1": "Texto",
-    "text2": "Estratégias, procedimentos de leitura em textos reivindicatórios ou propositivos",
+    "text2": "Estratégias e procedimentos de leitura Relação do verbal com outras semioses Procedimentos e gêneros de apoio à compreensão",
     "score": 0.95
   },
   {
-    "text1": "Aparelho",
-    "text2": "Construção do sistema alfabético",
-    "score": 0.95
+    "text1": "Analise a letra da música",
+    "text2": "texto_literario",
+    "score": 0.1
   },
   {
-    "text1": "Interprete a representação visual",
-    "text2": "imagem",
-    "score": 0.95
-  },
-  {
-    "text1": "Ensino Religioso",
+    "text1": "Computação",
     "text2": "Língua Inglesa",
     "score": 0.0
   },
   {
-    "text1": "Geografia",
-    "text2": "Danças do Brasil e do mundo Danças de matriz indígena e africana",
-    "score": 0.49991802157540444
-  },
-  {
-    "text1": "Texto",
-    "text2": "Leitura de imagens em narrativas visuais",
+    "text1": "Sistemas",
+    "text2": "Sistema Operacional",
     "score": 0.95
   },
   {
-    "text1": "Marque a alternativa correta",
-    "text2": "multipla_escolha",
+    "text1": "Resolver equações do segundo grau",
+    "text2": "conhecimento",
+    "score": 0.1
+  },
+  {
+    "text1": "Ciências",
+    "text2": "Matemática",
+    "score": 0.0
+  },
+  {
+    "text1": "Desenvolver uma redação argumentativa",
+    "text2": "avaliacao",
+    "score": 0.1
+  },
+  {
+    "text1": "Texto",
+    "text2": "Adesão às práticas de leitura",
+    "score": 0.95
+  },
+  {
+    "text1": "Estudantes em nível profundo",
+    "text2": "conhecimento_avancado",
+    "score": 0.95
+  },
+  {
+    "text1": "Crenças,",
+    "text2": "Místicas e espiritualidades",
+    "score": 0.382852918017044
+  },
+  {
+    "text1": "Entendimento",
+    "text2": "Reconstrução da textualidade e compreensão dos efeitos de sentidos provocados pelos usos de recursos linguísticos e multissemióticos",
+    "score": 0.95
+  },
+  {
+    "text1": "Entendimento",
+    "text2": "Compreensão em leitura",
+    "score": 0.95
+  },
+  {
+    "text1": "Matemática",
+    "text2": "Sistema de orientação",
+    "score": 0.400961020872613
+  },
+  {
+    "text1": "Ler",
+    "text2": "Estratégias de leitura Apreciação e réplica",
+    "score": 0.95
+  },
+  {
+    "text1": "Texto",
+    "text2": "Estratégias e procedimentos de leitura Relação do verbal com outras semioses Procedimentos e gêneros de apoio à compreensão",
+    "score": 0.95
+  },
+  {
+    "text1": "Diferenciar células vegetais e animais",
+    "text2": "analise",
     "score": 0.95
   },
   {
@@ -950,303 +220,28 @@
     "score": 0.95
   },
   {
-    "text1": "Aparelho",
-    "text2": "Construção do sistema alfabético e da ortografia",
-    "score": 0.95
-  },
-  {
-    "text1": "Desenvolver uma redação argumentativa",
-    "text2": "sintese",
-    "score": 0.95
-  },
-  {
-    "text1": "Problemas",
-    "text2": "Análise de chances de eventos aleatórios",
-    "score": 0.24588378708934447
-  },
-  {
-    "text1": "Ler",
-    "text2": "Adesão às práticas de leitura",
-    "score": 0.95
-  },
-  {
-    "text1": "Analise a carta geográfica",
-    "text2": "mapa",
-    "score": 0.95
-  },
-  {
-    "text1": "Elementos",
-    "text2": "Patrimônio cultural",
-    "score": 0.2902913492327997
-  },
-  {
-    "text1": "Interprete o gráfico de colunas",
-    "text2": "grafico_barras",
-    "score": 0.95
-  },
-  {
-    "text1": "Movimento Revolucionário",
-    "text2": "Os anos 1960: revolução cultural? A ditadura civil-militar e os processos de resistência As questões indígena e negra e a ditadura",
-    "score": 0.95
-  },
-  {
-    "text1": "História",
-    "text2": "Língua Inglesa",
-    "score": 0.0
-  },
-  {
-    "text1": "Ler",
-    "text2": "Estratégias, procedimentos de leitura em textos reivindicatórios ou propositivos",
-    "score": 0.95
-  },
-  {
-    "text1": "Mecanismos",
-    "text2": "Diversidade de ecossistemas Fenômenos naturais e impactos ambientais Programas e indicadores de saúde pública",
-    "score": 0.30470461645630476
-  },
-  {
-    "text1": "Análise Sintática",
-    "text2": "Sintaxe",
-    "score": 0.95
-  },
-  {
-    "text1": "Ciências",
-    "text2": "Geografia",
-    "score": 0.0
-  },
-  {
-    "text1": "Planejar uma apresentação",
-    "text2": "sintese",
-    "score": 0.95
-  },
-  {
-    "text1": "Cidadania,",
-    "text2": "Revolução Francesa e seus desdobramentos",
-    "score": 0.3893074577759238
-  },
-  {
-    "text1": "Estrutura Morfológica",
-    "text2": "Morfologia",
-    "score": 0.95
-  },
-  {
-    "text1": "Tutela",
-    "text2": "Figuras geométricas planas: características, representações e ângulos",
-    "score": 0.1
-  },
-  {
-    "text1": "Segundo a notícia publicada",
-    "text2": "artigo_jornal",
-    "score": 0.95
-  },
-  {
-    "text1": "Ler",
-    "text2": "Estratégia de leitura Distinção de fato e opinião",
-    "score": 0.95
-  },
-  {
-    "text1": "Sistemas",
-    "text2": "Construção do sistema alfabético",
-    "score": 0.95
-  },
-  {
-    "text1": "De acordo com o gráfico apresentado",
-    "text2": "grafico_barras",
-    "score": 0.95
-  },
-  {
-    "text1": "Com base na tirinha",
-    "text2": "charge",
-    "score": 0.95
-  },
-  {
-    "text1": "Ler",
-    "text2": "Leitura e elaboração de mapas temáticos, croquis e outras formas de representação para analisar informações geográficas",
-    "score": 0.95
-  },
-  {
-    "text1": "Estratégias",
-    "text2": "Usos de linguagem em meio digital: “internetês”",
-    "score": 0.36981939871097236
-  },
-  {
-    "text1": "Analise a evolução temporal",
-    "text2": "texto_literario",
-    "score": 0.1
-  },
-  {
-    "text1": "Estrutura Morfológica",
-    "text2": "Morfologia",
-    "score": 0.95
-  },
-  {
-    "text1": "Sistemas",
-    "text2": "Sistema Operacional",
-    "score": 0.95
-  },
-  {
-    "text1": "Matrizes",
-    "text2": "Arte e tecnologia",
-    "score": 0.23041851360938478
-  },
-  {
-    "text1": "Geografia",
-    "text2": "Medida do comprimento da circunferência",
-    "score": 0.4384061922380085
-  },
-  {
-    "text1": "Ler",
-    "text2": "Adesão às práticas de leitura",
-    "score": 0.95
-  },
-  {
-    "text1": "Texto",
-    "text2": "Adesão às práticas de leitura",
-    "score": 0.95
-  },
-  {
-    "text1": "Narrativas",
-    "text2": "Imanência e transcendência",
-    "score": 0.25390741188909616
-  },
-  {
-    "text1": "Formação Palavras",
-    "text2": "Morfologia",
-    "score": 0.95
-  },
-  {
-    "text1": "Texto",
-    "text2": "Adesão às práticas de leitura",
-    "score": 0.95
-  },
-  {
-    "text1": "Criptografia",
+    "text1": "Sistemas De Criptografia",
     "text2": "Codificação da informação",
     "score": 0.95
   },
   {
-    "text1": "Tradições",
-    "text2": "A noção do “Eu” e do “Outro”: registros de experiências pessoais e da comunidade no tempo e no espaço",
-    "score": 0.2761384772278101
-  },
-  {
-    "text1": "Comercial",
-    "text2": "A invenção do comércio e a circulação de produtos",
-    "score": 0.95
-  },
-  {
-    "text1": "Ler",
-    "text2": "Leitura colaborativa e autônoma",
-    "score": 0.95
-  },
-  {
-    "text1": "Arte",
-    "text2": "Corpo humano Respeito à diversidade",
+    "text1": "Observe o mapa abaixo",
+    "text2": "documento_historico",
     "score": 0.1
-  },
-  {
-    "text1": "Contextos",
-    "text2": "Transformações do espaço na sociedade urbano-industrial",
-    "score": 0.1
-  },
-  {
-    "text1": "Sistemas",
-    "text2": "Construção do sistema alfabético",
-    "score": 0.95
-  },
-  {
-    "text1": "Computação",
-    "text2": "Ensino Religioso",
-    "score": 0.0
-  },
-  {
-    "text1": "Ler",
-    "text2": "Estratégias e procedimentos de leitura Relação do verbal com outras semioses Procedimentos e gêneros de apoio à compreensão",
-    "score": 0.95
-  },
-  {
-    "text1": "Revolucionário",
-    "text2": "Revolução Francesa e seus desdobramentos",
-    "score": 0.95
-  },
-  {
-    "text1": "Ler",
-    "text2": "Estratégia de leitura",
-    "score": 0.95
   },
   {
     "text1": "Aparelho",
-    "text2": "Construção do sistema alfabético e da ortografia",
-    "score": 0.95
-  },
-  {
-    "text1": "Explique em poucas palavras",
-    "text2": "dissertativa_curta",
-    "score": 0.95
-  },
-  {
-    "text1": "Sistemas",
     "text2": "Construção do sistema alfabético/ Convenções da escrita",
     "score": 0.95
   },
   {
-    "text1": "Analise o cartum apresentado",
-    "text2": "imagem",
-    "score": 0.1
+    "text1": "História",
+    "text2": "Cartografia: anamorfose, croquis e mapas temáticos da América e África",
+    "score": 0.4287310547859797
   },
   {
-    "text1": "Demográfico",
+    "text1": "Demografia",
     "text2": "A tutela da população indígena, a escravidão dos negros e a tutela dos egressos da escravidão",
-    "score": 0.95
-  },
-  {
-    "text1": "Segundo a série temporal",
-    "text2": "grafico_linhas",
-    "score": 0.95
-  },
-  {
-    "text1": "Aparelho",
-    "text2": "Construção do sistema alfabético e da ortografia",
-    "score": 0.95
-  },
-  {
-    "text1": "Saberes",
-    "text2": "A produção dos marcos da memória: formação cultural da população",
-    "score": 0.31675336640230745
-  },
-  {
-    "text1": "Formação Palavras",
-    "text2": "Morfologia",
-    "score": 0.95
-  },
-  {
-    "text1": "Marque V para verdadeiro e F para falso",
-    "text2": "dissertativa_curta",
-    "score": 0.1
-  },
-  {
-    "text1": "Ler",
-    "text2": "Estratégia de leitura",
-    "score": 0.95
-  },
-  {
-    "text1": "Texto",
-    "text2": "Compreensão em leitura",
-    "score": 0.95
-  },
-  {
-    "text1": "Cidades",
-    "text2": "Território, redes e urbanização",
-    "score": 0.95
-  },
-  {
-    "text1": "Interpretação",
-    "text2": "Procedimentos de apoio à compreensão Tomada de nota",
-    "score": 0.95
-  },
-  {
-    "text1": "Ler",
-    "text2": "Compreensão em leitura",
     "score": 0.95
   },
   {
@@ -1255,428 +250,43 @@
     "score": 0.95
   },
   {
-    "text1": "Interprete a matriz de dados",
-    "text2": "tabela",
+    "text1": "Revolucionário",
+    "text2": "Revolução Francesa e seus desdobramentos",
     "score": 0.95
   },
   {
-    "text1": "Processos",
-    "text2": "Materialidades",
-    "score": 0.2006590531034701
-  },
-  {
-    "text1": "Texto",
-    "text2": "Estratégias de leitura Apreciação e réplica",
-    "score": 0.95
-  },
-  {
-    "text1": "Ciências",
-    "text2": "Trabalho e inovação tecnológica",
-    "score": 0.4842524376578602
-  },
-  {
-    "text1": "Segundo a charge política",
-    "text2": "charge",
-    "score": 0.95
-  },
-  {
-    "text1": "Entendimento",
-    "text2": "Procedimentos de apoio à compreensão Tomada de nota",
-    "score": 0.95
-  },
-  {
-    "text1": "Ciências",
-    "text2": "Arte",
-    "score": 0.0
-  },
-  {
-    "text1": "Sistemas",
-    "text2": "Construção do sistema alfabético/ Estabelecimento de relações anafóricas na referenciação e construção da coesão",
-    "score": 0.95
-  },
-  {
-    "text1": "Desenvolver uma redação argumentativa",
-    "text2": "aplicacao",
-    "score": 0.1
-  },
-  {
-    "text1": "Escreva uma redação sobre",
-    "text2": "dissertativa_longa",
-    "score": 0.95
-  },
-  {
-    "text1": "Texto",
-    "text2": "Compreensão em leitura",
-    "score": 0.95
-  },
-  {
-    "text1": "História",
-    "text2": "Língua Portuguesa",
-    "score": 0.0
-  },
-  {
-    "text1": "Sistemas",
+    "text1": "Aparelho",
     "text2": "Construção do sistema alfabético e da ortografia",
     "score": 0.95
   },
   {
-    "text1": "Texto",
-    "text2": "Estratégias de leitura Apreciação e réplica",
+    "text1": "Demográfico",
+    "text2": "Características da população brasileira",
     "score": 0.95
   },
   {
-    "text1": "Ler",
-    "text2": "Leitura de imagens em narrativas visuais",
-    "score": 0.95
-  },
-  {
-    "text1": "Avaliar a qualidade de um argumento",
-    "text2": "avaliacao",
-    "score": 0.95
-  },
-  {
-    "text1": "Analisar as causas da guerra",
-    "text2": "sintese",
-    "score": 0.1
-  },
-  {
-    "text1": "Celular",
-    "text2": "Célula como unidade da vida Interação entre os sistemas locomotor e nervoso Lentes corretivas",
-    "score": 0.95
-  },
-  {
-    "text1": "Leia a notícia abaixo",
-    "text2": "artigo_jornal",
-    "score": 0.95
-  },
-  {
-    "text1": "Texto",
-    "text2": "Estratégias e procedimentos de leitura Relação do verbal com outras semioses Procedimentos e gêneros de apoio à compreensão",
-    "score": 0.95
-  },
-  {
-    "text1": "Analise o gráfico em colunas",
-    "text2": "texto_literario",
-    "score": 0.1
-  },
-  {
-    "text1": "Entendimento",
-    "text2": "Compreensão em leitura",
-    "score": 0.95
-  },
-  {
-    "text1": "História",
-    "text2": "Compreensão de textos orais de cunho descritivo ou narrativo",
-    "score": 0.35230322749761284
-  },
-  {
-    "text1": "Texto",
-    "text2": "Estratégias e procedimentos de leitura Relação do verbal com outras semioses Procedimentos e gêneros de apoio à compreensão",
-    "score": 0.95
-  },
-  {
-    "text1": "Distância",
-    "text2": "Arte e tecnologia",
-    "score": 0.1
-  },
-  {
-    "text1": "Entendimento",
+    "text1": "Interpretação",
     "text2": "Compreensão",
     "score": 0.95
   },
   {
-    "text1": "Entendimento",
-    "text2": "Compreensão em leitura",
-    "score": 0.95
-  },
-  {
-    "text1": "Industrialização",
-    "text2": "Matéria-prima e indústria",
-    "score": 0.95
-  },
-  {
-    "text1": "Decodificação/Fluência",
-    "text2": "Escrita autônoma e compartilhada",
-    "score": 0.339135423623237
-  },
-  {
-    "text1": "Aparelho",
-    "text2": "Sistema Operacional",
-    "score": 0.95
-  },
-  {
-    "text1": "Entendimento",
-    "text2": "Compreensão em leitura",
-    "score": 0.95
-  },
-  {
-    "text1": "Esportes",
-    "text2": "Ginástica geral",
-    "score": 0.23785026444548066
-  },
-  {
-    "text1": "Observe a tabela abaixo",
-    "text2": "tabela",
-    "score": 0.95
-  },
-  {
-    "text1": "Observe o infográfico abaixo",
-    "text2": "artigo_jornal",
-    "score": 0.1
-  },
-  {
-    "text1": "Texto",
-    "text2": "Leitura de imagens em narrativas visuais",
-    "score": 0.95
-  },
-  {
-    "text1": "Interpretação",
-    "text2": "Reconstrução da textualidade e compreensão dos efeitos de sentidos provocados pelos usos de recursos linguísticos e multissemióticos",
-    "score": 0.95
-  },
-  {
-    "text1": "Explicar o processo de fotossíntese",
-    "text2": "analise",
-    "score": 0.1
-  },
-  {
-    "text1": "Ciências",
-    "text2": "Composição do ar Efeito estufa Camada de ozônio Fenômenos naturais (vulcões, terremotos e tsunamis) Placas tectônicas e deriva continental",
-    "score": 0.42852239483350973
-  },
-  {
-    "text1": "Sistemas",
-    "text2": "Construção do sistema alfabético",
-    "score": 0.95
-  },
-  {
-    "text1": "Observe a charge abaixo",
-    "text2": "grafico_barras",
-    "score": 0.1
-  },
-  {
-    "text1": "Sistemas",
-    "text2": "Sistema monetário brasileiro: reconhecimento de cédulas e moedas",
-    "score": 0.95
-  },
-  {
-    "text1": "Esportes",
-    "text2": "Jogos eletrônicos",
-    "score": 0.3289552356618382
-  },
-  {
-    "text1": "Entendimento",
-    "text2": "Compreensão em leitura",
-    "score": 0.95
-  },
-  {
-    "text1": "Arte",
-    "text2": "Estratégias de solução de problemas - Decomposição",
-    "score": 0.1
-  },
-  {
-    "text1": "Interpretação",
-    "text2": "Reconstrução da textualidade e compreensão dos efeitos de sentidos provocados pelos usos de recursos linguísticos e multissemióticos",
-    "score": 0.95
-  },
-  {
-    "text1": "Sistemas",
-    "text2": "Sistema operacional",
-    "score": 0.95
-  },
-  {
-    "text1": "Observe o gráfico de barras",
-    "text2": "texto_literario",
-    "score": 0.1
-  },
-  {
-    "text1": "Criptografia",
-    "text2": "Codificação da informação",
-    "score": 0.95
-  },
-  {
-    "text1": "Partilha",
-    "text2": "Pronomes relativos",
-    "score": 0.25856171007648204
-  },
-  {
-    "text1": "Nomear os planetas do sistema solar",
-    "text2": "conhecimento",
-    "score": 0.95
-  },
-  {
-    "text1": "Ensino Religioso",
-    "text2": "História",
-    "score": 0.0
-  },
-  {
-    "text1": "Formação Palavras",
-    "text2": "Morfologia",
-    "score": 0.95
-  },
-  {
-    "text1": "Ler",
-    "text2": "Leitura de imagens em narrativas visuais",
-    "score": 0.95
-  },
-  {
-    "text1": "Sistemas",
-    "text2": "Construção do sistema alfabético e da ortografia",
-    "score": 0.95
-  },
-  {
-    "text1": "Texto",
-    "text2": "Leitura e elaboração de mapas temáticos, croquis e outras formas de representação para analisar informações geográficas",
-    "score": 0.95
-  },
-  {
     "text1": "Aparelho",
     "text2": "Construção do sistema alfabético e da ortografia",
     "score": 0.95
   },
   {
-    "text1": "Ler",
-    "text2": "Estratégias de leitura Apreciação e réplica",
-    "score": 0.95
+    "text1": "Composição",
+    "text2": "Mecanismos reprodutivos Sexualidade",
+    "score": 0.32261210933136564
   },
   {
-    "text1": "Sistemas",
-    "text2": "Construção do sistema alfabético e da ortografia",
-    "score": 0.95
-  },
-  {
-    "text1": "Ler",
-    "text2": "Leitura colaborativa e autônoma",
-    "score": 0.95
-  },
-  {
-    "text1": "De acordo com a infografia",
-    "text2": "infografico",
-    "score": 0.95
-  },
-  {
-    "text1": "Revisão",
-    "text2": "Ideia(s) de divindade(s)",
-    "score": 0.1
-  },
-  {
-    "text1": "Texto",
-    "text2": "Leitura de imagens em narrativas visuais",
-    "score": 0.95
-  },
-  {
-    "text1": "Segundo a ilustração",
-    "text2": "imagem",
-    "score": 0.95
-  },
-  {
-    "text1": "Matemática",
-    "text2": "Uso de tecnologias computacionais",
-    "score": 0.3758136345481564
-  },
-  {
-    "text1": "Ler",
-    "text2": "Compreensão em leitura",
-    "score": 0.95
-  },
-  {
-    "text1": "Geografia",
-    "text2": "Espaços e territórios religiosos",
-    "score": 0.32379226804633066
-  },
-  {
-    "text1": "Interpretação",
-    "text2": "Compreensão em leitura",
-    "score": 0.95
-  },
-  {
-    "text1": "História",
-    "text2": "Estratégias de solução de problemas - Generalização",
-    "score": 0.34526816288861334
-  },
-  {
-    "text1": "Texto",
-    "text2": "Estratégias e procedimentos de leitura Relação do verbal com outras semioses Procedimentos e gêneros de apoio à compreensão",
-    "score": 0.95
-  },
-  {
-    "text1": "Descrever o ciclo da água",
-    "text2": "compreensao",
-    "score": 0.95
-  },
-  {
-    "text1": "Interpretação",
-    "text2": "Compreensão de textos orais",
-    "score": 0.95
-  },
-  {
-    "text1": "Usar fórmulas matemáticas em problemas",
-    "text2": "aplicacao",
-    "score": 0.95
-  },
-  {
-    "text1": "Geografia",
-    "text2": "Matemática",
-    "score": 0.0
-  },
-  {
-    "text1": "Texto",
-    "text2": "Leitura colaborativa e autônoma",
-    "score": 0.95
-  },
-  {
-    "text1": "De acordo com a fonte histórica",
-    "text2": "documento_historico",
-    "score": 0.95
-  },
-  {
-    "text1": "Combine os elementos das duas listas",
-    "text2": "associacao",
+    "text1": "Com base no mapa geográfico",
+    "text2": "mapa",
     "score": 0.95
   },
   {
     "text1": "Ler",
     "text2": "Compreensão em leitura",
-    "score": 0.95
-  },
-  {
-    "text1": "Geografia",
-    "text2": "Diferentes tipos de poluição",
-    "score": 0.31110910324784025
-  },
-  {
-    "text1": "Texto",
-    "text2": "Decodificação/Fluência de leitura",
-    "score": 0.95
-  },
-  {
-    "text1": "Ler",
-    "text2": "Estratégias e procedimentos de leitura em textos legais e normativos",
-    "score": 0.95
-  },
-  {
-    "text1": "Computação",
-    "text2": "Língua Inglesa",
-    "score": 0.0
-  },
-  {
-    "text1": "Aparelho",
-    "text2": "Construção do sistema alfabético",
-    "score": 0.95
-  },
-  {
-    "text1": "Analise a visualização de dados",
-    "text2": "infografico",
-    "score": 0.95
-  },
-  {
-    "text1": "Indique a alternativa verdadeira",
-    "text2": "multipla_escolha",
-    "score": 0.95
-  },
-  {
-    "text1": "Espaço Geográfico",
-    "text2": "Território e diversidade cultural",
     "score": 0.95
   },
   {
@@ -1685,48 +295,183 @@
     "score": 0.95
   },
   {
-    "text1": "Composição",
-    "text2": "Princípios e valores éticos",
-    "score": 0.1
-  },
-  {
-    "text1": "Marque V para verdadeiro e F para falso",
-    "text2": "verdadeiro_falso",
+    "text1": "Estrutura Morfológica",
+    "text2": "Morfologia",
     "score": 0.95
   },
   {
-    "text1": "Ler",
+    "text1": "Transformações",
+    "text2": "Instâncias do poder público e canais de participação social",
+    "score": 0.36278957539143164
+  },
+  {
+    "text1": "Revolucionário",
+    "text2": "Revolução Industrial e seus impactos na produção e circulação de povos, produtos e culturas",
+    "score": 0.95
+  },
+  {
+    "text1": "Entendimento",
     "text2": "Compreensão em leitura",
     "score": 0.95
   },
   {
+    "text1": "Alunos que sabem o básico mas não conectam",
+    "text2": "dificuldade_conexao",
+    "score": 0.95
+  },
+  {
     "text1": "Aparelho",
-    "text2": "Construção do sistema alfabético e da ortografia",
+    "text2": "Sistema Sol, Terra e Lua Clima",
     "score": 0.95
   },
   {
-    "text1": "Computação",
-    "text2": "Geografia",
-    "score": 0.0
-  },
-  {
-    "text1": "Leia o fragmento literário",
-    "text2": "mapa",
-    "score": 0.1
-  },
-  {
-    "text1": "Texto",
-    "text2": "Leitura colaborativa e autônoma",
+    "text1": "Entendimento",
+    "text2": "Reconstrução da textualidade e compreensão dos efeitos de sentidos provocados pelos usos de recursos linguísticos e multissemióticos",
     "score": 0.95
   },
   {
-    "text1": "Defina o conceito",
+    "text1": "Interpretação",
+    "text2": "Procedimentos de apoio à compreensão Tomada de nota",
+    "score": 0.95
+  },
+  {
+    "text1": "Lei Fundamental",
+    "text2": "O processo de redemocratização A Constituição de 1988 e a emancipação das cidadanias (analfabetos, indígenas, negros, jovens etc.) A história recente do Brasil: transformações políticas, econômicas, sociais e culturais de 1989 aos dias atuais Os protagonismos da sociedade civil e as alterações da sociedade brasileira A questão da violência contra populações marginalizadas O Brasil e suas relações internacionais na era da globalização",
+    "score": 0.95
+  },
+  {
+    "text1": "Segundo a tabela apresentada",
+    "text2": "tabela",
+    "score": 0.95
+  },
+  {
+    "text1": "Descreva resumidamente",
     "text2": "dissertativa_curta",
     "score": 0.95
   },
   {
-    "text1": "Independente",
+    "text1": "Observe a imagem abaixo",
+    "text2": "imagem",
+    "score": 0.95
+  },
+  {
+    "text1": "Indique a alternativa verdadeira",
+    "text2": "multipla_escolha",
+    "score": 0.95
+  },
+  {
+    "text1": "Políticas",
+    "text2": "Usos de recursos linguísticos e paralinguísticos no intercâmbio oral",
+    "score": 0.1
+  },
+  {
+    "text1": "Com base no gráfico vertical",
+    "text2": "grafico_barras",
+    "score": 0.95
+  },
+  {
+    "text1": "Segurança",
+    "text2": "Processos de criação",
+    "score": 0.1
+  },
+  {
+    "text1": "Interpretação",
+    "text2": "Compreensão em leitura",
+    "score": 0.95
+  },
+  {
+    "text1": "Estrutura Morfológica",
+    "text2": "Morfologia",
+    "score": 0.95
+  },
+  {
+    "text1": "Sistemas",
+    "text2": "Construção do sistema alfabético",
+    "score": 0.95
+  },
+  {
+    "text1": "Selecione a resposta adequada",
+    "text2": "multipla_escolha",
+    "score": 0.95
+  },
+  {
+    "text1": "Escreva uma redação sobre",
+    "text2": "verdadeiro_falso",
+    "score": 0.1
+  },
+  {
+    "text1": "Indique se as afirmações são verdadeiras ou falsas",
+    "text2": "verdadeiro_falso",
+    "score": 0.95
+  },
+  {
+    "text1": "Patrimônio",
+    "text2": "Consideração das condições de produção Estratégias de produção: planejamento, textualização e revisão/edição",
+    "score": 0.1
+  },
+  {
+    "text1": "Células",
+    "text2": "Célula como unidade da vida Interação entre os sistemas locomotor e nervoso Lentes corretivas",
+    "score": 0.95
+  },
+  {
+    "text1": "Interprete a matriz de dados",
+    "text2": "tabela",
+    "score": 0.95
+  },
+  {
+    "text1": "Geografia",
+    "text2": "Educação Física",
+    "score": 0.0
+  },
+  {
+    "text1": "Interprete o mapa apresentado",
+    "text2": "mapa",
+    "score": 0.95
+  },
+  {
+    "text1": "Emancipação",
     "text2": "Independência dos Estados Unidos da América  Independências na América espanhola • A revolução dos escravizados em São Domingo e seus múltiplos significados e desdobramentos: o caso do Haiti Os caminhos até a independência do Brasil",
+    "score": 0.95
+  },
+  {
+    "text1": "Surgimento",
+    "text2": "Segurança e responsabilidade no uso de tecnologia computaciona",
+    "score": 0.1
+  },
+  {
+    "text1": "Quantificadores",
+    "text2": "Compreensão de textos orais de cunho descritivo ou narrativo",
+    "score": 0.356478801832155
+  },
+  {
+    "text1": "Leia o documento histórico abaixo",
+    "text2": "tabela",
+    "score": 0.1
+  },
+  {
+    "text1": "Ler",
+    "text2": "Leitura de imagens em narrativas visuais",
+    "score": 0.95
+  },
+  {
+    "text1": "Movimento Revolucionário",
+    "text2": "Revolução Francesa e seus desdobramentos",
+    "score": 0.95
+  },
+  {
+    "text1": "Expansão",
+    "text2": "Brincadeiras e jogos da cultura popular presentes no contexto comunitário e regional",
+    "score": 0.1
+  },
+  {
+    "text1": "Segundo a ilustração",
+    "text2": "imagem",
+    "score": 0.95
+  },
+  {
+    "text1": "Sistemas",
+    "text2": "Construção do sistema alfabético",
     "score": 0.95
   },
   {
@@ -1735,78 +480,73 @@
     "score": 0.95
   },
   {
-    "text1": "Tempo",
-    "text2": "Integração mundial e suas interpretações: globalização e mundialização",
+    "text1": "Interpretação",
+    "text2": "Compreensão",
+    "score": 0.95
+  },
+  {
+    "text1": "Sistemas De Criptografia",
+    "text2": "Codificação da informação",
+    "score": 0.95
+  },
+  {
+    "text1": "Formação Palavras",
+    "text2": "Morfologia",
+    "score": 0.95
+  },
+  {
+    "text1": "Analisar as causas da guerra",
+    "text2": "aplicacao",
     "score": 0.1
   },
   {
-    "text1": "Geografia",
-    "text2": "Arte",
-    "score": 0.0
-  },
-  {
-    "text1": "Argumentar sobre questões ambientais",
-    "text2": "avaliacao",
-    "score": 0.95
-  },
-  {
     "text1": "Texto",
-    "text2": "Decodificação/Fluência de leitura",
+    "text2": "Estratégia de leitura Distinção de fato e opinião",
     "score": 0.95
   },
   {
-    "text1": "Explicar o processo de fotossíntese",
-    "text2": "compreensao",
+    "text1": "Matemática",
+    "text2": "Uso de tecnologias computacionais - Tecnologia digital e sustentabilidade",
+    "score": 0.4975161497564435
+  },
+  {
+    "text1": "Alunos com conhecimento avançado",
+    "text2": "conhecimento_avancado",
     "score": 0.95
   },
   {
-    "text1": "Demografia",
-    "text2": "Características da população brasileira",
+    "text1": "Criptografia",
+    "text2": "Codificação da informação",
     "score": 0.95
   },
   {
-    "text1": "Saberes",
-    "text2": "Cidadania, diversidade cultural e respeito às diferenças sociais, culturais e históricas",
-    "score": 0.20889778972296558
+    "text1": "Analise a fotografia",
+    "text2": "texto_literario",
+    "score": 0.1
   },
   {
-    "text1": "De acordo com a foto apresentada",
-    "text2": "imagem",
+    "text1": "Ler",
+    "text2": "Estratégias de leitura Apreciação e réplica",
     "score": 0.95
   },
   {
-    "text1": "Escolha entre as alternativas a), b), c)",
-    "text2": "multipla_escolha",
+    "text1": "Interpretação",
+    "text2": "Procedimentos de apoio à compreensão Tomada de nota",
     "score": 0.95
   },
   {
-    "text1": "Computação",
+    "text1": "Entendimento",
+    "text2": "Compreensão em leitura",
+    "score": 0.95
+  },
+  {
+    "text1": "Ensino Religioso",
     "text2": "Língua Portuguesa",
     "score": 0.0
   },
   {
-    "text1": "Polígonos:",
-    "text2": "Problemas de contagem do tipo: “Se cada objeto de uma coleção A for combinado com todos os elementos de uma coleção B, quantos agrupamentos desse tipo podem ser formados?”",
-    "score": 0.26886842127014166
-  },
-  {
-    "text1": "Analise o trecho do romance",
-    "text2": "texto_literario",
-    "score": 0.95
-  },
-  {
-    "text1": "Ligue os itens correspondentes",
-    "text2": "associacao",
-    "score": 0.95
-  },
-  {
-    "text1": "Demográfico",
-    "text2": "Diversidade e dinâmica da população mundial e local",
-    "score": 0.95
-  },
-  {
-    "text1": "Memorizar datas históricas importantes",
-    "text2": "conhecimento",
+    "text1": "Segundo os dados do gráfico de barras",
+    "text2": "grafico_barras",
     "score": 0.95
   },
   {
@@ -1816,26 +556,546 @@
   },
   {
     "text1": "Texto",
-    "text2": "Decodificação/Fluência de leitura",
+    "text2": "Estratégias e procedimentos de leitura Relação do verbal com outras semioses Procedimentos e gêneros de apoio à compreensão",
     "score": 0.95
   },
   {
-    "text1": "Analise a fonte primária",
+    "text1": "Texto",
+    "text2": "Estratégias e procedimentos de leitura em textos legais e normativos",
+    "score": 0.95
+  },
+  {
+    "text1": "Ler",
+    "text2": "Compreensão em leitura",
+    "score": 0.95
+  },
+  {
+    "text1": "Ler",
+    "text2": "Estratégias de leitura Apreciação e réplica",
+    "score": 0.95
+  },
+  {
+    "text1": "Ensino Religioso",
+    "text2": "Educação Física",
+    "score": 0.0
+  },
+  {
+    "text1": "Entendimento",
+    "text2": "Compreensão em leitura",
+    "score": 0.95
+  },
+  {
+    "text1": "Relacione a coluna A com a coluna B",
+    "text2": "associacao",
+    "score": 0.95
+  },
+  {
+    "text1": "Entendimento",
+    "text2": "Compreensão em leitura",
+    "score": 0.95
+  },
+  {
+    "text1": "Elementos",
+    "text2": "Contextos e práticas",
+    "score": 0.2391672831224341
+  },
+  {
+    "text1": "Ler",
+    "text2": "Leitura colaborativa e autônoma",
+    "score": 0.95
+  },
+  {
+    "text1": "Problemas",
+    "text2": "A circunferência como lugar geométrico",
+    "score": 0.23722488245686113
+  },
+  {
+    "text1": "Interpretação",
+    "text2": "Procedimentos de apoio à compreensão Tomada de nota",
+    "score": 0.95
+  },
+  {
+    "text1": "Julgar a validade de uma teoria",
+    "text2": "conhecimento",
+    "score": 0.1
+  },
+  {
+    "text1": "Ler",
+    "text2": "Compreensão em leitura",
+    "score": 0.95
+  },
+  {
+    "text1": "Entendimento",
+    "text2": "Procedimentos de apoio à compreensão Tomada de nota",
+    "score": 0.95
+  },
+  {
+    "text1": "Retorno Democracia",
+    "text2": "O processo de redemocratização A Constituição de 1988 e a emancipação das cidadanias (analfabetos, indígenas, negros, jovens etc.) A história recente do Brasil: transformações políticas, econômicas, sociais e culturais de 1989 aos dias atuais Os protagonismos da sociedade civil e as alterações da sociedade brasileira A questão da violência contra populações marginalizadas O Brasil e suas relações internacionais na era da globalização",
+    "score": 0.95
+  },
+  {
+    "text1": "Interpretar um texto literário",
+    "text2": "compreensao",
+    "score": 0.95
+  },
+  {
+    "text1": "Computação",
+    "text2": "Educação Física",
+    "score": 0.0
+  },
+  {
+    "text1": "Interprete o infográfico",
+    "text2": "infografico",
+    "score": 0.95
+  },
+  {
+    "text1": "Assinale a opção que apresenta",
+    "text2": "dissertativa_curta",
+    "score": 0.1
+  },
+  {
+    "text1": "Leia o documento histórico abaixo",
     "text2": "documento_historico",
     "score": 0.95
   },
   {
-    "text1": "Construir uma maquete",
+    "text1": "Usar fórmulas matemáticas em problemas",
+    "text2": "aplicacao",
+    "score": 0.95
+  },
+  {
+    "text1": "Sistemas",
+    "text2": "Construção do sistema alfabético/ Estabelecimento de relações anafóricas na referenciação e construção da coesão",
+    "score": 0.95
+  },
+  {
+    "text1": "Geografia",
+    "text2": "O “Eu”, o “Outro” e os diferentes grupos sociais e étnicos que compõem a cidade e os municípios: os desafios sociais, culturais e ambientais do lugar onde vive",
+    "score": 0.37722193425602946
+  },
+  {
+    "text1": "Entendimento",
+    "text2": "Reconstrução da textualidade e compreensão dos efeitos de sentidos provocados pelos usos de recursos linguísticos e multissemióticos",
+    "score": 0.95
+  },
+  {
+    "text1": "Observe o trecho do documento oficial",
+    "text2": "documento_historico",
+    "score": 0.95
+  },
+  {
+    "text1": "Entendimento",
+    "text2": "Procedimentos de apoio à compreensão Tomada de nota",
+    "score": 0.95
+  },
+  {
+    "text1": "Sistemas",
+    "text2": "Construção do sistema alfabético e da ortografia",
+    "score": 0.95
+  },
+  {
+    "text1": "Texto",
+    "text2": "Estratégias e procedimentos de leitura Relação do verbal com outras semioses Procedimentos e gêneros de apoio à compreensão",
+    "score": 0.95
+  },
+  {
+    "text1": "Celular",
+    "text2": "Célula como unidade da vida Interação entre os sistemas locomotor e nervoso Lentes corretivas",
+    "score": 0.95
+  },
+  {
+    "text1": "Executar operações com frações",
+    "text2": "aplicacao",
+    "score": 0.95
+  },
+  {
+    "text1": "Relacione a coluna A com a coluna B",
+    "text2": "verdadeiro_falso",
+    "score": 0.1
+  },
+  {
+    "text1": "Texto",
+    "text2": "Leitura e elaboração de mapas temáticos, croquis e outras formas de representação para analisar informações geográficas",
+    "score": 0.95
+  },
+  {
+    "text1": "Responda de forma objetiva",
+    "text2": "dissertativa_curta",
+    "score": 0.95
+  },
+  {
+    "text1": "Observe o gráfico de barras",
+    "text2": "documento_historico",
+    "score": 0.1
+  },
+  {
+    "text1": "De acordo com o texto jornalístico",
+    "text2": "artigo_jornal",
+    "score": 0.95
+  },
+  {
+    "text1": "Assinale a opção que apresenta",
+    "text2": "multipla_escolha",
+    "score": 0.95
+  },
+  {
+    "text1": "Industrial",
+    "text2": "Matéria-prima e indústria",
+    "score": 0.95
+  },
+  {
+    "text1": "Interpretação",
+    "text2": "Reconstrução da textualidade e compreensão dos efeitos de sentidos provocados pelos usos de recursos linguísticos e multissemióticos",
+    "score": 0.95
+  },
+  {
+    "text1": "Texto",
+    "text2": "Leitura colaborativa e autônoma",
+    "score": 0.95
+  },
+  {
+    "text1": "Aplicar regras gramaticais em frases",
+    "text2": "avaliacao",
+    "score": 0.1
+  },
+  {
+    "text1": "Ler",
+    "text2": "Decodificação/Fluência de leitura",
+    "score": 0.95
+  },
+  {
+    "text1": "Analise o cartum apresentado",
+    "text2": "charge",
+    "score": 0.95
+  },
+  {
+    "text1": "Formação Palavras",
+    "text2": "Morfologia",
+    "score": 0.95
+  },
+  {
+    "text1": "Observe a charge abaixo",
+    "text2": "charge",
+    "score": 0.95
+  },
+  {
+    "text1": "Matemática",
+    "text2": "Estratégias de leitura Apreciação e réplica",
+    "score": 0.30932912518326683
+  },
+  {
+    "text1": "Analise o gráfico em colunas",
+    "text2": "grafico_barras",
+    "score": 0.95
+  },
+  {
+    "text1": "Texto",
+    "text2": "Leitura colaborativa e autônoma",
+    "score": 0.95
+  },
+  {
+    "text1": "Sistemas",
+    "text2": "Sistema Operacional",
+    "score": 0.95
+  },
+  {
+    "text1": "Formação Palavras",
+    "text2": "Morfologia",
+    "score": 0.95
+  },
+  {
+    "text1": "Ciências",
+    "text2": "Humanismos: uma nova visão de ser humano e de mundo Renascimentos artísticos e culturais",
+    "score": 0.3941387424608812
+  },
+  {
+    "text1": "Composição",
+    "text2": "Construção composicional e estilo Gêneros de divulgação científica",
+    "score": 0.1
+  },
+  {
+    "text1": "Alunos com dificuldade em conectar conceitos",
+    "text2": "dificuldade_conexao",
+    "score": 0.95
+  },
+  {
+    "text1": "Desenvolva um texto argumentativo",
+    "text2": "dissertativa_longa",
+    "score": 0.95
+  },
+  {
+    "text1": "Marque a alternativa correta",
+    "text2": "multipla_escolha",
+    "score": 0.95
+  },
+  {
+    "text1": "Ciências",
+    "text2": "Movimento aparente do Sol no céu O Sol como fonte de luz e calor",
+    "score": 0.4575315428315758
+  },
+  {
+    "text1": "Lógicas",
+    "text2": "Padrões figurais e numéricos: investigação de regularidades ou padrões em sequências",
+    "score": 0.1
+  },
+  {
+    "text1": "Texto",
+    "text2": "Estratégias e procedimentos de leitura Relação do verbal com outras semioses Procedimentos e gêneros de apoio à compreensão",
+    "score": 0.95
+  },
+  {
+    "text1": "Analise a reportagem",
+    "text2": "artigo_jornal",
+    "score": 0.95
+  },
+  {
+    "text1": "Territorial",
+    "text2": "Território e diversidade cultural",
+    "score": 0.95
+  },
+  {
+    "text1": "Analise os dados tabulados",
+    "text2": "tabela",
+    "score": 0.95
+  },
+  {
+    "text1": "Análise Sintática",
+    "text2": "Sintaxe",
+    "score": 0.95
+  },
+  {
+    "text1": "Turma iniciante",
+    "text2": "conhecimento_basico",
+    "score": 0.95
+  },
+  {
+    "text1": "Analise a reportagem",
+    "text2": "grafico_barras",
+    "score": 0.1
+  },
+  {
+    "text1": "Língua Portuguesa",
+    "text2": "Arte",
+    "score": 0.0
+  },
+  {
+    "text1": "Formação Palavras",
+    "text2": "Morfologia",
+    "score": 0.95
+  },
+  {
+    "text1": "Criar um projeto de ciências",
     "text2": "sintese",
     "score": 0.95
   },
   {
-    "text1": "Espaços",
-    "text2": "Lideranças religiosas",
-    "score": 0.3238711901524215
+    "text1": "Ler",
+    "text2": "Compreensão em leitura",
+    "score": 0.95
   },
   {
-    "text1": "De acordo com a obra literária",
+    "text1": "Ler",
+    "text2": "Estratégias e procedimentos de leitura Relação do verbal com outras semioses Procedimentos e gêneros de apoio à compreensão",
+    "score": 0.95
+  },
+  {
+    "text1": "Ler",
+    "text2": "Adesão às práticas de leitura",
+    "score": 0.95
+  },
+  {
+    "text1": "Texto",
+    "text2": "Compreensão em leitura",
+    "score": 0.95
+  },
+  {
+    "text1": "Formação Palavras",
+    "text2": "Morfologia",
+    "score": 0.95
+  },
+  {
+    "text1": "Geografia",
+    "text2": "Sistema monetário brasileiro: estabelecimento de equivalências de um mesmo valor na utilização de diferentes cédulas e moedas",
+    "score": 0.3649320257853
+  },
+  {
+    "text1": "Observe o infográfico abaixo",
+    "text2": "infografico",
+    "score": 0.95
+  },
+  {
+    "text1": "Elabore um texto dissertativo",
+    "text2": "dissertativa_longa",
+    "score": 0.95
+  },
+  {
+    "text1": "Calcular a área de um triângulo",
+    "text2": "aplicacao",
+    "score": 0.95
+  },
+  {
+    "text1": "Ler",
+    "text2": "Compreensão em leitura",
+    "score": 0.95
+  },
+  {
+    "text1": "De acordo com a foto apresentada",
+    "text2": "imagem",
+    "score": 0.95
+  },
+  {
+    "text1": "Texto",
+    "text2": "Leitura de imagens em narrativas visuais",
+    "score": 0.95
+  },
+  {
+    "text1": "Interpretação",
+    "text2": "Compreensão em leitura",
+    "score": 0.95
+  },
+  {
+    "text1": "Texto",
+    "text2": "Estratégia de leitura",
+    "score": 0.95
+  },
+  {
+    "text1": "Fontes:",
+    "text2": "Recursos linguísticos e semióticos que operam nos textos pertencentes aos gêneros literários",
+    "score": 0.1
+  },
+  {
+    "text1": "De acordo com a representação cartográfica",
+    "text2": "mapa",
+    "score": 0.95
+  },
+  {
+    "text1": "Identificar as partes do corpo humano",
+    "text2": "conhecimento",
+    "score": 0.95
+  },
+  {
+    "text1": "Interpretação",
+    "text2": "Compreensão em leitura",
+    "score": 0.95
+  },
+  {
+    "text1": "Matemática",
+    "text2": "Processos de criação",
+    "score": 0.47474681574409566
+  },
+  {
+    "text1": "Texto",
+    "text2": "Decodificação/Fluência de leitura",
+    "score": 0.95
+  },
+  {
+    "text1": "Coleta,",
+    "text2": "Plantas baixas e vistas aéreas",
+    "score": 0.2707353313900552
+  },
+  {
+    "text1": "Leia a notícia abaixo",
+    "text2": "documento_historico",
+    "score": 0.1
+  },
+  {
+    "text1": "Entendimento",
+    "text2": "Compreensão em leitura",
+    "score": 0.95
+  },
+  {
+    "text1": "Produza um texto explicando",
+    "text2": "dissertativa_longa",
+    "score": 0.95
+  },
+  {
+    "text1": "Necessidade",
+    "text2": "Produção de textos escritos, em formatos diversos, com mediação do professor",
+    "score": 0.1
+  },
+  {
+    "text1": "Ler",
+    "text2": "Estratégia de leitura Distinção de fato e opinião",
+    "score": 0.95
+  },
+  {
+    "text1": "Demográfico",
+    "text2": "Diversidade e dinâmica da população mundial e local",
+    "score": 0.95
+  },
+  {
+    "text1": "Verbo",
+    "text2": "Partilha de leitura, com mediação do professor",
+    "score": 0.3616202442135846
+  },
+  {
+    "text1": "Ação",
+    "text2": "A emergência do capitalismo",
+    "score": 0.36856543628577954
+  },
+  {
+    "text1": "Interprete o gráfico de colunas",
+    "text2": "grafico_barras",
+    "score": 0.95
+  },
+  {
+    "text1": "Modelagem",
+    "text2": "Jogos eletrônicos",
+    "score": 0.1
+  },
+  {
+    "text1": "Com base na matéria do jornal",
+    "text2": "artigo_jornal",
+    "score": 0.95
+  },
+  {
+    "text1": "Turma com conhecimento aprofundado",
+    "text2": "conhecimento_avancado",
+    "score": 0.95
+  },
+  {
+    "text1": "Geografia",
+    "text2": "Segurança e responsabilidade no uso da tecnologia - Cyberbullying",
+    "score": 0.45680533543685775
+  },
+  {
+    "text1": "Geografia",
+    "text2": "História",
+    "score": 0.0
+  },
+  {
+    "text1": "Observe o artigo jornalístico",
+    "text2": "artigo_jornal",
+    "score": 0.95
+  },
+  {
+    "text1": "Ler",
+    "text2": "Leitura de imagens em narrativas visuais",
+    "score": 0.95
+  },
+  {
+    "text1": "Observe o mapa abaixo",
+    "text2": "mapa",
+    "score": 0.95
+  },
+  {
+    "text1": "Demografia",
+    "text2": "Distribuição da população mundial e deslocamentos populacionais",
+    "score": 0.95
+  },
+  {
+    "text1": "Estudantes que leem bem",
+    "text2": "bom_dominio",
+    "score": 0.95
+  },
+  {
+    "text1": "Texto",
+    "text2": "Estratégias de leitura Apreciação e réplica",
+    "score": 0.95
+  },
+  {
+    "text1": "Segundo o conto apresentado",
     "text2": "texto_literario",
     "score": 0.95
   },
@@ -1845,88 +1105,73 @@
     "score": 0.95
   },
   {
+    "text1": "Observe o gráfico de linhas",
+    "text2": "charge",
+    "score": 0.1
+  },
+  {
+    "text1": "Texto",
+    "text2": "Leitura de imagens em narrativas visuais",
+    "score": 0.95
+  },
+  {
+    "text1": "Aparelho",
+    "text2": "Construção do sistema alfabético",
+    "score": 0.95
+  },
+  {
+    "text1": "Analise a fonte primária",
+    "text2": "documento_historico",
+    "score": 0.95
+  },
+  {
+    "text1": "Planejar uma apresentação",
+    "text2": "sintese",
+    "score": 0.95
+  },
+  {
+    "text1": "Responda brevemente",
+    "text2": "dissertativa_curta",
+    "score": 0.95
+  },
+  {
+    "text1": "Crescimento Urbano",
+    "text2": "Território, redes e urbanização",
+    "score": 0.95
+  },
+  {
+    "text1": "Sistemas De Criptografia",
+    "text2": "Codificação da informação",
+    "score": 0.95
+  },
+  {
+    "text1": "Discurso",
+    "text2": "Produção de textos escritos, em formatos diversos, com a mediação do professor",
+    "score": 0.1
+  },
+  {
+    "text1": "Processo",
+    "text2": "Tradições religiosas, mídias e tecnologias",
+    "score": 0.1
+  },
+  {
+    "text1": "Aparelho",
+    "text2": "Sistema Operacional",
+    "score": 0.95
+  },
+  {
+    "text1": "Estudantes iniciantes no assunto",
+    "text2": "bom_dominio",
+    "score": 0.1
+  },
+  {
     "text1": "Interpretação",
     "text2": "Compreensão em leitura",
     "score": 0.95
   },
   {
-    "text1": "Tutela",
-    "text2": "Brasil: Primeiro Reinado O Período Regencial e as contestações ao poder central O Brasil do Segundo Reinado: política e economia • A Lei de Terras e seus desdobramentos na política do Segundo Reinado • Territórios e fronteiras: a Guerra do Paraguai",
-    "score": 0.33535151114744133
-  },
-  {
-    "text1": "Observe o mapa abaixo",
-    "text2": "documento_historico",
-    "score": 0.1
-  },
-  {
-    "text1": "Anarquismo",
-    "text2": "Aspectos não linguísticos (paralinguísticos) no ato da fala",
-    "score": 0.1
-  },
-  {
-    "text1": "Explique em poucas palavras",
-    "text2": "verdadeiro_falso",
-    "score": 0.1
-  },
-  {
-    "text1": "Sistema",
-    "text2": "Segurança e responsabilidade no uso da tecnologia computacional",
-    "score": 0.34535626354220583
-  },
-  {
     "text1": "Estrutura Morfológica",
     "text2": "Morfologia",
-    "score": 0.95
-  },
-  {
-    "text1": "Observe a imagem abaixo",
-    "text2": "imagem",
-    "score": 0.95
-  },
-  {
-    "text1": "Observe o mapa abaixo",
-    "text2": "mapa",
-    "score": 0.95
-  },
-  {
-    "text1": "Demonstrar experimentos científicos",
-    "text2": "aplicacao",
-    "score": 0.95
-  },
-  {
-    "text1": "Texto",
-    "text2": "Compreensão em leitura",
-    "score": 0.95
-  },
-  {
-    "text1": "Sistemas",
-    "text2": "Sistema de orientação",
-    "score": 0.95
-  },
-  {
-    "text1": "Ler",
-    "text2": "Estratégia de leitura Distinção de fato e opinião",
-    "score": 0.95
-  },
-  {
-    "text1": "Texto",
-    "text2": "Estratégias e procedimentos de leitura Relação do verbal com outras semioses Procedimentos e gêneros de apoio à compreensão",
-    "score": 0.95
-  },
-  {
-    "text1": "Ler",
-    "text2": "Estratégias e procedimentos de leitura Relação do verbal com outras semioses Procedimentos e gêneros de apoio à compreensão",
-    "score": 0.95
-  },
-  {
-    "text1": "Examinar dados de um gráfico",
-    "text2": "analise",
-    "score": 0.95
-  },
-  {
-    "text1": "Entendimento",
-    "text2": "Compreensão em leitura",
     "score": 0.95
   },
   {
@@ -1935,64 +1180,9 @@
     "score": 0.95
   },
   {
-    "text1": "Analise a reportagem",
-    "text2": "texto_literario",
-    "score": 0.1
-  },
-  {
-    "text1": "Emancipação",
-    "text2": "Independência dos Estados Unidos da América  Independências na América espanhola • A revolução dos escravizados em São Domingo e seus múltiplos significados e desdobramentos: o caso do Haiti Os caminhos até a independência do Brasil",
+    "text1": "Escreva uma redação sobre",
+    "text2": "dissertativa_longa",
     "score": 0.95
-  },
-  {
-    "text1": "Ciências",
-    "text2": "Ensino Religioso",
-    "score": 0.0
-  },
-  {
-    "text1": "Produção",
-    "text2": "Uma nova ordem econômica: as demandas do capitalismo industrial e o lugar das economias africanas e asiáticas nas dinâmicas globais",
-    "score": 0.1
-  },
-  {
-    "text1": "Comparar diferentes sistemas políticos",
-    "text2": "analise",
-    "score": 0.95
-  },
-  {
-    "text1": "Ler",
-    "text2": "Compreensão em leitura",
-    "score": 0.95
-  },
-  {
-    "text1": "Planejamento",
-    "text2": "Identidades e interculturalidades regionais: Estados Unidos da América, América espanhola e portuguesa e África",
-    "score": 0.1
-  },
-  {
-    "text1": "Sistemas De Criptografia",
-    "text2": "Codificação da informação",
-    "score": 0.95
-  },
-  {
-    "text1": "Ler",
-    "text2": "Decodificação/Fluência de leitura",
-    "score": 0.95
-  },
-  {
-    "text1": "Ler",
-    "text2": "Compreensão em leitura",
-    "score": 0.95
-  },
-  {
-    "text1": "Diferenciar células vegetais e animais",
-    "text2": "analise",
-    "score": 0.95
-  },
-  {
-    "text1": "Vida",
-    "text2": "O eu, a família e o ambiente de convivência",
-    "score": 0.3495011565018856
   },
   {
     "text1": "Analisar as causas da guerra",
@@ -2000,19 +1190,99 @@
     "score": 0.95
   },
   {
-    "text1": "Carta Magna",
-    "text2": "O processo de redemocratização A Constituição de 1988 e a emancipação das cidadanias (analfabetos, indígenas, negros, jovens etc.) A história recente do Brasil: transformações políticas, econômicas, sociais e culturais de 1989 aos dias atuais Os protagonismos da sociedade civil e as alterações da sociedade brasileira A questão da violência contra populações marginalizadas O Brasil e suas relações internacionais na era da globalização",
-    "score": 0.95
+    "text1": "Língua Portuguesa",
+    "text2": "Matemática",
+    "score": 0.0
   },
   {
-    "text1": "Observe o infográfico abaixo",
-    "text2": "infografico",
-    "score": 0.95
+    "text1": "Estudantes que têm dificuldade para relacionar ideias",
+    "text2": "bom_dominio",
+    "score": 0.1
+  },
+  {
+    "text1": "Alunos com dificuldade em conectar conceitos",
+    "text2": "bom_dominio",
+    "score": 0.1
+  },
+  {
+    "text1": "Leia o fragmento literário",
+    "text2": "mapa",
+    "score": 0.1
+  },
+  {
+    "text1": "História",
+    "text2": "Ginástica de condicionamento físico",
+    "score": 0.4085029592288895
+  },
+  {
+    "text1": "Ciências",
+    "text2": "Arte",
+    "score": 0.0
   },
   {
     "text1": "Interpretação",
-    "text2": "Compreensão de textos orais",
+    "text2": "Reconstrução da textualidade e compreensão dos efeitos de sentidos provocados pelos usos de recursos linguísticos e multissemióticos",
     "score": 0.95
+  },
+  {
+    "text1": "Computação",
+    "text2": "Arte",
+    "score": 0.0
+  },
+  {
+    "text1": "Computação",
+    "text2": "Geografia",
+    "score": 0.0
+  },
+  {
+    "text1": "Espaço Geográfico",
+    "text2": "Território e diversidade cultural",
+    "score": 0.95
+  },
+  {
+    "text1": "Revisão",
+    "text2": "Passado simples e contínuo (formas afirmativa, negativa e interrogativa)",
+    "score": 0.3664551908604889
+  },
+  {
+    "text1": "Ler",
+    "text2": "Estratégias, procedimentos de leitura em textos reivindicatórios ou propositivos",
+    "score": 0.95
+  },
+  {
+    "text1": "Defender um ponto de vista",
+    "text2": "avaliacao",
+    "score": 0.95
+  },
+  {
+    "text1": "De acordo com a obra literária",
+    "text2": "texto_literario",
+    "score": 0.95
+  },
+  {
+    "text1": "Português",
+    "text2": "Lutas do mundo",
+    "score": 0.48670131175184267
+  },
+  {
+    "text1": "Criptografia",
+    "text2": "Codificação da informação",
+    "score": 0.95
+  },
+  {
+    "text1": "Ler",
+    "text2": "Leitura de imagens em narrativas visuais",
+    "score": 0.95
+  },
+  {
+    "text1": "Com base na figura",
+    "text2": "imagem",
+    "score": 0.95
+  },
+  {
+    "text1": "Textualização",
+    "text2": "Recursos linguísticos e semióticos que operam nos textos pertencentes aos gêneros literários",
+    "score": 0.3310137292343487
   },
   {
     "text1": "Entendimento",
@@ -2020,8 +1290,338 @@
     "score": 0.95
   },
   {
-    "text1": "Com base na matéria do jornal",
-    "text2": "artigo_jornal",
+    "text1": "Segurança",
+    "text2": "Programação -Tipos de dados",
+    "score": 0.2728945630756582
+  },
+  {
+    "text1": "Texto",
+    "text2": "Protocolos de leitura",
+    "score": 0.95
+  },
+  {
+    "text1": "Ciências",
+    "text2": "Geografia",
+    "score": 0.0
+  },
+  {
+    "text1": "Texto",
+    "text2": "Estratégia de leitura",
+    "score": 0.95
+  },
+  {
+    "text1": "Sistemas",
+    "text2": "Construção do sistema alfabético/ Convenções da escrita",
+    "score": 0.95
+  },
+  {
+    "text1": "Geografia",
+    "text2": "Sistemas da linguagem",
+    "score": 0.3062930522061027
+  },
+  {
+    "text1": "Aparelho",
+    "text2": "Construção do sistema alfabético/ Convenções da escrita",
+    "score": 0.95
+  },
+  {
+    "text1": "Matemática",
+    "text2": "Língua Inglesa",
+    "score": 0.0
+  },
+  {
+    "text1": "Sequência",
+    "text2": "Forma de composição do texto",
+    "score": 0.1
+  },
+  {
+    "text1": "Turma com boa compreensão textual",
+    "text2": "bom_dominio",
+    "score": 0.95
+  },
+  {
+    "text1": "Explique em poucas palavras",
+    "text2": "dissertativa_curta",
+    "score": 0.95
+  },
+  {
+    "text1": "Responda brevemente",
+    "text2": "verdadeiro_falso",
+    "score": 0.1
+  },
+  {
+    "text1": "Demografia",
+    "text2": "Diversidade e dinâmica da população mundial e local",
+    "score": 0.95
+  },
+  {
+    "text1": "Matemática",
+    "text2": "Arte",
+    "score": 0.0
+  },
+  {
+    "text1": "Ler",
+    "text2": "Estratégias e procedimentos de leitura Relação do verbal com outras semioses Procedimentos e gêneros de apoio à compreensão",
+    "score": 0.95
+  },
+  {
+    "text1": "Defina o conceito",
+    "text2": "dissertativa_curta",
+    "score": 0.95
+  },
+  {
+    "text1": "Ligue os itens correspondentes",
+    "text2": "associacao",
+    "score": 0.95
+  },
+  {
+    "text1": "Julgue os itens como certo ou errado",
+    "text2": "verdadeiro_falso",
+    "score": 0.95
+  },
+  {
+    "text1": "Ler",
+    "text2": "Estratégias e procedimentos de leitura em textos reivindicatórios ou propositivos",
+    "score": 0.95
+  },
+  {
+    "text1": "Ler",
+    "text2": "Adesão às práticas de leitura",
+    "score": 0.95
+  },
+  {
+    "text1": "Determine a veracidade das afirmações",
+    "text2": "verdadeiro_falso",
+    "score": 0.95
+  },
+  {
+    "text1": "Avaliar a qualidade de um argumento",
+    "text2": "compreensao",
+    "score": 0.1
+  },
+  {
+    "text1": "Interpretação",
+    "text2": "Compreensão de textos orais",
+    "score": 0.95
+  },
+  {
+    "text1": "Conecte os termos às suas descrições",
+    "text2": "associacao",
+    "score": 0.95
+  },
+  {
+    "text1": "Português",
+    "text2": "Espaços e territórios religiosos",
+    "score": 0.4502388950382566
+  },
+  {
+    "text1": "Com base no registro histórico",
+    "text2": "documento_historico",
+    "score": 0.95
+  },
+  {
+    "text1": "Português",
+    "text2": "O fim da Guerra Fria e o processo de globalização Políticas econômicas na América Latina",
+    "score": 0.4347272378855339
+  },
+  {
+    "text1": "Interprete a representação visual",
+    "text2": "imagem",
+    "score": 0.95
+  },
+  {
+    "text1": "Relacionar eventos históricos",
+    "text2": "analise",
+    "score": 0.95
+  },
+  {
+    "text1": "Aparelho",
+    "text2": "Sistema de orientação",
+    "score": 0.95
+  },
+  {
+    "text1": "Turma em nível fundamental",
+    "text2": "conhecimento_basico",
+    "score": 0.95
+  },
+  {
+    "text1": "Ginástica",
+    "text2": "Práticas corporais de aventura na natureza",
+    "score": 0.3857902668067605
+  },
+  {
+    "text1": "Senhores",
+    "text2": "Processos de criação",
+    "score": 0.1
+  },
+  {
+    "text1": "Interpretação",
+    "text2": "Compreensão de textos orais",
+    "score": 0.95
+  },
+  {
+    "text1": "Estudantes especializados",
+    "text2": "conhecimento_avancado",
+    "score": 0.95
+  },
+  {
+    "text1": "Ler",
+    "text2": "Estratégias e procedimentos de leitura Relação do verbal com outras semioses Procedimentos e gêneros de apoio à compreensão",
+    "score": 0.95
+  },
+  {
+    "text1": "Matrizes",
+    "text2": "Processos de criação",
+    "score": 0.35350463888936
+  },
+  {
+    "text1": "Texto",
+    "text2": "Compreensão em leitura",
+    "score": 0.95
+  },
+  {
+    "text1": "Analise o cartum apresentado",
+    "text2": "mapa",
+    "score": 0.1
+  },
+  {
+    "text1": "Polígonos",
+    "text2": "Coleta, classificação e representação de dados referentes a variáveis categóricas, por meio de tabelas e gráficos",
+    "score": 0.3693711346401717
+  },
+  {
+    "text1": "História",
+    "text2": "Matemática",
+    "score": 0.0
+  },
+  {
+    "text1": "Marque V para verdadeiro e F para falso",
+    "text2": "verdadeiro_falso",
+    "score": 0.95
+  },
+  {
+    "text1": "Lógicas",
+    "text2": "Atividades humanas e dinâmica climática",
+    "score": 0.1
+  },
+  {
+    "text1": "Republicano",
+    "text2": "Primeira República e suas características Contestações e dinâmicas da vida cultural no Brasil entre 1900 e 1930",
+    "score": 0.95
+  },
+  {
+    "text1": "Ensino Religioso",
+    "text2": "Língua Inglesa",
+    "score": 0.0
+  },
+  {
+    "text1": "Textualização",
+    "text2": "Edição de textos",
+    "score": 0.288601704644181
+  },
+  {
+    "text1": "Alunos com conhecimento básico",
+    "text2": "dificuldade_conexao",
+    "score": 0.1
+  },
+  {
+    "text1": "Interpretação",
+    "text2": "Compreensão em leitura",
+    "score": 0.95
+  },
+  {
+    "text1": "Sistemas",
+    "text2": "Construção do sistema alfabético/ Estabelecimento de relações anafóricas na referenciação e construção da coesão",
+    "score": 0.95
+  },
+  {
+    "text1": "Nova",
+    "text2": "O colonialismo na África As guerras mundiais, a crise do colonialismo e o advento dos nacionalismos africanos e asiáticos",
+    "score": 0.3183363148173082
+  },
+  {
+    "text1": "Geografia",
+    "text2": "Máquinas simples Formas de propagação do calor Equilíbrio termodinâmico e vida na Terra História dos combustíveis e das máquinas térmicas",
+    "score": 0.45319552694905624
+  },
+  {
+    "text1": "Interpretação",
+    "text2": "Compreensão em leitura",
+    "score": 0.95
+  },
+  {
+    "text1": "Observe o gráfico de barras",
+    "text2": "grafico_barras",
+    "score": 0.95
+  },
+  {
+    "text1": "Ensino Religioso",
+    "text2": "Geografia",
+    "score": 0.0
+  },
+  {
+    "text1": "Aplicar regras gramaticais em frases",
+    "text2": "aplicacao",
+    "score": 0.95
+  },
+  {
+    "text1": "Demonstrar experimentos científicos",
+    "text2": "aplicacao",
+    "score": 0.95
+  },
+  {
+    "text1": "Descrever o ciclo da água",
+    "text2": "compreensao",
+    "score": 0.95
+  },
+  {
+    "text1": "Recordar eventos da Segunda Guerra",
+    "text2": "conhecimento",
+    "score": 0.95
+  },
+  {
+    "text1": "Ler",
+    "text2": "Estratégias de leitura Apreciação e réplica",
+    "score": 0.95
+  },
+  {
+    "text1": "Entendimento",
+    "text2": "Compreensão de textos orais",
+    "score": 0.95
+  },
+  {
+    "text1": "Examinar dados de um gráfico",
+    "text2": "analise",
+    "score": 0.95
+  },
+  {
+    "text1": "Ler",
+    "text2": "Compreensão em leitura",
+    "score": 0.95
+  },
+  {
+    "text1": "Texto",
+    "text2": "Estratégias e procedimentos de leitura Relação do verbal com outras semioses Procedimentos e gêneros de apoio à compreensão",
+    "score": 0.95
+  },
+  {
+    "text1": "Interpretação",
+    "text2": "Compreensão",
+    "score": 0.95
+  },
+  {
+    "text1": "Aparelho",
+    "text2": "Construção do sistema alfabético e da ortografia",
+    "score": 0.95
+  },
+  {
+    "text1": "Entendimento",
+    "text2": "Compreensão em leitura",
+    "score": 0.95
+  },
+  {
+    "text1": "Sistemas",
+    "text2": "Construção do sistema alfabético e da ortografia",
     "score": 0.95
   },
   {
@@ -2031,178 +1631,38 @@
   },
   {
     "text1": "Sistemas",
-    "text2": "Construção do sistema alfabético e da ortografia",
-    "score": 0.95
-  },
-  {
-    "text1": "Observe o gráfico de linhas",
-    "text2": "charge",
-    "score": 0.1
-  },
-  {
-    "text1": "Republicana",
-    "text2": "Primeira República e suas características Contestações e dinâmicas da vida cultural no Brasil entre 1900 e 1930",
-    "score": 0.95
-  },
-  {
-    "text1": "Julgar a validade de uma teoria",
-    "text2": "avaliacao",
-    "score": 0.95
-  },
-  {
-    "text1": "Geografia",
-    "text2": "Segmentação de palavras/Classificação de palavras por número de sílabas",
-    "score": 0.3374156855974197
-  },
-  {
-    "text1": "Aparelho",
     "text2": "Sistema Operacional",
     "score": 0.95
   },
   {
-    "text1": "Interpretação",
-    "text2": "Compreensão em leitura",
-    "score": 0.95
-  },
-  {
-    "text1": "Computação",
-    "text2": "Arte",
-    "score": 0.0
-  },
-  {
-    "text1": "Argumente a favor ou contra",
-    "text2": "dissertativa_longa",
-    "score": 0.95
-  },
-  {
-    "text1": "Elaborar um plano de ação",
-    "text2": "sintese",
-    "score": 0.95
-  },
-  {
-    "text1": "Justificar uma decisão política",
-    "text2": "avaliacao",
-    "score": 0.95
-  },
-  {
-    "text1": "Interpretação",
-    "text2": "Compreensão em leitura",
-    "score": 0.95
-  },
-  {
-    "text1": "Texto",
-    "text2": "Compreensão em leitura",
-    "score": 0.95
-  },
-  {
-    "text1": "Texto",
-    "text2": "Decodificação/Fluência de leitura",
-    "score": 0.95
-  },
-  {
-    "text1": "Sistemas De Criptografia",
-    "text2": "Codificação da informação",
-    "score": 0.95
-  },
-  {
-    "text1": "Observe a imagem abaixo",
-    "text2": "infografico",
-    "score": 0.1
-  },
-  {
-    "text1": "Texto",
-    "text2": "Estratégias de leitura Apreciação e réplica",
-    "score": 0.95
-  },
-  {
-    "text1": "Interpretação",
-    "text2": "Compreensão em leitura",
-    "score": 0.95
-  },
-  {
-    "text1": "Ginástica",
-    "text2": "O “Eu”, o “Outro” e os diferentes grupos sociais e étnicos que compõem a cidade e os municípios: os desafios sociais, culturais e ambientais do lugar onde vive",
-    "score": 0.1
-  },
-  {
-    "text1": "Língua Portuguesa",
-    "text2": "Educação Física",
-    "score": 0.0
-  },
-  {
-    "text1": "Com base na planilha",
-    "text2": "tabela",
+    "text1": "Formação Palavras",
+    "text2": "Morfologia",
     "score": 0.95
   },
   {
     "text1": "Entendimento",
-    "text2": "Compreensão de textos orais",
-    "score": 0.95
-  },
-  {
-    "text1": "Texto",
-    "text2": "Leitura colaborativa e autônoma",
-    "score": 0.95
-  },
-  {
-    "text1": "Aparelho",
-    "text2": "Construção do sistema alfabético e da ortografia",
-    "score": 0.95
-  },
-  {
-    "text1": "Analise a evolução temporal",
-    "text2": "grafico_linhas",
-    "score": 0.95
-  },
-  {
-    "text1": "De acordo com a representação cartográfica",
-    "text2": "mapa",
-    "score": 0.95
-  },
-  {
-    "text1": "Mapas",
-    "text2": "Território, redes e urbanização",
-    "score": 0.24333085572507165
-  },
-  {
-    "text1": "Interpretação",
     "text2": "Compreensão em leitura",
     "score": 0.95
   },
   {
+    "text1": "Ler",
+    "text2": "Decodificação/Fluência de leitura",
+    "score": 0.95
+  },
+  {
+    "text1": "Alunos no nível básico",
+    "text2": "conhecimento_basico",
+    "score": 0.95
+  },
+  {
     "text1": "Texto",
-    "text2": "Compreensão em leitura",
+    "text2": "Leitura de imagens em narrativas visuais",
     "score": 0.95
   },
   {
-    "text1": "Observe o trecho do documento oficial",
-    "text2": "documento_historico",
-    "score": 0.95
-  },
-  {
-    "text1": "Com base no mapa geográfico",
-    "text2": "mapa",
-    "score": 0.95
-  },
-  {
-    "text1": "Ritos",
-    "text2": "Sistemas da linguagem",
-    "score": 0.1
-  },
-  {
-    "text1": "Geografia",
-    "text2": "Educação Física",
-    "score": 0.0
-  },
-  {
-    "text1": "Segundo os dados do gráfico de barras",
-    "text2": "grafico_barras",
-    "score": 0.95
-  },
-  {
-    "text1": "Ciências",
-    "text2": "Hipóteses sobre a finalidade de um texto",
-    "score": 0.3741979818166492
+    "text1": "História",
+    "text2": "Armazenamento e Transmissão de dados - Protocolos de comunicação em redes",
+    "score": 0.36718171821759765
   },
   {
     "text1": "Aparelho",
@@ -2210,78 +1670,28 @@
     "score": 0.95
   },
   {
-    "text1": "Demografia",
-    "text2": "Diversidade e dinâmica da população mundial e local",
-    "score": 0.95
+    "text1": "Ocidente",
+    "text2": "Rebeliões na América portuguesa: as conjurações mineira e baiana",
+    "score": 0.3173919084067663
   },
   {
-    "text1": "Português",
-    "text2": "Lógica computacional",
-    "score": 0.3164244803061282
+    "text1": "Aparelho",
+    "text2": "Construção do sistema alfabético/ Convenções da escrita",
+    "score": 0.95
   },
   {
     "text1": "Ler",
-    "text2": "Estratégias e procedimentos de leitura Relação do verbal com outras semioses Procedimentos e gêneros de apoio à compreensão",
+    "text2": "Decodificação/Fluência de leitura",
     "score": 0.95
   },
   {
-    "text1": "Observe o artigo jornalístico",
-    "text2": "artigo_jornal",
-    "score": 0.95
+    "text1": "Leitura",
+    "text2": "Cálculo de porcentagens e representação fracionária",
+    "score": 0.3552082670422476
   },
   {
-    "text1": "Estratégias",
-    "text2": "Elementos da linguagem",
-    "score": 0.1
-  },
-  {
-    "text1": "Ler",
-    "text2": "Leitura colaborativa e autônoma",
-    "score": 0.95
-  },
-  {
-    "text1": "Classifique as sentenças em V ou F",
-    "text2": "verdadeiro_falso",
-    "score": 0.95
-  },
-  {
-    "text1": "Indique se as afirmações são verdadeiras ou falsas",
-    "text2": "associacao",
-    "score": 0.1
-  },
-  {
-    "text1": "Abertura Política",
-    "text2": "O processo de redemocratização A Constituição de 1988 e a emancipação das cidadanias (analfabetos, indígenas, negros, jovens etc.) A história recente do Brasil: transformações políticas, econômicas, sociais e culturais de 1989 aos dias atuais Os protagonismos da sociedade civil e as alterações da sociedade brasileira A questão da violência contra populações marginalizadas O Brasil e suas relações internacionais na era da globalização",
-    "score": 0.95
-  },
-  {
-    "text1": "Analise a reportagem",
-    "text2": "artigo_jornal",
-    "score": 0.95
-  },
-  {
-    "text1": "Texto",
-    "text2": "Compreensão em leitura",
-    "score": 0.95
-  },
-  {
-    "text1": "História",
-    "text2": "A cidade e suas atividades: trabalho, cultura e lazer",
-    "score": 0.38486043856874586
-  },
-  {
-    "text1": "Ensinamentos",
-    "text2": "Relação do texto com o contexto de produção e experimentação de papéis sociais",
-    "score": 0.1
-  },
-  {
-    "text1": "História",
-    "text2": "Misturas Transformações reversíveis e não reversíveis",
-    "score": 0.3030181998411613
-  },
-  {
-    "text1": "Com base no gráfico informativo",
-    "text2": "infografico",
+    "text1": "Era Vargas",
+    "text2": "O período varguista e suas contradições A emergência da vida urbana e a segregação espacial O trabalhismo e seu protagonismo político",
     "score": 0.95
   },
   {
@@ -2291,17 +1701,567 @@
   },
   {
     "text1": "Texto",
-    "text2": "Leitura de imagens em narrativas visuais",
+    "text2": "Leitura colaborativa e autônoma",
     "score": 0.95
   },
   {
-    "text1": "Ciências",
-    "text2": "Humanismos: uma nova visão de ser humano e de mundo Renascimentos artísticos e culturais",
-    "score": 0.41286966148777693
+    "text1": "Contextos",
+    "text2": "Princípios e valores éticos",
+    "score": 0.1
+  },
+  {
+    "text1": "Texto",
+    "text2": "Compreensão em leitura",
+    "score": 0.95
+  },
+  {
+    "text1": "Sistemas",
+    "text2": "Construção do sistema alfabético/ Estabelecimento de relações anafóricas na referenciação e construção da coesão",
+    "score": 0.95
+  },
+  {
+    "text1": "Leia o poema abaixo",
+    "text2": "poema",
+    "score": 0.95
+  },
+  {
+    "text1": "Estrutura Morfológica",
+    "text2": "Morfologia",
+    "score": 0.95
+  },
+  {
+    "text1": "Ler",
+    "text2": "Compreensão em leitura",
+    "score": 0.95
+  },
+  {
+    "text1": "Sistemas",
+    "text2": "Construção do sistema alfabético",
+    "score": 0.95
+  },
+  {
+    "text1": "Sistemas",
+    "text2": "Construção do sistema alfabético/ Convenções da escrita",
+    "score": 0.95
+  },
+  {
+    "text1": "Princípios",
+    "text2": "Mitos nas tradições religiosas",
+    "score": 0.3991428778669419
+  },
+  {
+    "text1": "Discurso",
+    "text2": "Construção de repertório artístico-cultural",
+    "score": 0.1
+  },
+  {
+    "text1": "Texto",
+    "text2": "Estratégias de leitura Apreciação e réplica",
+    "score": 0.95
+  },
+  {
+    "text1": "Texto",
+    "text2": "Compreensão em leitura",
+    "score": 0.95
+  },
+  {
+    "text1": "Investigar relações entre variáveis",
+    "text2": "analise",
+    "score": 0.95
+  },
+  {
+    "text1": "Analise a evolução temporal",
+    "text2": "infografico",
+    "score": 0.1
+  },
+  {
+    "text1": "Português",
+    "text2": "Os diferentes contextos e os meios técnico e tecnológico na produção",
+    "score": 0.37234886972846815
+  },
+  {
+    "text1": "Célula",
+    "text2": "Hereditariedade Ideias evolucionistas Preservação da biodiversidade",
+    "score": 0.21664783109757102
+  },
+  {
+    "text1": "Aparelho",
+    "text2": "Construção do sistema alfabético/ Estabelecimento de relações anafóricas na referenciação e construção da coesão",
+    "score": 0.95
+  },
+  {
+    "text1": "Avaliar a qualidade de um argumento",
+    "text2": "avaliacao",
+    "score": 0.95
+  },
+  {
+    "text1": "Ligue os itens correspondentes",
+    "text2": "multipla_escolha",
+    "score": 0.1
+  },
+  {
+    "text1": "Cidade,",
+    "text2": "O passado e o presente: a noção de permanência e as lentas transformações sociais e culturais",
+    "score": 0.25393960783401576
+  },
+  {
+    "text1": "Estrutura Sintática",
+    "text2": "Sintaxe",
+    "score": 0.95
+  },
+  {
+    "text1": "Elaborar um plano de ação",
+    "text2": "sintese",
+    "score": 0.95
+  },
+  {
+    "text1": "Marque a alternativa correta",
+    "text2": "verdadeiro_falso",
+    "score": 0.1
+  },
+  {
+    "text1": "Indique se as afirmações são verdadeiras ou falsas",
+    "text2": "dissertativa_curta",
+    "score": 0.1
   },
   {
     "text1": "Qual das opções abaixo está correta?",
     "text2": "multipla_escolha",
+    "score": 0.95
+  },
+  {
+    "text1": "Português",
+    "text2": "Conceituação de Algoritmos",
+    "score": 0.4749695893160537
+  },
+  {
+    "text1": "Discorra sobre o tema",
+    "text2": "dissertativa_longa",
+    "score": 0.95
+  },
+  {
+    "text1": "Construir uma maquete",
+    "text2": "sintese",
+    "score": 0.95
+  },
+  {
+    "text1": "Comparar diferentes sistemas políticos",
+    "text2": "analise",
+    "score": 0.95
+  },
+  {
+    "text1": "Analise a carta geográfica",
+    "text2": "texto_literario",
+    "score": 0.1
+  },
+  {
+    "text1": "Entendimento",
+    "text2": "Compreensão",
+    "score": 0.95
+  },
+  {
+    "text1": "Desenvolver uma redação argumentativa",
+    "text2": "sintese",
+    "score": 0.95
+  },
+  {
+    "text1": "Escolha entre as alternativas a), b), c)",
+    "text2": "multipla_escolha",
+    "score": 0.95
+  },
+  {
+    "text1": "Marque V para verdadeiro e F para falso",
+    "text2": "dissertativa_longa",
+    "score": 0.1
+  },
+  {
+    "text1": "Aparelho",
+    "text2": "Construção do sistema alfabético e da ortografia",
+    "score": 0.95
+  },
+  {
+    "text1": "Movimento Revolucionário",
+    "text2": "Os anos 1960: revolução cultural? A ditadura civil-militar e os processos de resistência As questões indígena e negra e a ditadura",
+    "score": 0.95
+  },
+  {
+    "text1": "Português",
+    "text2": "Leitura, interpretação e representação de dados de pesquisa expressos em tabelas de dupla entrada, gráficos de colunas simples e agrupadas, gráficos de barras e de setores e gráficos pictóricos",
+    "score": 0.315914599288917
+  },
+  {
+    "text1": "Elementos",
+    "text2": "Uso de tecnologias computacionais",
+    "score": 0.1
+  },
+  {
+    "text1": "Computação",
+    "text2": "Língua Portuguesa",
+    "score": 0.0
+  },
+  {
+    "text1": "Cite dois exemplos",
+    "text2": "dissertativa_curta",
+    "score": 0.95
+  },
+  {
+    "text1": "Segundo a estrofe",
+    "text2": "poema",
+    "score": 0.95
+  },
+  {
+    "text1": "Texto",
+    "text2": "Decodificação/Fluência de leitura",
+    "score": 0.95
+  },
+  {
+    "text1": "Constelações",
+    "text2": "Relação campo e cidade",
+    "score": 0.1
+  },
+  {
+    "text1": "Geografia",
+    "text2": "Edição de textos",
+    "score": 0.3298948023383168
+  },
+  {
+    "text1": "Ler",
+    "text2": "Compreensão em leitura",
+    "score": 0.95
+  },
+  {
+    "text1": "Ler",
+    "text2": "Compreensão em leitura",
+    "score": 0.95
+  },
+  {
+    "text1": "Resolver equações do segundo grau",
+    "text2": "aplicacao",
+    "score": 0.95
+  },
+  {
+    "text1": "Interpretação",
+    "text2": "Compreensão em leitura",
+    "score": 0.95
+  },
+  {
+    "text1": "Geografia",
+    "text2": "Ancestralidade e tradição oral",
+    "score": 0.46841241358810826
+  },
+  {
+    "text1": "Ler",
+    "text2": "Protocolos de leitura",
+    "score": 0.95
+  },
+  {
+    "text1": "Movimento Revolucionário",
+    "text2": "Revolução Industrial e seus impactos na produção e circulação de povos, produtos e culturas",
+    "score": 0.95
+  },
+  {
+    "text1": "Carta Magna",
+    "text2": "O processo de redemocratização A Constituição de 1988 e a emancipação das cidadanias (analfabetos, indígenas, negros, jovens etc.) A história recente do Brasil: transformações políticas, econômicas, sociais e culturais de 1989 aos dias atuais Os protagonismos da sociedade civil e as alterações da sociedade brasileira A questão da violência contra populações marginalizadas O Brasil e suas relações internacionais na era da globalização",
+    "score": 0.95
+  },
+  {
+    "text1": "Texto",
+    "text2": "Estratégias e procedimentos de leitura em textos reivindicatórios ou propositivos",
+    "score": 0.95
+  },
+  {
+    "text1": "Sistemas",
+    "text2": "Sistema Sol, Terra e Lua Clima",
+    "score": 0.95
+  },
+  {
+    "text1": "Sistemas",
+    "text2": "Programação -Tipos de dados",
+    "score": 0.26176462139084733
+  },
+  {
+    "text1": "Ler",
+    "text2": "Estratégias e procedimentos de leitura Relação do verbal com outras semioses Procedimentos e gêneros de apoio à compreensão",
+    "score": 0.95
+  },
+  {
+    "text1": "Criticar uma obra literária",
+    "text2": "avaliacao",
+    "score": 0.95
+  },
+  {
+    "text1": "Demografia",
+    "text2": "Características da população brasileira",
+    "score": 0.95
+  },
+  {
+    "text1": "Associe os conceitos às definições",
+    "text2": "associacao",
+    "score": 0.95
+  },
+  {
+    "text1": "Segundo a notícia publicada",
+    "text2": "artigo_jornal",
+    "score": 0.95
+  },
+  {
+    "text1": "Combine os elementos das duas listas",
+    "text2": "associacao",
+    "score": 0.95
+  },
+  {
+    "text1": "Ciências",
+    "text2": "Ensino Religioso",
+    "score": 0.0
+  },
+  {
+    "text1": "Interpretação",
+    "text2": "Compreensão em leitura",
+    "score": 0.95
+  },
+  {
+    "text1": "De acordo com a fonte histórica",
+    "text2": "documento_historico",
+    "score": 0.95
+  },
+  {
+    "text1": "Aparelho",
+    "text2": "Construção do sistema alfabético e da ortografia",
+    "score": 0.95
+  },
+  {
+    "text1": "Texto",
+    "text2": "Estratégias e procedimentos de leitura Relação do verbal com outras semioses Procedimentos e gêneros de apoio à compreensão",
+    "score": 0.95
+  },
+  {
+    "text1": "Ciências",
+    "text2": "Construção de laços afetivos e convívio social",
+    "score": 0.4743291707790731
+  },
+  {
+    "text1": "Aparelho",
+    "text2": "Construção do sistema alfabético e da ortografia",
+    "score": 0.95
+  },
+  {
+    "text1": "Interpretação",
+    "text2": "Compreensão em leitura",
+    "score": 0.95
+  },
+  {
+    "text1": "Povos",
+    "text2": "Danças de salão",
+    "score": 0.1
+  },
+  {
+    "text1": "Texto",
+    "text2": "Leitura colaborativa e autônoma",
+    "score": 0.95
+  },
+  {
+    "text1": "Brincadeiras",
+    "text2": "Expansão da língua inglesa: contexto histórico",
+    "score": 0.1
+  },
+  {
+    "text1": "Aparelho",
+    "text2": "Construção do sistema alfabético e da ortografia",
+    "score": 0.95
+  },
+  {
+    "text1": "Texto",
+    "text2": "Estratégias e procedimentos de leitura em textos legais e normativos",
+    "score": 0.95
+  },
+  {
+    "text1": "Ler",
+    "text2": "Estratégias e procedimentos de leitura Relação do verbal com outras semioses Procedimentos e gêneros de apoio à compreensão",
+    "score": 0.95
+  },
+  {
+    "text1": "Entendimento",
+    "text2": "Procedimentos de apoio à compreensão Tomada de nota",
+    "score": 0.95
+  },
+  {
+    "text1": "Sistemas",
+    "text2": "Construção do sistema alfabético/ Convenções da escrita",
+    "score": 0.95
+  },
+  {
+    "text1": "Estudantes avançados em leitura",
+    "text2": "bom_dominio",
+    "score": 0.95
+  },
+  {
+    "text1": "Estrutura Morfológica",
+    "text2": "Morfologia",
+    "score": 0.95
+  },
+  {
+    "text1": "Texto",
+    "text2": "Decodificação/Fluência de leitura",
+    "score": 0.95
+  },
+  {
+    "text1": "Classifique as sentenças em V ou F",
+    "text2": "verdadeiro_falso",
+    "score": 0.95
+  },
+  {
+    "text1": "Com base no gráfico linear",
+    "text2": "grafico_linhas",
+    "score": 0.95
+  },
+  {
+    "text1": "Interpretação",
+    "text2": "Compreensão de textos orais",
+    "score": 0.95
+  },
+  {
+    "text1": "Industrialização",
+    "text2": "Matéria-prima e indústria",
+    "score": 0.95
+  },
+  {
+    "text1": "Processos",
+    "text2": "Lutas do Brasil",
+    "score": 0.1
+  },
+  {
+    "text1": "Ler",
+    "text2": "Estratégia de leitura Distinção de fato e opinião",
+    "score": 0.95
+  },
+  {
+    "text1": "Texto",
+    "text2": "Estratégia de leitura",
+    "score": 0.95
+  },
+  {
+    "text1": "Cadeias",
+    "text2": "Misturas homogêneas e heterogêneas Separação de materiais Materiais sintéticos Transformações químicas",
+    "score": 0.3395523473048607
+  },
+  {
+    "text1": "Ler",
+    "text2": "Decodificação/Fluência de leitura",
+    "score": 0.95
+  },
+  {
+    "text1": "Entendimento",
+    "text2": "Compreensão em leitura",
+    "score": 0.95
+  },
+  {
+    "text1": "Entendimento",
+    "text2": "Compreensão em leitura",
+    "score": 0.95
+  },
+  {
+    "text1": "Texto",
+    "text2": "Leitura de imagens em narrativas visuais",
+    "score": 0.95
+  },
+  {
+    "text1": "Lutas",
+    "text2": "Programação - Programação usando registros e matrizes",
+    "score": 0.1
+  },
+  {
+    "text1": "Sistemas De Criptografia",
+    "text2": "Codificação da informação",
+    "score": 0.95
+  },
+  {
+    "text1": "Texto",
+    "text2": "Adesão às práticas de leitura",
+    "score": 0.95
+  },
+  {
+    "text1": "Analise a letra da música",
+    "text2": "poema",
+    "score": 0.95
+  },
+  {
+    "text1": "Segundo a charge política",
+    "text2": "charge",
+    "score": 0.95
+  },
+  {
+    "text1": "Aparelho",
+    "text2": "Construção do sistema alfabético/ Estabelecimento de relações anafóricas na referenciação e construção da coesão",
+    "score": 0.95
+  },
+  {
+    "text1": "Ensino Religioso",
+    "text2": "Matemática",
+    "score": 0.0
+  },
+  {
+    "text1": "Ler",
+    "text2": "Leitura e elaboração de mapas temáticos, croquis e outras formas de representação para analisar informações geográficas",
+    "score": 0.95
+  },
+  {
+    "text1": "Interpretação",
+    "text2": "Reconstrução da textualidade e compreensão dos efeitos de sentidos provocados pelos usos de recursos linguísticos e multissemióticos",
+    "score": 0.95
+  },
+  {
+    "text1": "Entendimento",
+    "text2": "Compreensão em leitura",
+    "score": 0.95
+  },
+  {
+    "text1": "Sentimentos,",
+    "text2": "Verbos modais: should, must, have to, may e might",
+    "score": 0.1
+  },
+  {
+    "text1": "Listar os estados brasileiros",
+    "text2": "aplicacao",
+    "score": 0.1
+  },
+  {
+    "text1": "Texto",
+    "text2": "Estratégias de leitura Apreciação e réplica",
+    "score": 0.95
+  },
+  {
+    "text1": "Aparelho",
+    "text2": "Construção do sistema alfabético/ Estabelecimento de relações anafóricas na referenciação e construção da coesão",
+    "score": 0.95
+  },
+  {
+    "text1": "Ciências",
+    "text2": "Elementos da linguagem",
+    "score": 0.44302490899558555
+  },
+  {
+    "text1": "Observe a imagem abaixo",
+    "text2": "texto_literario",
+    "score": 0.1
+  },
+  {
+    "text1": "Texto",
+    "text2": "Compreensão em leitura",
+    "score": 0.95
+  },
+  {
+    "text1": "Sistemas",
+    "text2": "Construção do sistema alfabético e da ortografia",
+    "score": 0.95
+  },
+  {
+    "text1": "Ler",
+    "text2": "Compreensão em leitura",
+    "score": 0.95
+  },
+  {
+    "text1": "Sistemas",
+    "text2": "Construção do sistema alfabético e da ortografia",
     "score": 0.95
   },
   {
@@ -2310,8 +2270,378 @@
     "score": 0.95
   },
   {
+    "text1": "Ler",
+    "text2": "Estratégia de leitura",
+    "score": 0.95
+  },
+  {
+    "text1": "Aparelho",
+    "text2": "Construção do sistema alfabético/ Convenções da escrita",
+    "score": 0.95
+  },
+  {
+    "text1": "Alunos com bom domínio de leitura",
+    "text2": "bom_dominio",
+    "score": 0.95
+  },
+  {
+    "text1": "Geografia",
+    "text2": "Ginástica de condicionamento físico Ginástica de conscientização corporal",
+    "score": 0.4661570899852198
+  },
+  {
+    "text1": "Aparelho",
+    "text2": "Sistema monetário brasileiro: reconhecimento de cédulas e moedas",
+    "score": 0.95
+  },
+  {
+    "text1": "Produzir um vídeo educativo",
+    "text2": "sintese",
+    "score": 0.95
+  },
+  {
+    "text1": "Desenvolva um texto argumentativo",
+    "text2": "multipla_escolha",
+    "score": 0.1
+  },
+  {
+    "text1": "Explique em poucas palavras",
+    "text2": "verdadeiro_falso",
+    "score": 0.1
+  },
+  {
+    "text1": "Texto",
+    "text2": "Estratégias, procedimentos de leitura em textos reivindicatórios ou propositivos",
+    "score": 0.95
+  },
+  {
+    "text1": "Ciências",
+    "text2": "Língua Inglesa",
+    "score": 0.0
+  },
+  {
+    "text1": "Segundo a série temporal",
+    "text2": "grafico_linhas",
+    "score": 0.95
+  },
+  {
+    "text1": "Analise o gráfico em colunas",
+    "text2": "grafico_linhas",
+    "score": 0.1
+  },
+  {
+    "text1": "Ler",
+    "text2": "Compreensão em leitura",
+    "score": 0.95
+  },
+  {
+    "text1": "Estudantes que leem bem",
+    "text2": "conhecimento_avancado",
+    "score": 0.1
+  },
+  {
+    "text1": "Interpretação",
+    "text2": "Compreensão em leitura",
+    "score": 0.95
+  },
+  {
+    "text1": "Português",
+    "text2": "Características dos materiais",
+    "score": 0.3887725762073967
+  },
+  {
+    "text1": "Ler",
+    "text2": "Leitura de imagens em narrativas visuais",
+    "score": 0.95
+  },
+  {
+    "text1": "Ler",
+    "text2": "Adesão às práticas de leitura",
+    "score": 0.95
+  },
+  {
+    "text1": "Explicar o processo de fotossíntese",
+    "text2": "compreensao",
+    "score": 0.95
+  },
+  {
+    "text1": "Português",
+    "text2": "Construção do sentido global do texto",
+    "score": 0.3210419386084698
+  },
+  {
+    "text1": "Texto",
+    "text2": "Estratégias de leitura Apreciação e réplica",
+    "score": 0.95
+  },
+  {
+    "text1": "Formação",
+    "text2": "Leitura de imagens em narrativas visuais",
+    "score": 0.29376743993344123
+  },
+  {
+    "text1": "Formação Palavras",
+    "text2": "Morfologia",
+    "score": 0.95
+  },
+  {
+    "text1": "Texto",
+    "text2": "Compreensão em leitura",
+    "score": 0.95
+  },
+  {
+    "text1": "Sistemas",
+    "text2": "Sistema Operacional",
+    "score": 0.95
+  },
+  {
+    "text1": "Construção",
+    "text2": "Reconstrução das condições de produção e recepção dos textos e adequação do texto à construção composicional e ao estilo de gênero",
+    "score": 0.36461319976704737
+  },
+  {
+    "text1": "Texto",
+    "text2": "Estratégia de leitura Distinção de fato e opinião",
+    "score": 0.95
+  },
+  {
+    "text1": "Julgar a validade de uma teoria",
+    "text2": "avaliacao",
+    "score": 0.95
+  },
+  {
+    "text1": "De acordo com a infografia",
+    "text2": "infografico",
+    "score": 0.95
+  },
+  {
+    "text1": "História",
+    "text2": "Língua Portuguesa",
+    "score": 0.0
+  },
+  {
+    "text1": "Analise a visualização de dados",
+    "text2": "imagem",
+    "score": 0.1
+  },
+  {
+    "text1": "Língua Portuguesa",
+    "text2": "Língua Inglesa",
+    "score": 0.0
+  },
+  {
+    "text1": "Sistemas De Criptografia",
+    "text2": "Codificação da informação",
+    "score": 0.95
+  },
+  {
+    "text1": "Problemas",
+    "text2": "Elementos da linguagem",
+    "score": 0.1
+  },
+  {
+    "text1": "História",
+    "text2": "Figuras geométricas planas: características, representações e ângulos",
+    "score": 0.4067060113711661
+  },
+  {
+    "text1": "De acordo com o quadro de dados",
+    "text2": "tabela",
+    "score": 0.95
+  },
+  {
+    "text1": "Abertura Política",
+    "text2": "O processo de redemocratização A Constituição de 1988 e a emancipação das cidadanias (analfabetos, indígenas, negros, jovens etc.) A história recente do Brasil: transformações políticas, econômicas, sociais e culturais de 1989 aos dias atuais Os protagonismos da sociedade civil e as alterações da sociedade brasileira A questão da violência contra populações marginalizadas O Brasil e suas relações internacionais na era da globalização",
+    "score": 0.95
+  },
+  {
+    "text1": "Observe o gráfico de linhas",
+    "text2": "grafico_linhas",
+    "score": 0.95
+  },
+  {
+    "text1": "Estrutura Morfológica",
+    "text2": "Morfologia",
+    "score": 0.95
+  },
+  {
+    "text1": "Práticas",
+    "text2": "Vida e morte",
+    "score": 0.1
+  },
+  {
+    "text1": "Computação",
+    "text2": "Ensino Religioso",
+    "score": 0.0
+  },
+  {
+    "text1": "Ler",
+    "text2": "Leitura colaborativa e autônoma",
+    "score": 0.95
+  },
+  {
+    "text1": "Construção",
+    "text2": "Revolução Industrial e seus impactos na produção e circulação de povos, produtos e culturas",
+    "score": 0.3167671120490938
+  },
+  {
+    "text1": "Matemática",
+    "text2": "Composição, estrutura e localização do Sistema Solar no Universo Astronomia e cultura Vida humana fora da Terra Ordem de grandeza astronômica Evolução estelar",
+    "score": 0.47917066305679507
+  },
+  {
+    "text1": "Variação",
+    "text2": "Construção de sentidos por meio de inferências e reconhecimento de implícitos",
+    "score": 0.24921009756950482
+  },
+  {
+    "text1": "Texto",
+    "text2": "Estratégias, procedimentos de leitura em textos reivindicatórios ou propositivos",
+    "score": 0.95
+  },
+  {
+    "text1": "Problemas:",
+    "text2": "Ginástica de condicionamento físico Ginástica de conscientização corporal",
+    "score": 0.1
+  },
+  {
+    "text1": "Criptografia",
+    "text2": "Codificação da informação",
+    "score": 0.95
+  },
+  {
+    "text1": "Analise a fotografia",
+    "text2": "imagem",
+    "score": 0.95
+  },
+  {
+    "text1": "Sistema",
+    "text2": "Padrões figurais e numéricos: investigação de regularidades ou padrões em sequências",
+    "score": 0.34195803694894233
+  },
+  {
+    "text1": "Sistemas",
+    "text2": "Construção do sistema alfabético e da ortografia",
+    "score": 0.95
+  },
+  {
+    "text1": "Criptografia",
+    "text2": "Codificação da informação",
+    "score": 0.95
+  },
+  {
+    "text1": "Texto",
+    "text2": "Decodificação/Fluência de leitura",
+    "score": 0.95
+  },
+  {
+    "text1": "Analise a visualização de dados",
+    "text2": "infografico",
+    "score": 0.95
+  },
+  {
     "text1": "Sistemas",
     "text2": "Construção do sistema alfabético/ Convenções da escrita",
+    "score": 0.95
+  },
+  {
+    "text1": "Notação",
+    "text2": "Relação de igualdade",
+    "score": 0.1
+  },
+  {
+    "text1": "Geografia",
+    "text2": "Língua Inglesa",
+    "score": 0.0
+  },
+  {
+    "text1": "Nomear os planetas do sistema solar",
+    "text2": "conhecimento",
+    "score": 0.95
+  },
+  {
+    "text1": "Texto",
+    "text2": "Compreensão em leitura",
+    "score": 0.95
+  },
+  {
+    "text1": "Sistemas",
+    "text2": "Programação -Tipos de dados",
+    "score": 0.36049673975048535
+  },
+  {
+    "text1": "Leia o poema abaixo",
+    "text2": "charge",
+    "score": 0.1
+  },
+  {
+    "text1": "Turma avançada no assunto",
+    "text2": "conhecimento_avancado",
+    "score": 0.95
+  },
+  {
+    "text1": "Entendimento",
+    "text2": "Procedimentos de apoio à compreensão Tomada de nota",
+    "score": 0.95
+  },
+  {
+    "text1": "Argumente a favor ou contra",
+    "text2": "dissertativa_longa",
+    "score": 0.95
+  },
+  {
+    "text1": "Observe a tabela abaixo",
+    "text2": "artigo_jornal",
+    "score": 0.1
+  },
+  {
+    "text1": "Texto",
+    "text2": "Estratégia de leitura",
+    "score": 0.95
+  },
+  {
+    "text1": "Ler",
+    "text2": "Estratégias e procedimentos de leitura Relação do verbal com outras semioses Procedimentos e gêneros de apoio à compreensão",
+    "score": 0.95
+  },
+  {
+    "text1": "Texto",
+    "text2": "Decodificação/Fluência de leitura",
+    "score": 0.95
+  },
+  {
+    "text1": "Mercado",
+    "text2": "A invenção do comércio e a circulação de produtos",
+    "score": 0.95
+  },
+  {
+    "text1": "Memorizar datas históricas importantes",
+    "text2": "conhecimento",
+    "score": 0.95
+  },
+  {
+    "text1": "Ler",
+    "text2": "Leitura colaborativa e autônoma",
+    "score": 0.95
+  },
+  {
+    "text1": "Ler",
+    "text2": "Estratégias, procedimentos de leitura em textos reivindicatórios ou propositivos",
+    "score": 0.95
+  },
+  {
+    "text1": "Educação Física",
+    "text2": "Arte",
+    "score": 0.0
+  },
+  {
+    "text1": "Imanência",
+    "text2": "Estratégia de produção: textualização de textos informativos",
+    "score": 0.1
+  },
+  {
+    "text1": "Estrutura Morfológica",
+    "text2": "Morfologia",
     "score": 0.95
   },
   {
@@ -2321,13 +2651,13 @@
   },
   {
     "text1": "Texto",
-    "text2": "Estratégias e procedimentos de leitura Relação do verbal com outras semioses Procedimentos e gêneros de apoio à compreensão",
+    "text2": "Compreensão em leitura",
     "score": 0.95
   },
   {
-    "text1": "Rotas",
-    "text2": "Estratégias de compreensão de textos orais: palavras cognatas e pistas do contexto discursivo",
-    "score": 0.1
+    "text1": "Segundo o planisfério",
+    "text2": "mapa",
+    "score": 0.95
   },
   {
     "text1": "Entendimento",
@@ -2335,24 +2665,69 @@
     "score": 0.95
   },
   {
-    "text1": "Ciências",
-    "text2": "Matemática",
-    "score": 0.0
-  },
-  {
-    "text1": "Analise o cartum apresentado",
-    "text2": "charge",
+    "text1": "Ler",
+    "text2": "Estratégias e procedimentos de leitura Relação do verbal com outras semioses Procedimentos e gêneros de apoio à compreensão",
     "score": 0.95
   },
   {
-    "text1": "Industrial",
-    "text2": "Matéria-prima e indústria",
+    "text1": "Memorizar datas históricas importantes",
+    "text2": "compreensao",
+    "score": 0.1
+  },
+  {
+    "text1": "Entendimento",
+    "text2": "Compreensão",
     "score": 0.95
   },
   {
-    "text1": "Arte",
-    "text2": "Língua Inglesa",
-    "score": 0.0
+    "text1": "Alunos com bom domínio de leitura",
+    "text2": "conhecimento_basico",
+    "score": 0.1
+  },
+  {
+    "text1": "Interpretação",
+    "text2": "Reconstrução da textualidade e compreensão dos efeitos de sentidos provocados pelos usos de recursos linguísticos e multissemióticos",
+    "score": 0.95
+  },
+  {
+    "text1": "Justificar uma decisão política",
+    "text2": "avaliacao",
+    "score": 0.95
+  },
+  {
+    "text1": "Explicar o processo de fotossíntese",
+    "text2": "analise",
+    "score": 0.1
+  },
+  {
+    "text1": "Estudantes que têm dificuldade para relacionar ideias",
+    "text2": "dificuldade_conexao",
+    "score": 0.95
+  },
+  {
+    "text1": "Sistemas",
+    "text2": "Sistema operacional",
+    "score": 0.95
+  },
+  {
+    "text1": "Alunos com conhecimento básico",
+    "text2": "conhecimento_basico",
+    "score": 0.95
+  },
+  {
+    "text1": "Ler",
+    "text2": "Compreensão em leitura",
+    "score": 0.95
+  },
+  {
+    "text1": "Ler",
+    "text2": "Estratégia de leitura",
+    "score": 0.95
+  },
+  {
+    "text1": "Português",
+    "text2": "Matrizes estéticas e culturais",
+    "score": 0.448240580810223
   },
   {
     "text1": "Aparelho",
@@ -2360,13 +2735,183 @@
     "score": 0.95
   },
   {
-    "text1": "Estrutura Sintática",
-    "text2": "Sintaxe",
+    "text1": "Entendimento",
+    "text2": "Compreensão de textos orais",
     "score": 0.95
   },
   {
-    "text1": "Criptografia",
-    "text2": "Codificação da informação",
+    "text1": "Interpretação",
+    "text2": "Compreensão em leitura",
+    "score": 0.95
+  },
+  {
+    "text1": "Texto",
+    "text2": "Leitura de imagens em narrativas visuais",
+    "score": 0.95
+  },
+  {
+    "text1": "Danças",
+    "text2": "Jogos eletrônicos",
+    "score": 0.2668747306044215
+  },
+  {
+    "text1": "Ler",
+    "text2": "Leitura colaborativa e autônoma",
+    "score": 0.95
+  },
+  {
+    "text1": "Comercial",
+    "text2": "A invenção do comércio e a circulação de produtos",
+    "score": 0.95
+  },
+  {
+    "text1": "Com base na tirinha",
+    "text2": "charge",
+    "score": 0.95
+  },
+  {
+    "text1": "Esportes",
+    "text2": "Ginástica de condicionamento físico",
+    "score": 0.36100028529652295
+  },
+  {
+    "text1": "Texto",
+    "text2": "Compreensão em leitura",
+    "score": 0.95
+  },
+  {
+    "text1": "Texto",
+    "text2": "Compreensão em leitura",
+    "score": 0.95
+  },
+  {
+    "text1": "Texto",
+    "text2": "Compreensão em leitura",
+    "score": 0.95
+  },
+  {
+    "text1": "Brincadeiras",
+    "text2": "Princípios e valores éticos",
+    "score": 0.1
+  },
+  {
+    "text1": "Ler",
+    "text2": "Estratégia de leitura",
+    "score": 0.95
+  },
+  {
+    "text1": "Demográfico",
+    "text2": "A tutela da população indígena, a escravidão dos negros e a tutela dos egressos da escravidão",
+    "score": 0.95
+  },
+  {
+    "text1": "Matemática",
+    "text2": "Educação Física",
+    "score": 0.0
+  },
+  {
+    "text1": "Texto",
+    "text2": "Estratégia de leitura",
+    "score": 0.95
+  },
+  {
+    "text1": "Demográfico",
+    "text2": "Distribuição da população mundial e deslocamentos populacionais",
+    "score": 0.95
+  },
+  {
+    "text1": "Ler",
+    "text2": "Compreensão em leitura",
+    "score": 0.95
+  },
+  {
+    "text1": "Ler",
+    "text2": "Estratégias e procedimentos de leitura em textos legais e normativos",
+    "score": 0.95
+  },
+  {
+    "text1": "Aparelho",
+    "text2": "Construção do sistema alfabético/ Estabelecimento de relações anafóricas na referenciação e construção da coesão",
+    "score": 0.95
+  },
+  {
+    "text1": "História",
+    "text2": "Língua Inglesa",
+    "score": 0.0
+  },
+  {
+    "text1": "Geografia",
+    "text2": "Língua Portuguesa",
+    "score": 0.0
+  },
+  {
+    "text1": "Texto",
+    "text2": "Leitura colaborativa e autônoma",
+    "score": 0.95
+  },
+  {
+    "text1": "Gestão",
+    "text2": "Compreensão em leitura",
+    "score": 0.1
+  },
+  {
+    "text1": "Observe o infográfico abaixo",
+    "text2": "artigo_jornal",
+    "score": 0.1
+  },
+  {
+    "text1": "Resumir os principais eventos da Era Vargas",
+    "text2": "compreensao",
+    "score": 0.95
+  },
+  {
+    "text1": "Texto",
+    "text2": "Adesão às práticas de leitura",
+    "score": 0.95
+  },
+  {
+    "text1": "Entendimento",
+    "text2": "Compreensão em leitura",
+    "score": 0.95
+  },
+  {
+    "text1": "Interprete o gráfico de linhas",
+    "text2": "grafico_linhas",
+    "score": 0.95
+  },
+  {
+    "text1": "Lutas",
+    "text2": "Armazenamento e Transmissão de dados - Fundamentos de transmissão de dados",
+    "score": 0.1
+  },
+  {
+    "text1": "Observe a tabela abaixo",
+    "text2": "tabela",
+    "score": 0.95
+  },
+  {
+    "text1": "Interpretar um texto literário",
+    "text2": "avaliacao",
+    "score": 0.1
+  },
+  {
+    "text1": "Analise o trecho do romance",
+    "text2": "mapa",
+    "score": 0.1
+  },
+  {
+    "text1": "Estudantes com dificuldade em relacionar",
+    "text2": "dificuldade_conexao",
+    "score": 0.95
+  },
+  {
+    "text1": "Interpretação",
+    "text2": "Compreensão em leitura",
+    "score": 0.95
+  },
+  {
+    "text1": "De acordo com o gráfico de evolução",
+    "text2": "grafico_linhas",
     "score": 0.95
   },
   {
@@ -2380,324 +2925,34 @@
     "score": 0.95
   },
   {
-    "text1": "Aparelho",
-    "text2": "Construção do sistema alfabético e da ortografia",
-    "score": 0.95
-  },
-  {
-    "text1": "Interpretação",
-    "text2": "Compreensão",
-    "score": 0.95
-  },
-  {
-    "text1": "Ler",
-    "text2": "Estratégias de leitura Apreciação e réplica",
-    "score": 0.95
-  },
-  {
-    "text1": "Ginástica",
-    "text2": "Danças do Brasil e do mundo Danças de matriz indígena e africana",
-    "score": 0.33994940770893345
-  },
-  {
-    "text1": "Ângulos",
-    "text2": "Distância entre pontos no plano cartesiano",
-    "score": 0.2116029115194513
-  },
-  {
-    "text1": "Analise a visualização de dados",
-    "text2": "tabela",
-    "score": 0.1
-  },
-  {
-    "text1": "Texto",
-    "text2": "Estratégia de leitura Distinção de fato e opinião",
-    "score": 0.95
-  },
-  {
-    "text1": "Aparelho",
-    "text2": "Construção do sistema alfabético/ Estabelecimento de relações anafóricas na referenciação e construção da coesão",
-    "score": 0.95
-  },
-  {
-    "text1": "Desenvolva um texto argumentativo",
-    "text2": "dissertativa_longa",
-    "score": 0.95
-  },
-  {
-    "text1": "Comparar diferentes sistemas políticos",
-    "text2": "avaliacao",
-    "score": 0.1
-  },
-  {
-    "text1": "Relacione a coluna A com a coluna B",
-    "text2": "dissertativa_longa",
-    "score": 0.1
-  },
-  {
-    "text1": "Formação Palavras",
-    "text2": "Morfologia",
-    "score": 0.95
-  },
-  {
-    "text1": "Texto",
-    "text2": "Estratégias, procedimentos de leitura em textos reivindicatórios ou propositivos",
-    "score": 0.95
-  },
-  {
-    "text1": "Liderança",
-    "text2": "Países que têm a língua inglesa como língua materna e/ou oficial",
-    "score": 0.1
-  },
-  {
-    "text1": "Texto",
-    "text2": "Estratégias de leitura Apreciação e réplica",
-    "score": 0.95
-  },
-  {
-    "text1": "Ligue os itens correspondentes",
-    "text2": "dissertativa_curta",
-    "score": 0.1
-  },
-  {
-    "text1": "Aparelho",
-    "text2": "Sistema Sol, Terra e Lua Clima",
-    "score": 0.95
-  },
-  {
-    "text1": "Crescimento Urbano",
-    "text2": "Território, redes e urbanização",
-    "score": 0.95
-  },
-  {
-    "text1": "Entendimento",
-    "text2": "Compreensão de textos orais",
-    "score": 0.95
-  },
-  {
-    "text1": "Leia o documento histórico abaixo",
-    "text2": "mapa",
-    "score": 0.1
-  },
-  {
-    "text1": "Julgar a validade de uma teoria",
-    "text2": "sintese",
-    "score": 0.1
-  },
-  {
-    "text1": "Criar um projeto de ciências",
-    "text2": "sintese",
-    "score": 0.95
-  },
-  {
-    "text1": "Ler",
-    "text2": "Estratégias de leitura Apreciação e réplica",
-    "score": 0.95
-  },
-  {
-    "text1": "Estrutura Morfológica",
-    "text2": "Morfologia",
-    "score": 0.95
-  },
-  {
-    "text1": "Crenças,",
-    "text2": "Mitos nas tradições religiosas",
-    "score": 0.361543920996754
-  },
-  {
-    "text1": "Questão",
-    "text2": "A vida em casa, a vida na escola e formas de representação social e espacial: os jogos e brincadeiras como forma de interação social e espacial",
-    "score": 0.3019261865633545
-  },
-  {
-    "text1": "Objetivos",
-    "text2": "Produção de textos orais com autonomia",
-    "score": 0.24928851015592063
-  },
-  {
     "text1": "Sistemas",
-    "text2": "Construção do sistema alfabético e da ortografia",
+    "text2": "Sistema de orientação",
     "score": 0.95
   },
   {
-    "text1": "Participação",
-    "text2": "Leitura colaborativa e autônoma",
-    "score": 0.24095892029037494
-  },
-  {
-    "text1": "Interpretação",
-    "text2": "Procedimentos de apoio à compreensão Tomada de nota",
+    "text1": "Independente",
+    "text2": "Independência dos Estados Unidos da América  Independências na América espanhola • A revolução dos escravizados em São Domingo e seus múltiplos significados e desdobramentos: o caso do Haiti Os caminhos até a independência do Brasil",
     "score": 0.95
-  },
-  {
-    "text1": "Interpretação",
-    "text2": "Compreensão",
-    "score": 0.95
-  },
-  {
-    "text1": "Relacionar eventos históricos",
-    "text2": "analise",
-    "score": 0.95
-  },
-  {
-    "text1": "Aplicar regras gramaticais em frases",
-    "text2": "compreensao",
-    "score": 0.1
-  },
-  {
-    "text1": "Ler",
-    "text2": "Adesão às práticas de leitura",
-    "score": 0.95
-  },
-  {
-    "text1": "Ler",
-    "text2": "Estratégia de leitura",
-    "score": 0.95
-  },
-  {
-    "text1": "Observe a tabela abaixo",
-    "text2": "documento_historico",
-    "score": 0.1
-  },
-  {
-    "text1": "Estrutura Morfológica",
-    "text2": "Morfologia",
-    "score": 0.95
-  },
-  {
-    "text1": "Aparelho",
-    "text2": "Sistema monetário brasileiro: reconhecimento de cédulas e moedas",
-    "score": 0.95
-  },
-  {
-    "text1": "Estrutura Morfológica",
-    "text2": "Morfologia",
-    "score": 0.95
-  },
-  {
-    "text1": "Aparelho",
-    "text2": "Construção do sistema alfabético/ Estabelecimento de relações anafóricas na referenciação e construção da coesão",
-    "score": 0.95
-  },
-  {
-    "text1": "Interpretação",
-    "text2": "Reconstrução da textualidade e compreensão dos efeitos de sentidos provocados pelos usos de recursos linguísticos e multissemióticos",
-    "score": 0.95
-  },
-  {
-    "text1": "Formação Palavras",
-    "text2": "Morfologia",
-    "score": 0.95
-  },
-  {
-    "text1": "Entendimento",
-    "text2": "Procedimentos de apoio à compreensão Tomada de nota",
-    "score": 0.95
-  },
-  {
-    "text1": "Matemática",
-    "text2": "Arte",
-    "score": 0.0
-  },
-  {
-    "text1": "Negociação",
-    "text2": "Forma de composição do texto",
-    "score": 0.1
   },
   {
     "text1": "Interpretação",
     "text2": "Compreensão em leitura",
-    "score": 0.95
-  },
-  {
-    "text1": "Ler",
-    "text2": "Compreensão em leitura",
-    "score": 0.95
-  },
-  {
-    "text1": "Entendimento",
-    "text2": "Compreensão em leitura",
-    "score": 0.95
-  },
-  {
-    "text1": "Criptografia",
-    "text2": "Codificação da informação",
     "score": 0.95
   },
   {
     "text1": "Geografia",
-    "text2": "Codificação da informação",
-    "score": 0.47890164015487624
-  },
-  {
-    "text1": "Ler",
-    "text2": "Leitura de imagens em narrativas visuais",
-    "score": 0.95
-  },
-  {
-    "text1": "Retorno Democracia",
-    "text2": "O processo de redemocratização A Constituição de 1988 e a emancipação das cidadanias (analfabetos, indígenas, negros, jovens etc.) A história recente do Brasil: transformações políticas, econômicas, sociais e culturais de 1989 aos dias atuais Os protagonismos da sociedade civil e as alterações da sociedade brasileira A questão da violência contra populações marginalizadas O Brasil e suas relações internacionais na era da globalização",
-    "score": 0.95
-  },
-  {
-    "text1": "Questão",
-    "text2": "Usos de linguagem em meio digital: “internetês”",
-    "score": 0.1
-  },
-  {
-    "text1": "Mercado",
-    "text2": "A invenção do comércio e a circulação de produtos",
-    "score": 0.95
-  },
-  {
-    "text1": "De acordo com o texto jornalístico",
-    "text2": "artigo_jornal",
-    "score": 0.95
-  },
-  {
-    "text1": "História",
-    "text2": "Matemática",
-    "score": 0.0
-  },
-  {
-    "text1": "Ensino Religioso",
     "text2": "Arte",
     "score": 0.0
   },
   {
-    "text1": "Demografia",
-    "text2": "A tutela da população indígena, a escravidão dos negros e a tutela dos egressos da escravidão",
-    "score": 0.95
+    "text1": "Contextos",
+    "text2": "Elementos da linguagem",
+    "score": 0.3712425821160697
   },
   {
-    "text1": "Entendimento",
-    "text2": "Compreensão em leitura",
-    "score": 0.95
-  },
-  {
-    "text1": "Descreva resumidamente",
-    "text2": "dissertativa_curta",
-    "score": 0.95
-  },
-  {
-    "text1": "Observe o gráfico de barras",
-    "text2": "grafico_barras",
-    "score": 0.95
-  },
-  {
-    "text1": "Aparelho",
-    "text2": "Construção do sistema alfabético/ Estabelecimento de relações anafóricas na referenciação e construção da coesão",
-    "score": 0.95
-  },
-  {
-    "text1": "Arte",
-    "text2": "Matrizes estéticas e culturais",
-    "score": 0.290738687887236
-  },
-  {
-    "text1": "Português",
-    "text2": "Povos da Antiguidade na África (egípcios), no Oriente Médio (mesopotâmicos) e nas Américas (pré-colombianos) Os povos indígenas originários do atual território brasileiro e seus hábitos culturais e sociais",
-    "score": 0.32002236651345556
+    "text1": "Alunos com conhecimento avançado",
+    "text2": "bom_dominio",
+    "score": 0.1
   },
   {
     "text1": "Aparelho",
@@ -2705,304 +2960,39 @@
     "score": 0.95
   },
   {
-    "text1": "Computação",
-    "text2": "História",
-    "score": 0.0
-  },
-  {
-    "text1": "Ler",
-    "text2": "Adesão às práticas de leitura",
-    "score": 0.95
-  },
-  {
-    "text1": "Conflitos",
-    "text2": "A noção do “Eu” e do “Outro”: comunidade, convivências e interações entre pessoas",
-    "score": 0.35965186327080767
-  },
-  {
-    "text1": "Ler",
-    "text2": "Estratégias e procedimentos de leitura Relação do verbal com outras semioses Procedimentos e gêneros de apoio à compreensão",
-    "score": 0.95
-  },
-  {
-    "text1": "Entendimento",
-    "text2": "Compreensão em leitura",
-    "score": 0.95
-  },
-  {
-    "text1": "Com base no registro histórico",
-    "text2": "documento_historico",
-    "score": 0.95
-  },
-  {
-    "text1": "Recordar eventos da Segunda Guerra",
-    "text2": "conhecimento",
-    "score": 0.95
-  },
-  {
-    "text1": "Texto",
-    "text2": "Estratégia de leitura Distinção de fato e opinião",
-    "score": 0.95
-  },
-  {
-    "text1": "Sistemas De Criptografia",
-    "text2": "Codificação da informação",
-    "score": 0.95
-  },
-  {
-    "text1": "Assinale a opção que apresenta",
-    "text2": "dissertativa_curta",
-    "score": 0.1
-  },
-  {
-    "text1": "Cite dois exemplos",
-    "text2": "dissertativa_curta",
-    "score": 0.95
-  },
-  {
-    "text1": "Com base no gráfico linear",
+    "text1": "Analise a evolução temporal",
     "text2": "grafico_linhas",
     "score": 0.95
   },
   {
-    "text1": "Geografia",
-    "text2": "Processos de criação",
-    "score": 0.47677306676162456
-  },
-  {
-    "text1": "Observe a charge abaixo",
-    "text2": "charge",
+    "text1": "Alunos com alto nível",
+    "text2": "conhecimento_avancado",
     "score": 0.95
   },
   {
-    "text1": "Sistemas",
-    "text2": "Construção do sistema alfabético/ Convenções da escrita",
+    "text1": "Observe os versos apresentados",
+    "text2": "poema",
+    "score": 0.95
+  },
+  {
+    "text1": "De acordo com o soneto",
+    "text2": "poema",
     "score": 0.95
   },
   {
     "text1": "Aparelho",
-    "text2": "Construção do sistema alfabético/ Convenções da escrita",
-    "score": 0.95
-  },
-  {
-    "text1": "Criptografia",
-    "text2": "Codificação da informação",
-    "score": 0.95
-  },
-  {
-    "text1": "Lei Fundamental",
-    "text2": "O processo de redemocratização A Constituição de 1988 e a emancipação das cidadanias (analfabetos, indígenas, negros, jovens etc.) A história recente do Brasil: transformações políticas, econômicas, sociais e culturais de 1989 aos dias atuais Os protagonismos da sociedade civil e as alterações da sociedade brasileira A questão da violência contra populações marginalizadas O Brasil e suas relações internacionais na era da globalização",
-    "score": 0.95
-  },
-  {
-    "text1": "Desenvolva um texto argumentativo",
-    "text2": "dissertativa_curta",
-    "score": 0.1
-  },
-  {
-    "text1": "Sistemas",
-    "text2": "Sistema Operacional",
-    "score": 0.95
-  },
-  {
-    "text1": "Ler",
-    "text2": "Compreensão em leitura",
-    "score": 0.95
-  },
-  {
-    "text1": "Interpretação",
-    "text2": "Compreensão em leitura",
-    "score": 0.95
-  },
-  {
-    "text1": "Discorra sobre o tema",
-    "text2": "dissertativa_longa",
-    "score": 0.95
-  },
-  {
-    "text1": "Definir o conceito de fotossíntese",
-    "text2": "conhecimento",
-    "score": 0.95
-  },
-  {
-    "text1": "Geografia",
-    "text2": "Sistema Sol, Terra e Lua Clima",
-    "score": 0.32520183851587925
-  },
-  {
-    "text1": "Texto",
-    "text2": "Compreensão em leitura",
-    "score": 0.95
-  },
-  {
-    "text1": "Movimento",
-    "text2": "Ensinamentos da tradição escrita",
-    "score": 0.1
-  },
-  {
-    "text1": "Produzir um vídeo educativo",
-    "text2": "sintese",
-    "score": 0.95
-  },
-  {
-    "text1": "História",
-    "text2": "Educação Física",
-    "score": 0.0
-  },
-  {
-    "text1": "Matemática",
-    "text2": "Oralidade pública/Intercâmbio conversacional em sala de aula",
-    "score": 0.48437149748338815
-  },
-  {
-    "text1": "Interpretar um texto literário",
-    "text2": "compreensao",
-    "score": 0.95
-  },
-  {
-    "text1": "Listar os estados brasileiros",
-    "text2": "compreensao",
-    "score": 0.1
-  },
-  {
-    "text1": "Texto",
-    "text2": "Leitura de imagens em narrativas visuais",
-    "score": 0.95
-  },
-  {
-    "text1": "Texto",
-    "text2": "Compreensão em leitura",
-    "score": 0.95
-  },
-  {
-    "text1": "Revolucionário",
-    "text2": "Os anos 1960: revolução cultural? A ditadura civil-militar e os processos de resistência As questões indígena e negra e a ditadura",
-    "score": 0.95
-  },
-  {
-    "text1": "Sistemas",
-    "text2": "Construção do sistema alfabético/ Convenções da escrita",
-    "score": 0.95
-  },
-  {
-    "text1": "Português",
-    "text2": "Leitura, escrita, comparação e ordenação de números naturais de quatro ordens",
-    "score": 0.3766121395880578
-  },
-  {
-    "text1": "Ciências",
-    "text2": "Contextos e práticas",
-    "score": 0.39306084025307375
-  },
-  {
-    "text1": "Convivência",
-    "text2": "Construção de repertório artístico-cultural",
-    "score": 0.1
-  },
-  {
-    "text1": "Interpretação",
-    "text2": "Compreensão",
-    "score": 0.95
-  },
-  {
-    "text1": "Matemática",
-    "text2": "Imperativo",
-    "score": 0.3190009819448454
-  },
-  {
-    "text1": "Células",
-    "text2": "Célula como unidade da vida Interação entre os sistemas locomotor e nervoso Lentes corretivas",
-    "score": 0.95
-  },
-  {
-    "text1": "Responda brevemente",
-    "text2": "verdadeiro_falso",
-    "score": 0.1
-  },
-  {
-    "text1": "Interpretação",
-    "text2": "Compreensão em leitura",
-    "score": 0.95
-  },
-  {
-    "text1": "De acordo com o quadro de dados",
-    "text2": "tabela",
-    "score": 0.95
-  },
-  {
-    "text1": "Entendimento",
-    "text2": "Compreensão em leitura",
-    "score": 0.95
-  },
-  {
-    "text1": "Sistemas",
     "text2": "Construção do sistema alfabético/ Estabelecimento de relações anafóricas na referenciação e construção da coesão",
     "score": 0.95
   },
   {
-    "text1": "Calcular a área de um triângulo",
+    "text1": "Estratégias",
+    "text2": "Segurança e responsabilidade no uso de tecnologia computaciona",
+    "score": 0.3144455370275404
+  },
+  {
+    "text1": "Comparar diferentes sistemas políticos",
     "text2": "aplicacao",
-    "score": 0.95
-  },
-  {
-    "text1": "Família",
-    "text2": "Sentimentos, lembranças, memórias e saberes",
-    "score": 0.23222538592481234
-  },
-  {
-    "text1": "Entendimento",
-    "text2": "Reconstrução da textualidade e compreensão dos efeitos de sentidos provocados pelos usos de recursos linguísticos e multissemióticos",
-    "score": 0.95
-  },
-  {
-    "text1": "Investigar relações entre variáveis",
-    "text2": "analise",
-    "score": 0.95
-  },
-  {
-    "text1": "Responda de forma objetiva",
-    "text2": "dissertativa_curta",
-    "score": 0.95
-  },
-  {
-    "text1": "Ler",
-    "text2": "Decodificação/Fluência de leitura",
-    "score": 0.95
-  },
-  {
-    "text1": "Tecnologias",
-    "text2": "Problemas envolvendo adição de parcelas iguais (multiplicação)",
     "score": 0.1
-  },
-  {
-    "text1": "Ciências",
-    "text2": "Grandezas diretamente proporcionais Problemas envolvendo a partição de um todo em duas partes proporcionais",
-    "score": 0.4999866296418157
-  },
-  {
-    "text1": "História",
-    "text2": "Análise da ideia de acaso em situações do cotidiano: espaço amostral",
-    "score": 0.32443640891439585
-  },
-  {
-    "text1": "Relações",
-    "text2": "Situações de convívio em diferentes lugares",
-    "score": 0.3158462851438094
-  },
-  {
-    "text1": "Ler",
-    "text2": "Estratégias de leitura Apreciação e réplica",
-    "score": 0.95
-  },
-  {
-    "text1": "Processos",
-    "text2": "Corporações e organismos internacionais",
-    "score": 0.1
-  },
-  {
-    "text1": "Interpretação",
-    "text2": "Compreensão em leitura",
-    "score": 0.95
   },
   {
     "text1": "Texto",
@@ -3010,53 +3000,23 @@
     "score": 0.95
   },
   {
-    "text1": "Ler",
-    "text2": "Compreensão em leitura",
+    "text1": "Cidades",
+    "text2": "Território, redes e urbanização",
     "score": 0.95
   },
   {
-    "text1": "Texto",
-    "text2": "Estratégia de leitura",
-    "score": 0.95
-  },
-  {
-    "text1": "Analise a fotografia",
-    "text2": "infografico",
+    "text1": "Elementos",
+    "text2": "Sistemas da linguagem",
     "score": 0.1
   },
   {
-    "text1": "Ler",
-    "text2": "Estratégias e procedimentos de leitura em textos legais e normativos",
-    "score": 0.95
-  },
-  {
-    "text1": "Entendimento",
-    "text2": "Compreensão de textos orais",
-    "score": 0.95
-  },
-  {
-    "text1": "Texto",
-    "text2": "Compreensão em leitura",
-    "score": 0.95
-  },
-  {
-    "text1": "Indique se as afirmações são verdadeiras ou falsas",
-    "text2": "verdadeiro_falso",
-    "score": 0.95
-  },
-  {
-    "text1": "Sistemas De Criptografia",
-    "text2": "Codificação da informação",
-    "score": 0.95
-  },
-  {
-    "text1": "Com base na figura",
-    "text2": "imagem",
-    "score": 0.95
+    "text1": "Produção",
+    "text2": "Características e desenvolvimento dos animais",
+    "score": 0.39332772850304265
   },
   {
     "text1": "Sistemas",
-    "text2": "Construção do sistema alfabético e da ortografia",
+    "text2": "Sistema Operacional",
     "score": 0.95
   },
   {
@@ -3065,28 +3025,268 @@
     "score": 0.95
   },
   {
-    "text1": "Sistemas",
+    "text1": "Analise os dados tabulados",
+    "text2": "documento_historico",
+    "score": 0.1
+  },
+  {
+    "text1": "Texto",
+    "text2": "Estratégias e procedimentos de leitura em textos reivindicatórios ou propositivos",
+    "score": 0.95
+  },
+  {
+    "text1": "Aparelho",
     "text2": "Sistema Operacional",
     "score": 0.95
   },
   {
-    "text1": "Identificar as partes do corpo humano",
-    "text2": "conhecimento",
+    "text1": "Estabeleça correspondência entre",
+    "text2": "associacao",
     "score": 0.95
   },
   {
-    "text1": "Sequência",
-    "text2": "Brincadeiras e jogos da cultura popular presentes no contexto comunitário e regional",
-    "score": 0.1
+    "text1": "Turma com boa interpretação",
+    "text2": "bom_dominio",
+    "score": 0.95
   },
   {
-    "text1": "Entendimento",
-    "text2": "Procedimentos de apoio à compreensão Tomada de nota",
+    "text1": "Sistemas",
+    "text2": "Construção do sistema alfabético/ Estabelecimento de relações anafóricas na referenciação e construção da coesão",
+    "score": 0.95
+  },
+  {
+    "text1": "História",
+    "text2": "Educação Física",
+    "score": 0.0
+  },
+  {
+    "text1": "Argumentar sobre questões ambientais",
+    "text2": "avaliacao",
+    "score": 0.95
+  },
+  {
+    "text1": "Texto",
+    "text2": "Compreensão em leitura",
+    "score": 0.95
+  },
+  {
+    "text1": "Listar os estados brasileiros",
+    "text2": "conhecimento",
     "score": 0.95
   },
   {
     "text1": "Interpretação",
     "text2": "Compreensão em leitura",
     "score": 0.95
+  },
+  {
+    "text1": "História",
+    "text2": "Símbolos, ritos e mitos religiosos",
+    "score": 0.3101890922503425
+  },
+  {
+    "text1": "Estudantes em nível profundo",
+    "text2": "conhecimento_basico",
+    "score": 0.1
+  },
+  {
+    "text1": "Estudantes iniciantes no assunto",
+    "text2": "conhecimento_basico",
+    "score": 0.95
+  },
+  {
+    "text1": "Com base no poema",
+    "text2": "poema",
+    "score": 0.95
+  },
+  {
+    "text1": "De acordo com o gráfico apresentado",
+    "text2": "grafico_barras",
+    "score": 0.95
+  },
+  {
+    "text1": "Processos",
+    "text2": "Sistemas da linguagem",
+    "score": 0.35166567666932635
+  },
+  {
+    "text1": "Sistemas",
+    "text2": "Construção do sistema alfabético e da ortografia",
+    "score": 0.95
+  },
+  {
+    "text1": "História",
+    "text2": "Movimento aparente do Sol no céu O Sol como fonte de luz e calor",
+    "score": 0.42423663922113947
+  },
+  {
+    "text1": "Aparelho",
+    "text2": "Sistema Operacional",
+    "score": 0.95
+  },
+  {
+    "text1": "Texto",
+    "text2": "Adesão às práticas de leitura",
+    "score": 0.95
+  },
+  {
+    "text1": "Ler",
+    "text2": "Adesão às práticas de leitura",
+    "score": 0.95
+  },
+  {
+    "text1": "Experimentos",
+    "text2": "Sistemas distribuídos e internet - Internet",
+    "score": 0.1
+  },
+  {
+    "text1": "Ler",
+    "text2": "Leitura colaborativa e autônoma",
+    "score": 0.95
+  },
+  {
+    "text1": "Leia a notícia abaixo",
+    "text2": "artigo_jornal",
+    "score": 0.95
+  },
+  {
+    "text1": "Sistemas",
+    "text2": "Construção do sistema alfabético e da ortografia",
+    "score": 0.95
+  },
+  {
+    "text1": "Sistemas",
+    "text2": "Sistema monetário brasileiro: reconhecimento de cédulas e moedas",
+    "score": 0.95
+  },
+  {
+    "text1": "Observe a charge abaixo",
+    "text2": "documento_historico",
+    "score": 0.1
+  },
+  {
+    "text1": "Aparelho",
+    "text2": "Construção do sistema alfabético",
+    "score": 0.95
+  },
+  {
+    "text1": "Leia o fragmento literário",
+    "text2": "texto_literario",
+    "score": 0.95
+  },
+  {
+    "text1": "Estudantes com conhecimento elementar",
+    "text2": "conhecimento_basico",
+    "score": 0.95
+  },
+  {
+    "text1": "Sistemas De Criptografia",
+    "text2": "Codificação da informação",
+    "score": 0.95
+  },
+  {
+    "text1": "Entendimento",
+    "text2": "Compreensão de textos orais",
+    "score": 0.95
+  },
+  {
+    "text1": "Formas De Energia",
+    "text2": "Fontes e tipos de energia Transformação de energia Cálculo de consumo de energia elétrica Circuitos elétricos Uso consciente de energia elétrica",
+    "score": 0.95
+  },
+  {
+    "text1": "Texto",
+    "text2": "Compreensão em leitura",
+    "score": 0.95
+  },
+  {
+    "text1": "Sistemas",
+    "text2": "Construção do sistema alfabético/ Convenções da escrita",
+    "score": 0.95
+  },
+  {
+    "text1": "Pré-Escrita:",
+    "text2": "Construção de repertório lexical",
+    "score": 0.3215150043777479
+  },
+  {
+    "text1": "Ler",
+    "text2": "Compreensão em leitura",
+    "score": 0.95
+  },
+  {
+    "text1": "Ciências",
+    "text2": "Problemas de contagem do tipo: “Se cada objeto de uma coleção A for combinado com todos os elementos de uma coleção B, quantos agrupamentos desse tipo podem ser formados?”",
+    "score": 0.39581276459687975
+  },
+  {
+    "text1": "Mundo",
+    "text2": "Narrativas religiosas",
+    "score": 0.1
+  },
+  {
+    "text1": "Alunos com leitura fluente",
+    "text2": "bom_dominio",
+    "score": 0.95
+  },
+  {
+    "text1": "Criptografia",
+    "text2": "Codificação da informação",
+    "score": 0.95
+  },
+  {
+    "text1": "Computação",
+    "text2": "Matemática",
+    "score": 0.0
+  },
+  {
+    "text1": "Analise o trecho do romance",
+    "text2": "texto_literario",
+    "score": 0.95
+  },
+  {
+    "text1": "Ciências",
+    "text2": "Língua Portuguesa",
+    "score": 0.0
+  },
+  {
+    "text1": "Turma com dificuldade de conexão",
+    "text2": "dificuldade_conexao",
+    "score": 0.95
+  },
+  {
+    "text1": "De acordo com a história em quadrinhos",
+    "text2": "charge",
+    "score": 0.95
+  },
+  {
+    "text1": "Ângulos",
+    "text2": "Políticas de extermínio do indígena durante o Império",
+    "score": 0.1
+  },
+  {
+    "text1": "Ciências",
+    "text2": "Educação Física",
+    "score": 0.0
+  },
+  {
+    "text1": "Com base no gráfico informativo",
+    "text2": "infografico",
+    "score": 0.95
+  },
+  {
+    "text1": "Ensino Religioso",
+    "text2": "História",
+    "score": 0.0
+  },
+  {
+    "text1": "Texto",
+    "text2": "Compreensão em leitura",
+    "score": 0.95
+  },
+  {
+    "text1": "Ciências",
+    "text2": "Esportes de marca Esportes de precisão",
+    "score": 0.3059373545411242
   }
 ]

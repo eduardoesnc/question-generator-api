@@ -3,11 +3,9 @@ Validador de progressão pedagógica (Single Responsibility Principle)
 """
 from typing import Optional
 
-
 class YearValidator:
     """Valida progressão pedagógica entre anos escolares"""
     
-    # Mapeamento de anos para números
     YEAR_MAP = {
         '1º': 1, '2º': 2, '3º': 3, '4º': 4, '5º': 5,
         '6º': 6, '7º': 7, '8º': 8, '9º': 9
@@ -32,12 +30,12 @@ class YearValidator:
             True se válido, False caso contrário
         """
         if not year_extracted or not year_embedding:
-            return True  # Sem validação se algum ano está faltando
+            return True
         
         year_num_extracted = cls.YEAR_MAP.get(year_extracted, 0)
         year_num_embedding = cls.YEAR_MAP.get(year_embedding, 0)
         
         if year_num_extracted == 0 or year_num_embedding == 0:
-            return True  # Ano inválido, não validar
+            return True
         
         return abs(year_num_embedding - year_num_extracted) <= max_difference

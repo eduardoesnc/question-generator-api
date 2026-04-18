@@ -11,7 +11,6 @@ from app.models.responses import ExtractionResponse
 from app.services.nlp_service import NLPService
 from app.config import settings
 
-# Carregar variáveis de ambiente
 load_dotenv()
 
 app = FastAPI(
@@ -22,7 +21,6 @@ app = FastAPI(
     redoc_url="/redoc"
 )
 
-# CORS
 app.add_middleware(
     CORSMiddleware,
     allow_origins=settings.cors_origins,
@@ -31,9 +29,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Inicializar serviço NLP
 nlp_service = NLPService()
-
 
 @app.on_event("startup")
 async def startup_event():
@@ -47,7 +43,6 @@ async def startup_event():
     else:
         logger.success("✅ Modelo NLP carregado com sucesso!")
 
-
 @app.get("/")
 async def root():
     """Endpoint raiz com informações da API"""
@@ -59,7 +54,6 @@ async def root():
         "health": "/health"
     }
 
-
 @app.get("/health")
 async def health_check():
     """Verifica o status da API e do modelo NLP"""
@@ -70,7 +64,6 @@ async def health_check():
         "nlp_model_loaded": is_loaded,
         "environment": settings.environment
     }
-
 
 @app.post("/api/extract", response_model=ExtractionResponse)
 async def extract_information(input_data: ExtractionRequest):
@@ -109,12 +102,10 @@ async def extract_information(input_data: ExtractionRequest):
     - **original_text**: Texto original enviado
     """
     try:
-        # Verificar se modelo está carregado
         if not nlp_service.is_loaded():
             logger.error("Tentativa de processar texto sem modelo carregado")
             raise ModelNotLoadedError("Modelo NLP não está carregado")
         
-        # Processar texto
         logger.info(f"📝 Processando texto com método '{input_data.method}': '{input_data.text[:100]}...'")
         result = nlp_service.process(input_data.text, input_data.context, method=input_data.method)
         
@@ -142,7 +133,6 @@ async def extract_information(input_data: ExtractionRequest):
             status_code=500,
             detail=f"Erro ao processar texto: {str(e)}"
         )
-
 
 if __name__ == "__main__":
     uvicorn.run(

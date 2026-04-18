@@ -56,7 +56,6 @@ DISCIPLINAS_PATTERNS = {
     ]
 }
 
-
 class DisciplinasMatcher(BaseMatcher):
     def __init__(self, nlp):
         super().__init__(nlp, DISCIPLINAS_PATTERNS)

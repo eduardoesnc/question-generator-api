@@ -50,7 +50,6 @@ DISCIPLINAS_MAP = {
     ]
 }
 
-# Mapeamento de anos - retorna no formato da BNCC (sem "ano")
 ANOS_MAP = {
     "1º": [r"1[oº°]?\s*ano", r"primeiro\s+ano", r"\b1\s*ano\b"],
     "2º": [r"2[oº°]?\s*ano", r"segundo\s+ano", r"\b2\s*ano\b"],

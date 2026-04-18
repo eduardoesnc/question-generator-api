@@ -3,7 +3,6 @@ Exceções customizadas da aplicação
 """
 from typing import Optional, Dict, Any
 
-
 class NLPAPIException(Exception):
     """Exceção base da API"""
     
@@ -18,7 +17,6 @@ class NLPAPIException(Exception):
         self.details = details or {}
         super().__init__(self.message)
 
-
 class ModelNotLoadedError(NLPAPIException):
     """Modelo NLP não foi carregado"""
     
@@ -28,7 +26,6 @@ class ModelNotLoadedError(NLPAPIException):
             status_code=503,
             details={"model": model_name}
         )
-
 
 class BNCCDataNotFoundError(NLPAPIException):
     """Dados da BNCC não encontrados"""
@@ -40,7 +37,6 @@ class BNCCDataNotFoundError(NLPAPIException):
             details={"path": path}
         )
 
-
 class EmbeddingsNotAvailableError(NLPAPIException):
     """Embeddings não estão disponíveis"""
     
@@ -50,7 +46,6 @@ class EmbeddingsNotAvailableError(NLPAPIException):
             status_code=503,
             details={"solution": "Run generate_embeddings.py script"}
         )
-
 
 class InvalidTextInputError(NLPAPIException):
     """Texto de entrada inválido"""
@@ -62,7 +57,6 @@ class InvalidTextInputError(NLPAPIException):
             details={"reason": reason}
         )
 
-
 class ExtractionFailedError(NLPAPIException):
     """Falha na extração de informações"""
     
@@ -73,7 +67,6 @@ class ExtractionFailedError(NLPAPIException):
             details={"text": text[:100], "error": error}
         )
 
-
 class MatcherNotFoundError(NLPAPIException):
     """Matcher não encontrado"""
     
@@ -83,7 +76,6 @@ class MatcherNotFoundError(NLPAPIException):
             status_code=503,
             details={"matcher_type": matcher_type}
         )
-
 
 class ProcessingError(NLPAPIException):
     """Erro genérico durante processamento"""

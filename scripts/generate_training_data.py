@@ -424,6 +424,14 @@ def generate_text_base_examples():
             "Segundo o infográfico apresentado",
             "De acordo com a infografia",
             "Interprete o infográfico"
+        ],
+        "poema": [
+            "Leia o poema abaixo",
+            "Analise a letra da música",
+            "Observe os versos apresentados",
+            "Com base no poema",
+            "Segundo a estrofe",
+            "De acordo com o soneto"
         ]
     }
     
@@ -452,6 +460,72 @@ def generate_text_base_examples():
             })
     
     print(f"   ✅ {len(examples)} exemplos de tipos de texto base gerados")
+    return examples
+
+def generate_perfil_aluno_examples():
+    """Gera exemplos para perfis de aluno"""
+    examples = []
+    
+    print("📝 Gerando exemplos de PERFIS DE ALUNO...")
+    
+    perfil_phrases = {
+        "bom_dominio": [
+            "Alunos com bom domínio de leitura",
+            "Estudantes que leem bem",
+            "Turma com boa compreensão textual",
+            "Alunos com leitura fluente",
+            "Estudantes avançados em leitura",
+            "Turma com boa interpretação"
+        ],
+        "dificuldade_conexao": [
+            "Alunos com dificuldade em conectar conceitos",
+            "Estudantes que têm dificuldade para relacionar ideias",
+            "Turma com dificuldade de interpretação",
+            "Alunos que sabem o básico mas não conectam",
+            "Estudantes com dificuldade em relacionar",
+            "Turma com dificuldade de conexão"
+        ],
+        "conhecimento_basico": [
+            "Alunos com conhecimento básico",
+            "Estudantes iniciantes no assunto",
+            "Turma em nível fundamental",
+            "Alunos no nível básico",
+            "Estudantes com conhecimento elementar",
+            "Turma iniciante"
+        ],
+        "conhecimento_avancado": [
+            "Alunos com conhecimento avançado",
+            "Estudantes em nível profundo",
+            "Turma avançada no assunto",
+            "Alunos com alto nível",
+            "Estudantes especializados",
+            "Turma com conhecimento aprofundado"
+        ]
+    }
+    
+    for perfil, frases in perfil_phrases.items():
+        for frase in frases:
+            examples.append({
+                "text1": frase,
+                "text2": perfil,
+                "score": 0.95,
+                "type": "perfil_positive",
+                "disciplina": "perfil_aluno"
+            })
+    
+    perfis = list(perfil_phrases.keys())
+    for perfil_correto, frases in perfil_phrases.items():
+        for frase in frases[:2]:
+            perfil_errado = random.choice([p for p in perfis if p != perfil_correto])
+            examples.append({
+                "text1": frase,
+                "text2": perfil_errado,
+                "score": 0.1,
+                "type": "perfil_negative",
+                "disciplina": "perfil_aluno"
+            })
+    
+    print(f"   ✅ {len(examples)} exemplos de perfis de aluno gerados")
     return examples
 
 def balance_and_sample(positive, negative, max_total=200):
@@ -646,13 +720,14 @@ def main():
     
     print(f"   ✅ Selecionados: {len(sampled_positive)} positivos, {len(sampled_negative)} negativos")
     
-    # Gerar exemplos Bloom, Tipos de Questão, Tipos de Texto Base
+    # Gerar exemplos Bloom, Tipos de Questão, Tipos de Texto Base, Perfil Aluno
     bloom_examples = generate_bloom_examples()
     question_examples = generate_question_type_examples()
     text_base_examples = generate_text_base_examples()
+    perfil_examples = generate_perfil_aluno_examples()
     
     # Combinar todos os exemplos
-    all_examples = sampled_positive + sampled_negative + bloom_examples + question_examples + text_base_examples
+    all_examples = sampled_positive + sampled_negative + bloom_examples + question_examples + text_base_examples + perfil_examples
     
     # Embaralhar
     random.shuffle(all_examples)
@@ -674,9 +749,10 @@ def main():
     print(f"\n📊 Dataset balanceado ({len(all_examples)} exemplos):")
     print(f"   ✅ 300 exemplos BNCC positivos (amostra representativa)")
     print(f"   ✅ 150 exemplos BNCC negativos (evita falsos positivos)")
-    print(f"   ✅ 48 exemplos Bloom (generalização)")
-    print(f"   ✅ 40 exemplos Questão (generalização)")
-    print(f"   ✅ 80 exemplos Texto Base (generalização)")
+    print(f"   ✅ {len(bloom_examples)} exemplos Bloom (generalização)")
+    print(f"   ✅ {len(question_examples)} exemplos Questão (generalização)")
+    print(f"   ✅ {len(text_base_examples)} exemplos Texto Base (generalização)")
+    print(f"   ✅ {len(perfil_examples)} exemplos Perfil Aluno (generalização)")
     print(f"\n💡 Balanceamento evita overfitting e melhora generalização!")
 
 if __name__ == "__main__":
