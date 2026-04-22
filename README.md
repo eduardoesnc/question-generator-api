@@ -1,91 +1,74 @@
-# 🤖 NLP API - Processamento de Linguagem Natural
+# 🤖 NLP API - Extração de Informações Educacionais
 
-API FastAPI para processar texto livre e extrair informações educacionais usando NLP com spaCy.
+API FastAPI que extrai informações educacionais de texto livre usando embeddings semânticos fine-tuned para BNCC.
 
-> **Nota:** Este é o backend do projeto. Para instruções completas de instalação e execução do sistema completo, veja o [README principal](../README.md).
-
-## 🚀 Instalação
+## 🚀 Setup Rápido
 
 ```bash
-# Criar ambiente virtual
+# Criar e ativar ambiente virtual
 python -m venv venv
-
-# Ativar ambiente virtual (Windows)
-venv\Scripts\activate
+venv\Scripts\activate  # Windows
+source venv/bin/activate  # Linux/Mac
 
 # Instalar dependências
 pip install -r requirements.txt
 
-# Baixar modelo de português do spaCy
+# Baixar modelo spaCy (usado para keywords e análise sintática)
 python -m spacy download pt_core_news_lg
+
+# Configurar variáveis de ambiente
+cp .env.example .env
+
+# Executar API
+python -m uvicorn app.main:app --reload --port 8000
 ```
 
-## 🏃 Executar
+API disponível em: `http://localhost:8000/docs`
 
-```bash
-python -m uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
-```
+## 🎯 Métodos de Extração
 
-A API estará disponível em: `http://localhost:8000`
+A API oferece 3 métodos (parâmetro `method`):
 
-## 📚 Documentação da API
+- **keywords**: Matching por palavras-chave (~100ms)
+- **embeddings**: Similaridade semântica com modelo fine-tuned (~200ms)
+- **hybrid**: Combinação de ambos - recomendado (~250ms)
 
-Acesse a documentação interativa em: `http://localhost:8000/docs`
+## 📝 Exemplo de Uso
 
-## 🔍 Endpoints
-
-### `GET /`
-Informações básicas da API
-
-### `GET /health`
-Health check - verifica se o modelo NLP está carregado
-
-### `POST /api/extract`
-Extrai informações educacionais de texto livre
-
-**Request:**
 ```json
+POST /api/extract
 {
-  "text": "Quero uma questão de matemática para o 7º ano sobre frações",
-  "context": {}  // opcional
+  "text": "História sobre Era Vargas, 9º ano, análise, dissertativa com documento histórico",
+  "method": "hybrid"
 }
 ```
 
-**Response:**
-```json
-{
-  "extracted": {
-    "disciplina": "Matemática",
-    "ano": "7º ano"
-  },
-  "confidence": {
-    "disciplina": 0.95,
-    "ano": 0.98
-  },
-  "suggestions": [],
-  "missing_fields": ["nivelBloom", "tipoQuestao", "tipoTextoBase"],
-  "original_text": "Quero uma questão de matemática para o 7º ano sobre frações"
-}
-```
+Retorna: disciplina, ano, unidadeTematica, objetoConhecimento, habilidade BNCC, nivelBloom, tipoQuestao, tipoTextoBase, perfilAluno.
 
-## 🧪 Testar
+## 🔧 Scripts Disponíveis
 
 ```bash
-python test_api.py
+# Gerar embeddings dos dados da BNCC
+python scripts/generate_embeddings.py
+
+# Gerar embeddings de campos não-BNCC (Bloom, perfil aluno, tipos de questão/texto)
+python scripts/generate_non_bncc_embeddings.py
+
+# Criar pares de treinamento automaticamente
+python scripts/generate_training_data.py
+# Esses pares serão modificados, está dentro dos meus planos trocar a forma de treinamento
+
+# Fine-tuning do modelo com os dados gerados
+python scripts/finetune_embeddings.py
+
+# Adicionar embeddings de palavras-chave extraídas
+python scripts/add_keyword_embeddings.py
 ```
 
-## 📊 Campos Extraídos
+## 📦 Modelo
 
-- **disciplina**: Matéria escolar (Matemática, Português, etc.)
-- **ano**: Ano/série escolar (1º ano a 9º ano)
-- **nivelBloom**: Nível cognitivo (conhecimento, compreensão, aplicação, análise, síntese, avaliação)
-- **tipoQuestao**: Formato da questão (múltipla escolha, dissertativa, etc.)
-- **tipoTextoBase**: Tipo de texto de apoio (charge, gráfico, tabela, etc.)
-- **perfilAluno**: Perfil do estudante (conhecimento básico, avançado, etc.)
+O modelo fine-tuned está em `models/bncc-embeddings-finetuned/` e é carregado automaticamente pela API. Baseado em `sentence-transformers` com dados da BNCC.
 
-## 🛠️ Tecnologias
+## 🛠️ Stack
 
-- **FastAPI** - Framework web moderno e rápido
-- **spaCy** - Biblioteca de NLP para português
-- **Pydantic** - Validação de dados
-- **Uvicorn** - Servidor ASGI
+FastAPI • spaCy • Sentence Transformers • PyTorch • scikit-learn
