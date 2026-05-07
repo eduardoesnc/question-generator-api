@@ -29,9 +29,7 @@ ENV PATH=/root/.local/bin:$PATH
 COPY app/ ./app/
 COPY matchers/ ./matchers/
 COPY data/ ./data/
-
-ENV MODELS_DIR=/app/models
-RUN mkdir -p /app/models
+COPY models/ ./models/
 
 EXPOSE 8000
 

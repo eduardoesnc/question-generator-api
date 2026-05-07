@@ -1,3 +1,4 @@
+import os
 from typing import Dict, List, Any, Optional
 
 from app.core.logging import logger
@@ -14,20 +15,103 @@ class NLPService:
         self._load_model()
     
     def _load_model(self):
-        """Carrega o modelo de embeddings fine-tuned"""
+        """Carrega o modelo de embeddings de acordo com MODEL_SOURCE"""
         try:
-            logger.info("🔄 Carregando modelo de embeddings...")
-            self.embeddings_matcher = EmbeddingsMatcher()
+            model_path = self._resolve_model_path()
+            logger.info(f"Carregando modelo de embeddings de: {model_path}")
+            self.embeddings_matcher = EmbeddingsMatcher(model_path=model_path)
             
             if self.embeddings_matcher.embeddings_cache:
-                logger.success("✅ Modelo de embeddings carregado com sucesso!")
+                logger.success("Modelo de embeddings carregado com sucesso!")
             else:
-                logger.error("❌ Cache de embeddings vazio")
+                logger.error("Cache de embeddings vazio")
                 self.embeddings_matcher = None
                     
         except Exception as e:
-            logger.error(f"❌ Erro ao carregar embeddings: {str(e)}")
+            logger.error(f"Erro ao carregar embeddings: {str(e)}")
             self.embeddings_matcher = None
+
+    def _resolve_model_path(self) -> str:
+        """Resolve o caminho do modelo de acordo com MODEL_SOURCE"""
+        source = settings.MODEL_SOURCE.lower()
+
+        if source == "local":
+            return settings.sentence_transformer_model
+
+        elif source == "minio":
+            return self._download_from_minio()
+
+        elif source == "s3":
+            return self._download_from_s3()
+
+        elif source == "huggingface":
+            return settings.HF_MODEL_ID  # sentence-transformers aceita HF model ID direto
+
+        else:
+            logger.warning(f"MODEL_SOURCE '{source}' desconhecido, usando local")
+            return settings.sentence_transformer_model
+
+    def _download_from_minio(self) -> str:
+        """Baixa modelo do MinIO para MODELS_DIR e retorna o caminho local"""
+        try:
+            from minio import Minio
+
+            dest = settings.sentence_transformer_model
+            if os.path.exists(dest):
+                logger.info("Modelo já existe localmente, pulando download")
+                return dest
+
+            logger.info(f"Baixando modelo do MinIO: {settings.MINIO_BUCKET}/{settings.MINIO_MODEL_PATH}")
+            client = Minio(
+                settings.MINIO_ENDPOINT,
+                access_key=settings.MINIO_ACCESS_KEY,
+                secret_key=settings.MINIO_SECRET_KEY,
+                secure=True,
+            )
+            objects = client.list_objects(settings.MINIO_BUCKET, prefix=settings.MINIO_MODEL_PATH, recursive=True)
+            for obj in objects:
+                local_file = os.path.join(settings.MODELS_DIR, obj.object_name)
+                os.makedirs(os.path.dirname(local_file), exist_ok=True)
+                client.fget_object(settings.MINIO_BUCKET, obj.object_name, local_file)
+
+            logger.success("Modelo baixado do MinIO com sucesso!")
+            return dest
+
+        except ImportError:
+            raise RuntimeError("Pacote 'minio' não instalado. Adicione ao requirements.txt: minio")
+        except Exception as e:
+            raise RuntimeError(f"Erro ao baixar modelo do MinIO: {e}")
+
+    def _download_from_s3(self) -> str:
+        """Baixa modelo do S3 para MODELS_DIR e retorna o caminho local"""
+        try:
+            import boto3
+
+            dest = settings.sentence_transformer_model
+            if os.path.exists(dest):
+                logger.info("Modelo já existe localmente, pulando download")
+                return dest
+
+            logger.info(f"Baixando modelo do S3: {settings.MINIO_BUCKET}/{settings.MINIO_MODEL_PATH}")
+            s3 = boto3.client(
+                "s3",
+                aws_access_key_id=settings.MINIO_ACCESS_KEY,
+                aws_secret_access_key=settings.MINIO_SECRET_KEY,
+            )
+            paginator = s3.get_paginator("list_objects_v2")
+            for page in paginator.paginate(Bucket=settings.MINIO_BUCKET, Prefix=settings.MINIO_MODEL_PATH):
+                for obj in page.get("Contents", []):
+                    local_file = os.path.join(settings.MODELS_DIR, obj["Key"])
+                    os.makedirs(os.path.dirname(local_file), exist_ok=True)
+                    s3.download_file(settings.MINIO_BUCKET, obj["Key"], local_file)
+
+            logger.success("Modelo baixado do S3 com sucesso!")
+            return dest
+
+        except ImportError:
+            raise RuntimeError("Pacote 'boto3' não instalado. Adicione ao requirements.txt: boto3")
+        except Exception as e:
+            raise RuntimeError(f"Erro ao baixar modelo do S3: {e}")
     
     def is_loaded(self) -> bool:
         """Verifica se o modelo foi carregado"""

@@ -1,0 +1,36 @@
+models/
+checkpoints/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+
+# Git
+.git/
+.gitignore
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Env files
+.env
+
+# Documentação
+docs/
+README.md
+*.md
+
+# Scripts de treinamento
+scripts/

@@ -11,16 +11,17 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from app.core.logging import logger
-from matchers.synonyms import get_key_terms
+from app.config import settings
 
 class EmbeddingsMatcher:
     """Matcher baseado em embeddings semânticos"""
     
-    def __init__(self):
+    def __init__(self, model_path: str = None):
         self.model = None
         self.embeddings_cache = {}
         self.reverse_index = {}
         self.non_bncc_embeddings = {}
+        self._model_path_override = model_path
         self._load_model()
         self._load_embeddings()
         self._load_non_bncc_embeddings()
@@ -28,7 +29,8 @@ class EmbeddingsMatcher:
     def _load_model(self):
         """Carrega modelo fine-tuned (OBRIGATÓRIO)"""
         
-        model_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'models', 'bncc-embeddings-finetuned')
+        # Usa model_path passado no construtor, depois ENV, depois padrão
+        model_path = self._model_path_override or settings.sentence_transformer_model
         
         if not os.path.exists(model_path):
             error_msg = (
@@ -55,7 +57,7 @@ class EmbeddingsMatcher:
         )
         
         if not os.path.exists(embeddings_path):
-            logger.warning("⚠️  Embeddings não encontrados! Execute: python scripts/generate_embeddings.py")
+            logger.warning("Embeddings não encontrados! Execute: python scripts/generate_embeddings.py")
             return
         
         with open(embeddings_path, 'r', encoding='utf-8') as f:
@@ -83,7 +85,7 @@ class EmbeddingsMatcher:
         )
         
         if not os.path.exists(embeddings_path):
-            logger.warning("⚠️  Embeddings não-BNCC não encontrados! Execute: python scripts/generate_non_bncc_embeddings.py")
+            logger.warning("Embeddings não-BNCC não encontrados! Execute: python scripts/generate_non_bncc_embeddings.py")
             return
         
         with open(embeddings_path, 'r', encoding='utf-8') as f:
@@ -459,3 +461,4 @@ class EmbeddingsMatcher:
                                 return variations
         
         return variations
+

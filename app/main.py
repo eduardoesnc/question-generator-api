@@ -34,14 +34,14 @@ nlp_service = NLPService()
 @app.on_event("startup")
 async def startup_event():
     """Evento executado ao iniciar a aplicação"""
-    logger.info("🚀 Iniciando API NLP...")
-    logger.info(f"📝 Ambiente: {settings.environment}")
-    logger.info(f"🌐 CORS Origins: {settings.cors_origins}")
+    logger.info("Iniciando API NLP...")
+    logger.info(f"Ambiente: {settings.environment}")
+    logger.info(f"CORS Origins: {settings.cors_origins}")
     
     if not nlp_service.is_loaded():
-        logger.error("❌ Modelo NLP não foi carregado!")
+        logger.error("Modelo NLP não foi carregado!")
     else:
-        logger.success("✅ Modelo NLP carregado com sucesso!")
+        logger.success("Modelo NLP carregado com sucesso!")
 
 @app.get("/")
 async def root():
@@ -104,10 +104,10 @@ async def extract_information(input_data: ExtractionRequest):
             logger.error("Tentativa de processar texto sem modelo carregado")
             raise ModelNotLoadedError("Modelo NLP não está carregado")
         
-        logger.info(f"📝 Processando texto com método '{input_data.method}': '{input_data.text[:100]}...'")
+        logger.info(f"Processando texto com método '{input_data.method}': '{input_data.text[:100]}...'")
         result = nlp_service.process(input_data.text, input_data.context, method=input_data.method)
         
-        logger.success(f"✅ Processamento concluído. Campos extraídos: {len(result['extracted'])}")
+        logger.success(f"Processamento concluído. Campos extraídos: {len(result['extracted'])}")
         
         return ExtractionResponse(
             extracted=result["extracted"],
