@@ -68,12 +68,10 @@ async def health_check():
 @app.post("/api/extract", response_model=ExtractionResponse)
 async def extract_information(input_data: ExtractionRequest):
     """
-    Extrai informações educacionais de texto livre usando NLP.
+    Extrai informações educacionais de texto livre usando NLP com embeddings.
     
-    ## Métodos Disponíveis:
-    - **keywords**: Matching por palavras-chave (rápido, ~100ms)
-    - **embeddings**: Similaridade semântica (preciso, ~200ms)
-    - **hybrid**: Combinação de ambos (melhor resultado, ~250ms)
+    ## Método:
+    - **embeddings**: Similaridade semântica com modelo fine-tuned (~200ms)
     
     ## Campos Extraídos:
     - **disciplina**: Matéria escolar (Matemática, História, etc.)
@@ -90,7 +88,7 @@ async def extract_information(input_data: ExtractionRequest):
     ```json
     {
         "text": "História sobre Era Vargas, 9º ano, análise, dissertativa longa com documento histórico",
-        "method": "hybrid"
+        "method": "embeddings"
     }
     ```
     

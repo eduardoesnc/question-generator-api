@@ -19,15 +19,35 @@ class Settings(BaseSettings):
     # CORS
     CORS_ORIGINS: str = "http://localhost:3000,https://question-generator-seven-delta.vercel.app"
     
-    # Paths
-    DATA_DIR: str = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data")
-    MODELS_DIR: str = os.path.join(os.path.dirname(os.path.dirname(__file__)), "models")
-    BNCC_DATA_PATH: str = os.path.join(DATA_DIR, "bncc-data.json")
-    EMBEDDINGS_PATH: str = os.path.join(DATA_DIR, "bncc_embeddings.json")
+    # Paths (podem ser sobrescritos via ENV)
+    DATA_DIR: str = os.getenv("DATA_DIR", os.path.join(os.path.dirname(os.path.dirname(__file__)), "data"))
+    MODELS_DIR: str = os.getenv("MODELS_DIR", os.path.join(os.path.dirname(os.path.dirname(__file__)), "models"))
     
-    # NLP Models
-    SPACY_MODEL: str = "pt_core_news_sm"
-    SENTENCE_TRANSFORMER_MODEL: str = os.path.join(MODELS_DIR, "bncc-embeddings-finetuned")
+    @property
+    def bncc_data_path(self) -> str:
+        return os.path.join(self.DATA_DIR, "bncc-data.json")
+    
+    @property
+    def embeddings_path(self) -> str:
+        return os.path.join(self.DATA_DIR, "bncc_embeddings.json")
+    
+    # NLP Models (apenas embeddings)
+    @property
+    def sentence_transformer_model(self) -> str:
+        return os.path.join(self.MODELS_DIR, "bncc-embeddings-finetuned")
+    
+    # Manter compatibilidade com código antigo
+    @property
+    def BNCC_DATA_PATH(self) -> str:
+        return self.bncc_data_path
+    
+    @property
+    def EMBEDDINGS_PATH(self) -> str:
+        return self.embeddings_path
+    
+    @property
+    def SENTENCE_TRANSFORMER_MODEL(self) -> str:
+        return self.sentence_transformer_model
     
     # Thresholds
     KEYWORDS_THRESHOLD: float = 0.20

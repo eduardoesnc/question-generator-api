@@ -1,11 +1,13 @@
-fastapi
-uvicorn[standard]
-pydantic
-spacy
-python-dotenv
-requests
-sentence-transformers
-scikit-learn
-numpy
-datasets
-torch
+fastapi==0.115.0
+uvicorn[standard]==0.32.0
+pydantic==2.9.0
+pydantic-settings==2.5.0
+python-dotenv==1.0.1
+
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.5.1+cpu
+sentence-transformers==3.3.1
+scikit-learn==1.5.2
+numpy==1.26.4
+
+requests==2.32.3

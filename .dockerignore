@@ -1,0 +1,35 @@
+# checkpoints/ ainda excluído (não necessário em runtime)
+checkpoints/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+
+# Git
+.git/
+.gitignore
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Env files (copiar apenas .env.example)
+.env
+
+# Documentação
+docs/
+README.md
+
+# Scripts de treinamento (não necessários em runtime)
+scripts/

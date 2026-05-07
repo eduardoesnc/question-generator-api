@@ -20,9 +20,9 @@ class ExtractionRequest(BaseModel):
         description="Contexto adicional (opcional)"
     )
     
-    method: Literal['keywords', 'embeddings', 'hybrid'] = Field(
-        default='keywords',
-        description="Método de extração: keywords (rápido), embeddings (preciso), hybrid (melhor)"
+    method: Literal['embeddings'] = Field(
+        default='embeddings',
+        description="Método de extração: embeddings (similaridade semântica com modelo fine-tuned)"
     )
     
     @validator('text')
@@ -40,6 +40,6 @@ class ExtractionRequest(BaseModel):
         json_schema_extra = {
             "example": {
                 "text": "História sobre Era Vargas, 9º ano, análise",
-                "method": "hybrid"
+                "method": "embeddings"
             }
         }
