@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 from app.core.logging import logger
 from app.core.exceptions import ModelNotLoadedError, ProcessingError
 from app.models.requests import ExtractionRequest
-from app.models.responses import ExtractionResponse
+from app.models.responses import ExtractionResponse, LLMGenerationResponse
 from app.services.nlp_service import NLPService
 from app.config import settings
 
@@ -131,6 +131,39 @@ async def extract_information(input_data: ExtractionRequest):
             status_code=500,
             detail=f"Erro ao processar texto: {str(e)}"
         )
+
+@app.post("/api/generate-llm", response_model=LLMGenerationResponse)
+async def generate_with_llm(input_data: ExtractionRequest):
+    """
+    Usa o Gemini para extrair campos educacionais do texto, preencher o prompt padrão
+    e gerar a questão final — tudo em uma única chamada.
+
+    ## Fluxo:
+    1. Gemini extrai os campos educacionais (disciplina, ano, habilidade, etc.)
+    2. Os campos preenchem o template de prompt padrão do projeto
+    3. O prompt preenchido é enviado ao Gemini para gerar a questão
+
+    ## Retorno (para fins de teste):
+    - **filled_prompt**: prompt padrão com os campos preenchidos
+    - **extracted_fields**: campos que o Gemini identificou no texto
+    - **generated_question**: questão gerada pelo Gemini (JSON bruto)
+    - **processing_time_ms**: tempo total de processamento
+    """
+    from app.services.llm_service import LLMService
+
+    try:
+        llm_service = LLMService()
+    except ValueError as e:
+        raise HTTPException(status_code=503, detail=str(e))
+
+    try:
+        logger.info(f"[LLM] Requisição recebida: '{input_data.text[:80]}'")
+        result = llm_service.process(input_data.text)
+        return LLMGenerationResponse(**result)
+    except Exception as e:
+        logger.error(f"[LLM] Erro: {str(e)}")
+        raise HTTPException(status_code=500, detail=f"Erro ao processar com LLM: {str(e)}")
+
 
 if __name__ == "__main__":
     uvicorn.run(

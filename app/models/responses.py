@@ -86,6 +86,33 @@ class ExtractionResponse(BaseModel):
         }
 
 
+class TokenUsage(BaseModel):
+    """Uso de tokens de uma chamada ao Gemini"""
+    input_tokens: int
+    output_tokens: int
+    total_tokens: int
+
+
+class LLMTokenSummary(BaseModel):
+    """Resumo de tokens das duas chamadas ao Gemini"""
+    call_1: TokenUsage = Field(..., description="Tokens da chamada 1 (extração de campos)")
+    call_2: TokenUsage = Field(..., description="Tokens da chamada 2 (seleção BNCC + geração)")
+    total_input: int = Field(..., description="Total de tokens de entrada")
+    total_output: int = Field(..., description="Total de tokens de saída")
+    total: int = Field(..., description="Total geral de tokens")
+
+
+class LLMGenerationResponse(BaseModel):
+    """Response do modo LLM (Gemini)"""
+
+    filled_prompt: str = Field(..., description="Prompt padrão preenchido com os campos extraídos")
+    extracted_fields: Dict[str, Any] = Field(..., description="Campos extraídos pelo Gemini")
+    generated_question: str = Field(..., description="Questão gerada pelo Gemini (JSON bruto)")
+    original_text: str = Field(..., description="Texto original enviado")
+    processing_time_ms: float = Field(..., description="Tempo total de processamento em ms")
+    token_usage: Optional[LLMTokenSummary] = Field(default=None, description="Consumo de tokens por chamada")
+
+
 class HealthResponse(BaseModel):
     """Response do health check"""
     

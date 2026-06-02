@@ -12,6 +12,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from app.core.logging import logger
 from app.config import settings
+from matchers.synonyms import get_key_terms
 
 class EmbeddingsMatcher:
     """Matcher baseado em embeddings semânticos"""

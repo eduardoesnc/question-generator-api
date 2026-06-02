@@ -36,6 +36,10 @@ class Settings(BaseSettings):
     # HuggingFace (usado quando MODEL_SOURCE=huggingface)
     HF_MODEL_ID: str = ""
 
+    # Gemini (usado pelo modo LLM)
+    GEMINI_API_KEY: str = ""
+    GEMINI_MODEL: str = "gemini-3-flash-preview"
+
     @property
     def bncc_data_path(self) -> str:
         return os.path.join(self.DATA_DIR, "bncc-data.json")
